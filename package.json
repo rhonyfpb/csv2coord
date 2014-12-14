@@ -1,0 +1,28 @@
+{
+  "name": "csv2coord",
+  "version": "0.0.1",
+  "description": "CSV to GeoCoord",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rhonyfpb/csv2coord.git"
+  },
+  "keywords": [
+    "csv",
+    "geo",
+    "coordinates"
+  ],
+  "author": "Rhony Pedraza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rhonyfpb/csv2coord/issues"
+  },
+  "homepage": "https://github.com/rhonyfpb/csv2coord",
+  "dependencies": {
+    "ya-csv": "^0.9.4"
+  }
+}
