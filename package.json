@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/rhonyfpb/csv2coord",
   "dependencies": {
-    "ya-csv": "^0.9.4"
+    "request": "2.51.x",
+    "ya-csv": "0.9.x"
   }
 }
