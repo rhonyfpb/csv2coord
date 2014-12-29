@@ -28,11 +28,14 @@ reader.addListener("data", function(data) {
   var DIRECCION = direccion.toUpperCase();
   DIRECCION = DIRECCION.replace(/,/g, "");
 
-  if(direccion /*&& i<10*/ && (i==25 || i==25)) {
+  if(direccion /*&& i<10*/ /*&& (i==98 || i==98)*/) {
     //console.log((i+1) + " " + DIRECCION);
     //console.log("%d %s", ());
     var tokens = DIRECCION.split(/\s+/);
     //console.log(chalk.yellow(i+1) + " " + DIRECCION + chalk.yellow(" = ") + chalk.green(tokens));
+
+    //var nombres = new RegExp("^(JIM.NEZ|EL DORADO)$");
+    var nombres = "JIM.NEZ|EL DORADO|AM.RICAS";
     
 
     // procesamiento de los tokens
@@ -42,6 +45,7 @@ reader.addListener("data", function(data) {
     var postResult = [];
     var exp = [
       /^(AVENIDA|AVE|AV|AC|AK)$/,
+      nombres,
       /^(CALLE|CLL|CL|CARRERA|CRA|KRA|CR|KR|DIAGONAL|DIAG|DIA|DG|TRANSVERSAL|TRANSV|TRANS|TRA|TR)$/,
       /^\d{1,3}[A-Z]?$/,
       /^(|[A-Z])$/,
@@ -53,145 +57,177 @@ reader.addListener("data", function(data) {
       /^\d{1,3}$/,
       /^SUR$/
     ];
+    var skip = -Infinity;
 
     tokens.length > 0 && tokens.forEach(function(value, index, arr) {
-      switch(j) {
-        case 0: // Tipo de via
-          if(exp[j].test(value)) {
-            if(/^AC$/.test(value)) {
-              result.push("AC");
-            } else {
-              if(/^AK$/.test(value)) {
-                result.push("AK");
+      if(index >= skip) {
+        switch(j) {
+          case 0: // Tipo de via
+            if(exp[j].test(value)) {
+              if(/^AC$/.test(value)) {
+                result.push("AC");
               } else {
-                result.push("AV");
-              }
-            }
-            j++;
-            break;
-          } else {
-            if(exp[j+1].test(value)) {
-              j++;
-            } else {
-              preResult.push(value); // PRE
-              break;
-            }
-          }
-        case 1: // Tipo de via
-          if(exp[j].test(value)) {
-            var prev = result[0];
-            var prevExist = !!prev;
-            if(/^(CALLE|CLL|CL)$/.test(value)) {
-              prevExist ? result[0] = "AC" : result.push("CL");
-            } else {
-              if(/^(CARRERA|CRA|KRA|CR|KR)$/.test(value)) {
-                prevExist ? result[0] = "AK" : result.push("KR");
-              } else {
-                if(/^(DIAGONAL|DIAG|DIA|DG)$/.test(value)) {
-                  result.push("DG");
+                if(/^AK$/.test(value)) {
+                  result.push("AK");
                 } else {
-                  result.push("TR");
+                  result.push("AV");
                 }
               }
+              j++;
+              break;
+            } else {
+              if(exp[j+2].test(value)) {
+                j++;
+              } else {
+                preResult.push(value); // PRE
+                break;
+              }
+            }
+          case 1: // Nombres de vias
+            var regTemp = new RegExp("^(" + exp[j] + ")$");
+            if(regTemp.test(value)) {
+              result.push(value);
+              j = 6;
+              break;
+            } else {
+              regTemp = new RegExp("(" + exp[j] + ")");
+              var resReg = regTemp.exec(arr.join(" "));
+              var pattern = resReg ? resReg[0] : null;
+              if(pattern) {
+                result.push(pattern);
+                skip = index + pattern.split(" ").length;
+                j = 6;
+                break;
+              } else {
+                skip = -Infinity;
+              }
             }
             j++;
-            break;
-          } else {
-            j++;
-          }
-        case 2: // Numero de via
-          if(exp[j].test(value)) {
-            if(/^\d{1,3}$/.test(value)) {
+            //
+            /*if(exp[j].test(value)) {
               result.push(value);
+              j = 6;
+              break;
+            }
+            j++;*/
+          case 2: // Tipo de via
+            if(exp[j].test(value)) {
+              var prev = result[0];
+              var prevExist = !!prev;
+              if(/^(CALLE|CLL|CL)$/.test(value)) {
+                prevExist ? result[0] = "AC" : result.push("CL");
+              } else {
+                if(/^(CARRERA|CRA|KRA|CR|KR)$/.test(value)) {
+                  prevExist ? result[0] = "AK" : result.push("KR");
+                } else {
+                  if(/^(DIAGONAL|DIAG|DIA|DG)$/.test(value)) {
+                    result.push("DG");
+                  } else {
+                    result.push("TR");
+                  }
+                }
+              }
+              j++;
+              break;
             } else {
-              result.push(/\d+/.exec(value)[0]);
-              result.push(/[A-Z]/.exec(value)[0]);
               j++;
             }
-            j++;
-          }
-          break;
-        case 3: // Prefijo o cuadrante
-          if(exp[j].test(value)) {
-            if(/^[A-Z]$/.test(value)) {
-              result.push(value);
-            }
-            j++;
-            break;
-          } else {
-            j++;
-          }
-        case 4:
-          if(exp[j].test(value)) {
-            result.push(value);
-            j++;
-            break;
-          } else {
-            j++;
-          }
-        case 5: // Separador de numero
-          if(exp[j].test(value)) {
-            // Se evita la inclusion de cualquier simbolo de numero
-            j++;
-          }
-          break;
-        case 6: // Numero de via generadora
-          if(exp[j].test(value)) {
-            if(/^\d{1,3}$/.test(value)) {
-              result.push(value);
-            } else {
-              result.push(/\d+/.exec(value)[0]);
-              result.push(/[A-Z]/.exec(value)[0]);
+          case 3: // Numero de via
+            if(exp[j].test(value)) {
+              if(/^\d{1,3}$/.test(value)) {
+                result.push(value);
+              } else {
+                result.push(/\d+/.exec(value)[0]);
+                result.push(/[A-Z]/.exec(value)[0]);
+                j++;
+              }
               j++;
             }
-            j++;
-          }
-          break;
-        case 7: // Prefijo o cuadrante de via generadora
-          if(exp[j].test(value)) {
-            if(/^[A-Z]$/.test(value)) {
-              result.push(value);
+            break;
+          case 4: // Prefijo o cuadrante
+            if(exp[j].test(value)) {
+              if(/^[A-Z]$/.test(value)) {
+                result.push(value);
+              }
+              j++;
+              break;
+            } else {
+              j++;
             }
-            j++;
+          case 5: // Calificador sur
+            if(exp[j].test(value)) {
+              result.push(value);
+              j++;
+              break;
+            } else {
+              j++;
+            }
+          case 6: // Separador de numero
+            if(exp[j].test(value)) {
+              // Se evita la inclusion de cualquier simbolo de numero
+              j++;
+            }
             break;
-          } else {
-            j++;
-          }
-        case 8: // Separador de placa
-          if(exp[j].test(value)) {
-            j++;
-          }
-          break;
-        case 9: // Numero de placa
-          if(exp[j].test(value)) {
-            result.push(value);
-            j++;
-          }
-          break;
-        case 10: // Calificador sur
-          if(exp[j].test(value)) {
-            result.push(value);
-            j++;
+          case 7: // Numero de via generadora
+            if(exp[j].test(value)) {
+              if(/^\d{1,3}$/.test(value)) {
+                result.push(value);
+              } else {
+                result.push(/\d+/.exec(value)[0]);
+                result.push(/[A-Z]/.exec(value)[0]);
+                j++;
+              }
+              j++;
+            }
             break;
-          } else {
-            j++;
-          }
-        case 11:
-          postResult.push(value); // POST
-          break;
+          case 8: // Prefijo o cuadrante de via generadora
+            if(exp[j].test(value)) {
+              if(/^[A-Z]$/.test(value)) {
+                result.push(value);
+              }
+              j++;
+              break;
+            } else {
+              j++;
+            }
+          case 9: // Separador de placa
+            if(exp[j].test(value)) {
+              j++;
+            }
+            break;
+          case 10: // Numero de placa
+            if(exp[j].test(value)) {
+              result.push(value);
+              j++;
+            }
+            break;
+          case 11: // Calificador sur
+            if(exp[j].test(value)) {
+              result.push(value);
+              j++;
+              break;
+            } else {
+              j++;
+            }
+          case 12:
+            postResult.push(value); // POST
+            break;
+        }
       }
+      
     });
 
     // resultado
-    if(result.join(" ").indexOf("AV") !== -1) {
+    /*if(result.join(" ").indexOf("AV") !== -1) {
       console.log(chalk.yellow(i+1) + " " + DIRECCION + chalk.yellow(" = ") + chalk.green(tokens));
       console.log(chalk.yellow((i+1) + " PRE: ") + chalk.red(preResult.join(" ")));
       console.log(chalk.yellow((i+1) + " RES: ") + chalk.red(result.join(" ")));
       console.log(chalk.yellow((i+1) + " POS: ") + chalk.red(postResult.join(" ")));
-    }
-    /*console.log(chalk.yellow((i+1) + " PRE: ") + chalk.red(preResult.join(" ")));
+    }*/
+    console.log(chalk.yellow(i+1) + " " + DIRECCION + chalk.yellow(" = ") + chalk.green(tokens));
+    console.log(chalk.yellow((i+1) + " PRE: ") + chalk.red(preResult.join(" ")));
     console.log(chalk.yellow((i+1) + " RES: ") + chalk.red(result.join(" ")));
-    console.log(chalk.yellow((i+1) + " POS: ") + chalk.red(postResult.join(" ")));*/
+    console.log(chalk.yellow((i+1) + " POS: ") + chalk.red(postResult.join(" ")));
     //console.log(chalk.yellow(i+1) + " " + chalk.red(result));
     //i++;
 
@@ -221,5 +257,5 @@ reader.addListener("data", function(data) {
 });
 
 reader.addListener("end", function() {
-  console.log("FIN DE LA LECTURA DEL ARCHIVO");
+  console.log(chalk.blue("FIN DE LA LECTURA DEL ARCHIVO"));
 });
