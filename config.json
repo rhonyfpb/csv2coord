@@ -1,0 +1,6 @@
+{
+	"path": "./files/",
+	"sourceFile": "establecimientosdegastronomiaysimilaresdatosabiertos.csv",
+	"resultFile": "establecimientosdegastronomiaysimilaresdatosabiertos-procesado.csv",
+	"columnName": "DIRECCION"
+}

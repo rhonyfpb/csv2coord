@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/rhonyfpb/csv2coord",
   "dependencies": {
+    "chalk": "0.5.x",
+    "nconf": "0.7.x",
     "request": "2.51.x",
     "ya-csv": "0.9.x"
   }
