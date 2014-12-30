@@ -15,10 +15,10 @@ var reader = csv.createCsvFileReader(path + sourceFile, {
   columnsFromHeader: true
 });
 
-/*var writer = csv.createCsvFileWriter("./files/establecimientosdealojamiento-procesado.csv", {
+var writer = csv.createCsvFileWriter(path + resultFile, {
   separator: ";",
   quote: ""
-});*/
+});
 
 var i = 0;
 
@@ -28,15 +28,9 @@ reader.addListener("data", function(data) {
   var DIRECCION = direccion.toUpperCase();
   DIRECCION = DIRECCION.replace(/,/g, "");
 
-  if(direccion /*&& i<10*/ /*&& (i==98 || i==98)*/) {
-    //console.log((i+1) + " " + DIRECCION);
-    //console.log("%d %s", ());
+  if(direccion /*&& i<10*/ /*&& (i==62 && i==62)*/) {
     var tokens = DIRECCION.split(/\s+/);
-    //console.log(chalk.yellow(i+1) + " " + DIRECCION + chalk.yellow(" = ") + chalk.green(tokens));
-
-    //var nombres = new RegExp("^(JIM.NEZ|EL DORADO)$");
-    var nombres = "JIM.NEZ|EL DORADO|AM.RICAS";
-    
+    var nombres = "JIMENEZ|EL DORADO|AMERICAS";
 
     // procesamiento de los tokens
     var j = 0;
@@ -90,6 +84,7 @@ reader.addListener("data", function(data) {
               j = 6;
               break;
             } else {
+              // Se busca la coincidencia en la cadena completa
               regTemp = new RegExp("(" + exp[j] + ")");
               var resReg = regTemp.exec(arr.join(" "));
               var pattern = resReg ? resReg[0] : null;
@@ -103,13 +98,6 @@ reader.addListener("data", function(data) {
               }
             }
             j++;
-            //
-            /*if(exp[j].test(value)) {
-              result.push(value);
-              j = 6;
-              break;
-            }
-            j++;*/
           case 2: // Tipo de via
             if(exp[j].test(value)) {
               var prev = result[0];
@@ -166,8 +154,10 @@ reader.addListener("data", function(data) {
             if(exp[j].test(value)) {
               // Se evita la inclusion de cualquier simbolo de numero
               j++;
+              break;
+            } else {
+              j++;
             }
-            break;
           case 7: // Numero de via generadora
             if(exp[j].test(value)) {
               if(/^\d{1,3}$/.test(value)) {
@@ -218,18 +208,10 @@ reader.addListener("data", function(data) {
     });
 
     // resultado
-    /*if(result.join(" ").indexOf("AV") !== -1) {
-      console.log(chalk.yellow(i+1) + " " + DIRECCION + chalk.yellow(" = ") + chalk.green(tokens));
-      console.log(chalk.yellow((i+1) + " PRE: ") + chalk.red(preResult.join(" ")));
-      console.log(chalk.yellow((i+1) + " RES: ") + chalk.red(result.join(" ")));
-      console.log(chalk.yellow((i+1) + " POS: ") + chalk.red(postResult.join(" ")));
-    }*/
     console.log(chalk.yellow(i+1) + " " + DIRECCION + chalk.yellow(" = ") + chalk.green(tokens));
     console.log(chalk.yellow((i+1) + " PRE: ") + chalk.red(preResult.join(" ")));
     console.log(chalk.yellow((i+1) + " RES: ") + chalk.red(result.join(" ")));
     console.log(chalk.yellow((i+1) + " POS: ") + chalk.red(postResult.join(" ")));
-    //console.log(chalk.yellow(i+1) + " " + chalk.red(result));
-    //i++;
 
     // Revision de la direccion
     // 1 Tipo de via = AV, AC, AK, CL, KR, DG, TR
@@ -238,6 +220,8 @@ reader.addListener("data", function(data) {
     // 4 Numero de via generadora
     // 5 Prefijo o cuadrante de via generadora
     // 6 Numero de placa
+
+    writer.writeRecord([ DIRECCION, result.join(" ") ]);
 
     /*var options = {
       url: "http://www.direccionesbogota.com/ajax/search/co/bogota?query=" + direccion,
