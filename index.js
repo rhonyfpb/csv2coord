@@ -28,7 +28,7 @@ reader.addListener("data", function(data) {
   var DIRECCION = direccion.toUpperCase();
   DIRECCION = DIRECCION.replace(/,/g, "");
 
-  if(direccion /*&& i<10*/ /*&& (i==62 && i==62)*/) {
+  if(direccion /*&& i<10*/ /*&& (i==186 && i==186)*/) {
     var tokens = DIRECCION.split(/\s+/);
     var nombres = "JIMENEZ|EL DORADO|AMERICAS";
 
@@ -43,13 +43,14 @@ reader.addListener("data", function(data) {
       /^(CALLE|CLL|CL|CARRERA|CRA|KRA|CR|KR|DIAGONAL|DIAG|DIA|DG|TRANSVERSAL|TRANSV|TRANS|TRA|TR)$/,
       /^\d{1,3}[A-Z]?$/,
       /^(|[A-Z])$/,
-      /^SUR$/,
+      /^(SUR|ESTE)$/,
+      /^BIS$/,
       /^(|NO|#)$/,
       /^\d{1,3}[A-Z]?$/,
       /^(|[A-Z])$/,
       /^(|-)$/,
       /^\d{1,3}$/,
-      /^SUR$/
+      /^(SUR|ESTE)$/
     ];
     var skip = -Infinity;
 
@@ -85,16 +86,20 @@ reader.addListener("data", function(data) {
               break;
             } else {
               // Se busca la coincidencia en la cadena completa
-              regTemp = new RegExp("(" + exp[j] + ")");
-              var resReg = regTemp.exec(arr.join(" "));
-              var pattern = resReg ? resReg[0] : null;
-              if(pattern) {
-                result.push(pattern);
-                skip = index + pattern.split(" ").length;
-                j = 6;
-                break;
+              if(exp[j+1].test(value)) {
+                ;
               } else {
-                skip = -Infinity;
+                regTemp = new RegExp("(" + exp[j] + ")");
+                var resReg = regTemp.exec(arr.join(" "));
+                var pattern = resReg ? resReg[0] : null;
+                if(pattern) {
+                  result.push(pattern);
+                  skip = index + pattern.split(" ").length;
+                  j = 6;
+                  break;
+                } else {
+                  skip = -Infinity;
+                }
               }
             }
             j++;
@@ -142,7 +147,7 @@ reader.addListener("data", function(data) {
             } else {
               j++;
             }
-          case 5: // Calificador sur
+          case 5: // Calificador sur o de este
             if(exp[j].test(value)) {
               result.push(value);
               j++;
@@ -150,7 +155,15 @@ reader.addListener("data", function(data) {
             } else {
               j++;
             }
-          case 6: // Separador de numero
+          case 6: // Calificador bis
+            if(exp[j].test(value)) {
+              result.push(value);
+              j++;
+              break;
+            } else {
+              j++;
+            }
+          case 7: // Separador de numero
             if(exp[j].test(value)) {
               // Se evita la inclusion de cualquier simbolo de numero
               j++;
@@ -158,7 +171,7 @@ reader.addListener("data", function(data) {
             } else {
               j++;
             }
-          case 7: // Numero de via generadora
+          case 8: // Numero de via generadora
             if(exp[j].test(value)) {
               if(/^\d{1,3}$/.test(value)) {
                 result.push(value);
@@ -170,7 +183,7 @@ reader.addListener("data", function(data) {
               j++;
             }
             break;
-          case 8: // Prefijo o cuadrante de via generadora
+          case 9: // Prefijo o cuadrante de via generadora
             if(exp[j].test(value)) {
               if(/^[A-Z]$/.test(value)) {
                 result.push(value);
@@ -180,18 +193,20 @@ reader.addListener("data", function(data) {
             } else {
               j++;
             }
-          case 9: // Separador de placa
+          case 10: // Separador de placa
             if(exp[j].test(value)) {
               j++;
+              break;
+            } else {
+              j++;
             }
-            break;
-          case 10: // Numero de placa
+          case 11: // Numero de placa
             if(exp[j].test(value)) {
               result.push(value);
               j++;
             }
             break;
-          case 11: // Calificador sur
+          case 12: // Calificador sur o de este
             if(exp[j].test(value)) {
               result.push(value);
               j++;
@@ -199,7 +214,7 @@ reader.addListener("data", function(data) {
             } else {
               j++;
             }
-          case 12:
+          case 13:
             postResult.push(value); // POST
             break;
         }
