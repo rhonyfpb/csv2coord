@@ -1,7 +1,7 @@
-var csv = require("ya-csv");
-//var request = require("request");
-var nconf = require("nconf");
-var chalk = require("chalk");
+var csv = require("ya-csv"); // gestor de escritura y lectura de archivos csv
+var request = require("request"); // gestor de peticiones http
+var nconf = require("nconf"); // permite manejar archivos de configuracion (config.json)
+var chalk = require("chalk"); // dota a la consola de colores
 
 nconf.file({ file: "./config.json" });
 
@@ -15,6 +15,7 @@ var colsName = nconf.get("columnsName");
 var columnName = nconf.get("columnName");
 
 var numberColumnsError = nconf.get("columnsError");
+var numberColumnsResult = nconf.get("columnsResult");
 
 var names = nconf.get("names");
 
@@ -28,26 +29,23 @@ var errorWriter = csv.createCsvFileWriter(path + errorFile, {
   quote: ""
 });
 
-/*var writer = csv.createCsvFileWriter(path + resultFile, {
+var writer = csv.createCsvFileWriter(path + resultFile, {
   separator: ";",
   quote: ""
-});*/
+});
 
 var i = 0;
 
 reader.addListener("data", function(data) {
+  // en data se obtiene la informacion de la fila del archivo
   var direccion = data[columnName];
 
   var DIRECCION = direccion.toUpperCase();
   DIRECCION = DIRECCION.replace(/,/g, "");
 
-  if(direccion /*&& i<10*/ && (i==186 && i==186)) {
-
-    console.log(nconf.get());
-    console.log(data);
+  if(direccion /*&& i<10*/ /*&& (i>=0 && i<=9)*/) {
 
     var tokens = DIRECCION.split(/\s+/);
-    //var nombres = "JIMENEZ|EL DORADO|AMERICAS";
 
     // procesamiento de los tokens
     var j = 0;
@@ -240,10 +238,10 @@ reader.addListener("data", function(data) {
     });
 
     // resultado
-    /*console.log(chalk.yellow(i+1) + " " + DIRECCION + chalk.yellow(" = ") + chalk.green(tokens));
-    console.log(chalk.yellow((i+1) + " PRE: ") + chalk.red(preResult.join(" ")));
-    console.log(chalk.yellow((i+1) + " RES: ") + chalk.red(result.join(" ")));
-    console.log(chalk.yellow((i+1) + " POS: ") + chalk.red(postResult.join(" ")));*/
+    //console.log(chalk.yellow(i+1) + " " + DIRECCION + chalk.yellow(" = ") + chalk.green(tokens));
+    //console.log(chalk.yellow((i+1) + " PRE: ") + chalk.red(preResult.join(" ")));
+    //console.log(chalk.yellow((i+1) + " RES: ") + chalk.red(result.join(" ")));
+    //console.log(chalk.yellow((i+1) + " POS: ") + chalk.red(postResult.join(" ")));
 
     // Revision de la direccion
     // 1 Tipo de via = AV, AC, AK, CL, KR, DG, TR
@@ -253,33 +251,61 @@ reader.addListener("data", function(data) {
     // 5 Prefijo o cuadrante de via generadora
     // 6 Numero de placa
     result = result.join(" ");
+    var valid;
     if(!isValidAddress(result)) {
-      console.log(chalk.cyan("DIRECCION INVALIDA"));
+      //console.log(chalk.red(i) + "\t" + chalk.red("DIRECCION INVALIDA"));
+      valid = false;
+    } else {
+      //console.log(chalk.cyan(i) + "\t" + chalk.cyan("DIRECCION VALIDA"));
+      valid = true;
     }
 
-    /*errorWriter.writeRecord( numberColumnsError.map(function(va) {
-      return data[colsName[va]];
-    }).concat([]) );*/
+    // si hay direccion valida que consultar
+    if(valid) {
+      var options = {
+        url: "http://www.direccionesbogota.com/ajax/search/co/bogota?query=" + result,
+        headers: {
+          "X-Requested-With": "XMLHttpRequest"
+        }
+      };
+      request(options, function(error, response, body) {
+        //console.log(body);
+        var resultRequest = JSON.parse(body);
+        var coord = resultRequest ? resultRequest.coordinates : undefined;
+        if(coord) {
+          //writer.writeRecord([ data["NOMBRE COMERCIAL"], data.DIRECCION, data.TELEFONO, data["E MAIL"], data["PAGINA WEB"], coord[0], coord[1] ]);
+          errorWriter.writeRecord( numberColumnsError.map(function(va) {
+            return data[colsName[va]];
+          }).concat([ result, "VAL DIR", coord[1], coord[0], "VAL COORD" ]) ); // se anaden tambien la direccion procesada, el error de procesamiento de la direccion, lat, lon, error de coordenada
 
-    //writer.writeRecord([ DIRECCION, result.join(" ") ]);
-
-    /*var options = {
-      url: "http://www.direccionesbogota.com/ajax/search/co/bogota?query=" + direccion,
-      headers: {
-        "X-Requested-With": "XMLHttpRequest"
-      }
-    };
-    request(options, function(error, response, body) {
-      var result = JSON.parse(body);
-      var coord = result ? result.coordinates : undefined;
-      if(coord) {
-        writer.writeRecord([ data["NOMBRE COMERCIAL"], data.DIRECCION, data.TELEFONO, data["E MAIL"], data["PAGINA WEB"], coord[0], coord[1] ]);
-      }
-    });*/
+          writer.writeRecord( numberColumnsResult.map(function(vo) {
+            return data[colsName[vo]];
+          }).concat([ result, coord[1], coord[0] ]) ); // se anaden la direccion procesada, la latitud y la longitud
+        } else {
+          errorWriter.writeRecord( numberColumnsError.map(function(va) {
+            return data[colsName[va]];
+          }).concat([ result, "VAL DIR", "ERR LAT", "ERR LON", "NOT VALID COORD" ]) ); // se anaden tambien la direccion procesada, el error de procesamiento de la direccion, lat, lon, error de coordenada
+        }
+      });
+    } else {
+      errorWriter.writeRecord( numberColumnsError.map(function(va) {
+        return data[colsName[va]];
+      }).concat([ result, "NOT VALID DIR", "ERR LAT", "ERR LON", "NOT VALID COORD" ]) ); // se anaden tambien la direccion procesada, el error de procesamiento de la direccion, lat, lon, error de coordenada
+    }
   }
   i++;
 
   function isValidAddress(address) {
+    
+    //console.log("ADDRESS: " + chalk.green(address));
+
+    var tokens = [];
+    var temporal = "";
+    var x = 0;
+    var skipTo = -Infinity;
+    var resultado = [];
+    var expected = [ "0,1,3,7", "0,1,3,4,7", "0,3,7,9", "0,3,7,8,9", "2,3,7,9", "2,3,6,7,9", "2,3,7,8,9", "2,3,4,7,9", "2,3,7,8,9,10", "2,3,4,7,8,9", "2,3,4,5,7,8,9", "2,3,4,7,9,10" ];
+
     var reg = [
       /^(AV|AC|AK)$/,
       names,
@@ -293,14 +319,86 @@ reader.addListener("data", function(data) {
       /^\d{1,3}$/,
       /^(SUR|ESTE)$/
     ];
-    var chunks = address.split(" ");
-    if(chunks.length > 0) {
-      var x = 0;
-      chunks.forEach(function(val, ind, add) {
-        //
-      });
-    } else {
+
+    [].forEach.call(address, function(character, cIndex, cArreglo) {
+      var type;
+      if(cIndex > skipTo) {
+        if(/^\s$/.test(character)) {
+          type = "empty";
+        } else {
+          if(/^\d$/.test(character)) {
+            type = "number";
+          } else {
+            type = "string";
+          }
+        }
+
+        if(type === "empty") {
+          while(x < reg.length) {
+            if(x === 1) {
+              if(new RegExp("^(" + reg[x] + ")$").test(temporal)) {
+                tokens.push(temporal);
+                resultado.push(x);
+                x++;
+                break;
+              } else {
+                var cad = "";
+                var y = cIndex + 1;
+                while(y < cArreglo.length && !(/^\s$/.test(cArreglo[y]))) {
+                  cad += cArreglo[y];
+                  y++;
+                }
+                if(cad) {
+                  if(new RegExp("^(" + reg[x] + ")$").test( [temporal].concat(cad).join(" ") )) {
+                    tokens.push([temporal].concat(cad).join(" "));
+                    resultado.push(x);
+                    skipTo = y; // se salta la palabra completa
+                    x++;
+                    break;
+                  } 
+                }
+              }
+              x++;
+            } else {
+              if(reg[x].test(temporal)) {
+                tokens.push(temporal);
+                resultado.push(x);
+                x++;
+                break;
+              }
+              x++;
+            }
+          }
+          temporal = "";
+        } else {
+          temporal += character;
+        }
+      }
+
+    });
+    
+    // se revisa el ultimo token
+    while(x < reg.length) {
+      if(x > 0) {
+        if(reg[x].test(temporal)) {
+          tokens.push(temporal);
+          resultado.push(x);
+          x++;
+          break;
+        }
+        x++;
+      } else {
+        break;
+      }
+    }
+
+    //console.log("TOKENS: " + chalk.yellow(tokens));
+    //console.log("RESULTADO: " + chalk.yellow(resultado));
+
+    if(expected.indexOf(resultado.toString()) === -1) {
       return false;
+    } else {
+      return true;
     }
   }
 
