@@ -1,12 +1,11 @@
 {
 	"path": "./files/",
-	"sourceFile": "02establecimientosdegastronomiaysimilaresdatosabiertos.csv",
-	"resultFile": "02establecimientosdegastronomiaysimilaresdatosabiertos-procesado.csv",
-	"errorFile": "02establecimientosdegastronomiaysimilaresdatosabiertos-error.csv",
-	"names": "JIMENEZ|EL DORADO|AMERICAS",
-	"columnsName": [ "ID", "RNT", "NOMBRE COMERCIAL", "DIRECCION", "TELEFONO", "LOCALIDAD", "SERVICIO A DOMICILIO", "TELEFONO DOMICILIO", "PAGINA WEB" ],
-	"columnDirectionIndex": 3,
-	"columnsError": [ 0, 2, 3 ],
-	"columnsResult": [ 0, 1, 2, 3, 4, 5, 8],
-	"columnName": "DIRECCION"
+	"sourceFile": "01establecimientosdealojamiento.csv",
+	"resultFile": "01establecimientosdealojamiento-procesado.csv",
+	"errorFile": "01establecimientosdealojamiento-error.csv",
+	"names": "JIMENEZ|EL DORADO|AMERICAS|BOYACA|CARACAS",
+	"columnsName": [ "ID", "RNT", "NOMBRE COMERCIAL", "TIPO", "DIRECCION", "LOCALIDAD", "TELEFONO", "E MAIL", "PAGINA WEB", "RANGO TARIFA", "ZONA", "ESTADO" ],
+	"columnDirectionIndex": 4,
+	"columnsError": [ 0, 2, 4 ],
+	"columnsResult": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 }

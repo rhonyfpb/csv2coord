@@ -13,7 +13,7 @@ var resultFile = nconf.get("resultFile");
 var errorFile = nconf.get("errorFile");
 
 var colsName = nconf.get("columnsName");
-var columnName = nconf.get("columnName");
+var columnDirectionIndex = nconf.get("columnDirectionIndex");
 
 var numberColumnsError = nconf.get("columnsError");
 var numberColumnsResult = nconf.get("columnsResult");
@@ -41,7 +41,7 @@ db.connect(__dirname, ["dirs"]);
 
 reader.addListener("data", function(data) {
   // en data se obtiene la informacion de la fila del archivo
-  var direccion = data[columnName];
+  var direccion = data[colsName[columnDirectionIndex]];
 
   var DIRECCION = direccion.toUpperCase();
   DIRECCION = DIRECCION.replace(/,/g, "");
@@ -58,7 +58,7 @@ reader.addListener("data", function(data) {
     var exp = [
       /^(AVENIDA|AVE|AV|AC|AK)$/,
       names,
-      /^(CALLE|CLL|CL|CARRERA|CRA|KRA|CR|KR|DIAGONAL|DIAG|DIA|DG|TRANSVERSAL|TRANSV|TRANS|TRA|TR)$/,
+      /^(CALLE|CLL|CL|CARRERA|CRA|KRA|CR|KR|DIAGONAL|DIAG|DIA|DG|TRANSVERSAL|TRANSV|TRANS|TRA|TR|TV)$/,
       /^\d{1,3}[A-Z]?$/,
       /^(|[A-Z])$/,
       /^(SUR|ESTE)$/,
@@ -134,7 +134,7 @@ reader.addListener("data", function(data) {
                   if(/^(DIAGONAL|DIAG|DIA|DG)$/.test(value)) {
                     result.push("DG");
                   } else {
-                    result.push("TR");
+                    result.push("TV");
                   }
                 }
               }
@@ -330,12 +330,12 @@ reader.addListener("data", function(data) {
     var x = 0;
     var skipTo = -Infinity;
     var resultado = [];
-    var expected = [ "0,1,3,7", "0,1,3,4,7", "0,3,7,9", "0,3,7,8,9", "2,3,7,9", "2,3,6,7,9", "2,3,7,8,9", "2,3,4,7,9", "2,3,7,8,9,10", "2,3,4,7,8,9", "2,3,4,5,7,8,9", "2,3,4,7,9,10" ];
+    var expected = [ "0,1,3,7", "0,1,3,4,7", "0,3,7,9", "0,3,7,8,9", "2,3,7,9", "2,3,7,9,10", "2,3,6,7,9", "2,3,6,7,8,9", "2,3,4,6,7,9", "2,3,7,8,9", "2,3,4,6,7,8,9", "2,3,4,7,9", "2,3,7,8,9,10", "2,3,4,7,8,9", "2,3,4,5,7,8,9", "2,3,4,7,9,10" ];
 
     var reg = [
       /^(AV|AC|AK)$/,
       names,
-      /^(CL|KR|DG|TR)$/,
+      /^(CL|KR|DG|TV)$/,
       /^\d{1,3}$/,
       /^[A-Z]$/,
       /^(SUR|ESTE)$/,
