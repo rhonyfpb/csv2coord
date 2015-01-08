@@ -1,8 +1,8 @@
 {
 	"path": "./files/",
-	"sourceFile": "establecimientosdegastronomiaysimilaresdatosabiertos.csv",
-	"resultFile": "establecimientosdegastronomiaysimilaresdatosabiertos-procesado.csv",
-	"errorFile": "establecimientosdegastronomiaysimilaresdatosabiertos-err.csv",
+	"sourceFile": "02establecimientosdegastronomiaysimilaresdatosabiertos.csv",
+	"resultFile": "02establecimientosdegastronomiaysimilaresdatosabiertos-procesado.csv",
+	"errorFile": "02establecimientosdegastronomiaysimilaresdatosabiertos-error.csv",
 	"names": "JIMENEZ|EL DORADO|AMERICAS",
 	"columnsName": [ "ID", "RNT", "NOMBRE COMERCIAL", "DIRECCION", "TELEFONO", "LOCALIDAD", "SERVICIO A DOMICILIO", "TELEFONO DOMICILIO", "PAGINA WEB" ],
 	"columnDirectionIndex": 3,
