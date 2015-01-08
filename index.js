@@ -2,6 +2,7 @@ var csv = require("ya-csv"); // gestor de escritura y lectura de archivos csv
 var request = require("request"); // gestor de peticiones http
 var nconf = require("nconf"); // permite manejar archivos de configuracion (config.json)
 var chalk = require("chalk"); // dota a la consola de colores
+var db = require("diskdb"); // base de datos a disco
 
 nconf.file({ file: "./config.json" });
 
@@ -35,6 +36,8 @@ var writer = csv.createCsvFileWriter(path + resultFile, {
 });
 
 var i = 0;
+
+db.connect(__dirname, ["dirs"]);
 
 reader.addListener("data", function(data) {
   // en data se obtiene la informacion de la fila del archivo
@@ -262,31 +265,54 @@ reader.addListener("data", function(data) {
 
     // si hay direccion valida que consultar
     if(valid) {
-      var options = {
-        url: "http://www.direccionesbogota.com/ajax/search/co/bogota?query=" + result,
-        headers: {
-          "X-Requested-With": "XMLHttpRequest"
-        }
-      };
-      request(options, function(error, response, body) {
-        //console.log(body);
-        var resultRequest = JSON.parse(body);
-        var coord = resultRequest ? resultRequest.coordinates : undefined;
-        if(coord) {
-          //writer.writeRecord([ data["NOMBRE COMERCIAL"], data.DIRECCION, data.TELEFONO, data["E MAIL"], data["PAGINA WEB"], coord[0], coord[1] ]);
-          errorWriter.writeRecord( numberColumnsError.map(function(va) {
-            return data[colsName[va]];
-          }).concat([ result, "VAL DIR", coord[1], coord[0], "VAL COORD" ]) ); // se anaden tambien la direccion procesada, el error de procesamiento de la direccion, lat, lon, error de coordenada
+      // se busca la direccion en la cache
+      var resInCache = db.dirs.findOne({ "dir": result });
+      if(resInCache) {
+        errorWriter.writeRecord( numberColumnsError.map(function(va) {
+          return data[colsName[va]];
+        }).concat([ result, "VAL DIR", resInCache.coord.lat, resInCache.coord.lon, "VAL COORD" ]) ); // se anaden tambien la direccion procesada, el error de procesamiento de la direccion, lat, lon, error de coordenada
 
-          writer.writeRecord( numberColumnsResult.map(function(vo) {
-            return data[colsName[vo]];
-          }).concat([ result, coord[1], coord[0] ]) ); // se anaden la direccion procesada, la latitud y la longitud
-        } else {
-          errorWriter.writeRecord( numberColumnsError.map(function(va) {
-            return data[colsName[va]];
-          }).concat([ result, "VAL DIR", "ERR LAT", "ERR LON", "NOT VALID COORD" ]) ); // se anaden tambien la direccion procesada, el error de procesamiento de la direccion, lat, lon, error de coordenada
-        }
-      });
+        writer.writeRecord( numberColumnsResult.map(function(vo) {
+          return data[colsName[vo]];
+        }).concat([ result, resInCache.coord.lat, resInCache.coord.lon ]) ); // se anaden la direccion procesada, la latitud y la longitud
+      } else {
+        var options = {
+          url: "http://www.direccionesbogota.com/ajax/search/co/bogota?query=" + result,
+          headers: {
+            "X-Requested-With": "XMLHttpRequest"
+          }
+        };
+        request(options, function(error, response, body) {
+          //console.log(body);
+          var resultRequest = JSON.parse(body);
+          var coord = resultRequest ? resultRequest.coordinates : undefined;
+          if(coord) {
+            // se salva en el cache
+            if(!db.dirs.findOne({ "dir": result })) {
+              db.dirs.save({
+                dir: result,
+                coord: {
+                  lat: coord[1],
+                  lon: coord[0]
+                }
+              });
+            }
+            
+            //writer.writeRecord([ data["NOMBRE COMERCIAL"], data.DIRECCION, data.TELEFONO, data["E MAIL"], data["PAGINA WEB"], coord[0], coord[1] ]);
+            errorWriter.writeRecord( numberColumnsError.map(function(va) {
+              return data[colsName[va]];
+            }).concat([ result, "VAL DIR", coord[1], coord[0], "VAL COORD" ]) ); // se anaden tambien la direccion procesada, el error de procesamiento de la direccion, lat, lon, error de coordenada
+
+            writer.writeRecord( numberColumnsResult.map(function(vo) {
+              return data[colsName[vo]];
+            }).concat([ result, coord[1], coord[0] ]) ); // se anaden la direccion procesada, la latitud y la longitud
+          } else {
+            errorWriter.writeRecord( numberColumnsError.map(function(va) {
+              return data[colsName[va]];
+            }).concat([ result, "VAL DIR", "ERR LAT", "ERR LON", "NOT VALID COORD" ]) ); // se anaden tambien la direccion procesada, el error de procesamiento de la direccion, lat, lon, error de coordenada
+          }
+        });
+      }
     } else {
       errorWriter.writeRecord( numberColumnsError.map(function(va) {
         return data[colsName[va]];
