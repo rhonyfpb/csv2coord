@@ -46,8 +46,8 @@ reader.addListener("data", function(data) {
   var DIRECCION = direccion.toUpperCase();
   DIRECCION = DIRECCION.replace(/,/g, "");
 
-  if(direccion /*&& i<10*/ /*&& (i>=5 && i<=5)*/) {
-
+  if(direccion /*&& i<10*/ && (i>=0 && i<=9)) {
+	
     var tokens = DIRECCION.split(/\s+/);
 
     // procesamiento de los tokens
