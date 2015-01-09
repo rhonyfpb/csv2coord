@@ -116,9 +116,6 @@ ID;RNT;NOMBRE COMERCIAL;TIPO;DIRECCION;LOCALIDAD;TELEFONO;E MAIL;PAGINA WEB;RANG
 220;15720;HOTEL SAN PABLO;HOTEL;CL 26 38 A 11;TEUSAQUILLO;3694700 -  - ;reservas@sanpablohotel.com - operacion@sanpablohotel.com;www.sanpablohotel.com;Entre $ 150.001 y $ 350.000;No Pertenece a ZIT;
 222;9448;HOTEL CASA SANTA MARTA;HOTEL;KR 43 22 A 91;TEUSAQUILLO;3691876 - 3687163 - ;hotelcasasantamarta@gmail.com;NA;Entre $ 60.001 y $ 150.000;Quinta Paredes;
 224;8734;HOTEL TURÍSTICO INTERNACIONAL GRAN AMÉRICA;HOTEL;CL 24 32 86;TEUSAQUILLO;2694903 - 5707725 - 3685348;hgranamerica@hotmail.com;NA;Entre $ 60.001 y $ 150.000;No Pertenece a ZIT;
-225;4336;HOTEL TEUSACA AC;HOTEL;DG 33 BIS A 14 64;TEUSAQUILLO;5606085 - 2323556 - 2323722;teusaca_185@hotmail.com;www.hotelteusacac.inf.travel;Menos de $ 60.000;No Pertenece a ZIT;
-226;16722;POSADA COLOMBIANA  'EN SUCESIÓN' ;HOTEL;DG 33 14 44;TEUSAQUILLO;6052170 - 6050370 - 3167446558;info@posadacolombiana.com;NA;Menos de $ 60.000;No Pertenece a ZIT;
-227;5652;HOTEL MARÍA ISABEL BOGOTÁ;HOTEL;DG 33 BIS A 15 05;TEUSAQUILLO;2880399 -  - ;reservas@hotelmariaisabelbogota.com;www.hotelmariaisabelbogota.com;Entre $ 150.001 y $ 350.000;No Pertenece a ZIT;
 228;14343;SUITES EJECUTIVAS 57 INN;HOTEL;CL 57 18 25;TEUSAQUILLO;3458428 - 2490408 - ;ejecutivas57@hotelbogotainn.com;www.hotelbogotainn.com;Entre $ 60.001 y $ 150.000;No Pertenece a ZIT;
 229;8063;HOTEL GAVAN E.U.;HOTEL;AV CARACAS 51 39;CHAPINERO;2357990 -  - ;hotelgavan@gmail.com;www.hotelgavan.com;Menos de $ 60.000;No Pertenece a ZIT;
 231;14344;SUITES INN GALERIAS;HOTEL;KR 23 53 A 43;TEUSAQUILLO;3101066 - 5414688 - 5403569;galerias@hotelbogotainn.com;www.hotelbogotainn.com;Entre $ 60.001 y $ 150.000;Campin;
@@ -138,14 +135,14 @@ ID;RNT;NOMBRE COMERCIAL;TIPO;DIRECCION;LOCALIDAD;TELEFONO;E MAIL;PAGINA WEB;RANG
 245;9042;VIAGGIO CENTRO FINANCIERO - INMOBILIRIARIA ROYAL S.A.S.;VIVIENDA TURÍSTICA;CL 62 3 A 50;CHAPINERO;7449999 -  - ;mercadeo@viaggio.com.co - reservas@viaggio.com.co;www.viaggio.com.co;Entre $ 60.001 y $ 150.000;No Pertenece a ZIT;
 246;9042;VIAGGIO STUDIOS - INMOBILIRIARIA ROYAL S.A.S.;VIVIENDA TURÍSTICA;CL 62 3 B 37;CHAPINERO;7449999 -  - ;mercadeo@viaggio.com.co;www.viaggio.com.co;Entre $ 150.001 y $ 350.000;No Pertenece a ZIT;
 247;11183;CASA HOTEL ZUETANA PI;HOTEL;CL 106 A 18 A 19;USAQUÉN;6206848 - 6208052 - ;reservas@zuetana.com.co;www.zuetana.com;Entre $ 150.001 y $ 350.000;No Pertenece a ZIT;
-251;4929;HOTEL ROSALES PLAZA;HOTEL;CL 71 A 5 47;CHAPINERO;3171100 - 3215917 - ;reservas@hotelrosalesplaza.com - mercadeo@hotelrosalesplaza.com;www.hotelrosalesplaza.com;Entre $ 150.001 y $ 350.000;Calle 72;
+251;4929;HOTEL ROSALES PLAZA;HOTEL;CL 72 5 47;CHAPINERO;3171100 - 3215917 - ;reservas@hotelrosalesplaza.com - mercadeo@hotelrosalesplaza.com;www.hotelrosalesplaza.com;Entre $ 150.001 y $ 350.000;Calle 72;
 253;5538;HOTEL PARQUE 97 SUITES;HOTEL;CL 97 19 15;CHAPINERO;7444030 - 6917337 - ;reservas@hotelparque97.com;www.hotelparque97.com;Entre $ 150.001 y $ 350.000;Calle 100;
 254;4088;SUITES REAL 97;APARTA HOTEL;CL 97 A 10 45;CHAPINERO;6109700 -  - ;real97@suitesreal.com;www.suitesreal.com;Más de $ 150.001;Calle 100;
 255;40;HOTEL DE LA VILLE;HOTEL;CL 100 13 55;CHAPINERO;6500700 -  - ;ventas@hotelesdelaville.com.co;www.hotelesdelaville.com;Entre $ 150.001 y $ 350.000;Calle 100;
 257;4873;HALIFAX;HOTEL;CL 93 15 93;CHAPINERO;6163098 -  - ;info@hotelhalifax.com.co;www.hotelhalifax.com.co;Entre $ 60.001 y $ 150.000;Parque 93;
 258;3975;RICHMOND SUITES;HOTEL;CL 93 18 81;CHAPINERO;6235623 -  - ;reservas@richmondsuiteshotel.com;www.richmondsuiteshotel.com;Entre $ 150.001 y $ 350.000;Parque 93;
 259;6876;HOTEL ESTELAR WINDSOR HOUSE;HOTEL;CL 95 9 97;CHAPINERO;6343630 -  - ;reservas.hwhouse@hotelesestelar.com;www.hotelesestelar.com;Entre $ 150.001 y $ 350.000;No Pertenece a ZIT;
-260;5496;HOTEL MARBORÉ;HOTEL;AV 19 96 25;CHAPINERO;6108409 - 2368644 - 6233088;reservas@hotelmarbore.com.co;www.hotelmarbore.comc.o;Entre $ 60.001 y $ 150.000;Calle 100;
+260;5496;HOTEL MARBORÉ;HOTEL;AK 19 96 25;CHAPINERO;6108409 - 2368644 - 6233088;reservas@hotelmarbore.com.co;www.hotelmarbore.comc.o;Entre $ 60.001 y $ 150.000;Calle 100;
 261;19011;HOTEL VIRREY PARK;HOTEL;KR 15 87 94;CHAPINERO;2181625 - 2181606 - ;reservas@hotelvirreypark.com;www.hotelvirreypark.com;Entre $ 150.001 y $ 350.000;No Pertenece a ZIT;
 262;4734;HOTEL CHICO IMPERIAL SUITES;HOTEL;KR 19 C 91 63;CHAPINERO;6108003 -  - ;reservas@chicoimperialsuites.com.co;www.chicoimperial.com.co;Entre $ 60.001 y $ 150.000;No Pertenece a ZIT;
 263;12210;HOTEL LA FONT;HOTEL;KR 16 86 A 32;CHAPINERO;5938150 -  - ;hotel@lafont.com.co;www.lafont.com.co/hotel;Más de $ 350.001;No Pertenece a ZIT;
@@ -172,7 +169,7 @@ ID;RNT;NOMBRE COMERCIAL;TIPO;DIRECCION;LOCALIDAD;TELEFONO;E MAIL;PAGINA WEB;RANG
 291;7759;HOTEL COLONIAL BOGOTÁ;HOTEL;AV CARACAS 56 63;CHAPINERO;2551398 - 3107462 - ;NA;NA;Menos de $ 60.000;No Pertenece a ZIT;
 292;10158;HOTEL EL GRAN MARQUEZ;HOTEL;AV CARACAS 51 09 ;CHAPINERO;4814881 - 2354132 - ;reservas@hotelgranmarquez.com;www.hotelelgranmarquez.com;Menos de $ 60.000;No Pertenece a ZIT;
 295;5543;HOTEL CENTRO INTERNACIONAL;HOTEL;KR 13 A 38 95;SANTA FE;2885566 -  - ;reservas@hotelcentrointernacional.com - contacto@hotelcentrointernacional.com;www.hotelcentrointernacional.com;Entre $ 60.001 y $ 150.000;No Pertenece a ZIT;
-296;2439;HOTEL COSMOS 100;HOTEL;CL 100 21 A 41;USAQUÉN;6464000 - 2571035 - ;cosmos100@cosmos100.com - reservas@hotelescosmos.com;www.cosmo100.com;Entre $ 150.001 y $ 350.000;Calle 100;
+296;2439;HOTEL COSMOS 100;HOTEL;AC 100 19 A 83;USAQUÉN;6464000 - 2571035 - ;cosmos100@cosmos100.com - reservas@hotelescosmos.com;www.cosmo100.com;Entre $ 150.001 y $ 350.000;Calle 100;
 297;4792;HOTEL CASA DANN CARLTON;HOTEL;CL 94 19 71;CHAPINERO;6338777 -  - ;reservas.casadann@hotelesdann.com - servicioalcliente@hotelesdann.com;www.hotelesdann.com;Entre $ 150.001 y $ 350.000;Parque 93;
 298;1119;HOTEL ESTELAR LA FONTANA;HOTEL;AC 127 15 A 10;USAQUÉN;6154400 -  - ;;www.hotelestelar.com;Entre $ 150.001 y $ 350.000;No Pertenece a ZIT;
 301;9042;VIAGGIO VIRREY - INMOBILIRIARIA ROYAL S.A.S.;VIVIENDA TURÍSTICA;KR 18 86 A 36;CHAPINERO;7449999 -  - ;mercadeo@viaggio.com.co;www.viaggio.com.co;Entre $ 60.001 y $ 150.000;No Pertenece a ZIT;
@@ -196,7 +193,7 @@ ID;RNT;NOMBRE COMERCIAL;TIPO;DIRECCION;LOCALIDAD;TELEFONO;E MAIL;PAGINA WEB;RANG
 1030;17200;BLUE SUITES HOTEL;HOTEL;CL 93 17 48;CHAPINERO;7452222 - 7452223 - ;reservas@bluesuiteshotel.com;www.bluesuiteshotel.com;Entre $ 150.001 y $ 350.000;Parque 93;
 1031;17326;APARTAHOTEL CASABLANCA BOGOTÁ;APARTA HOTEL;CL 55 6 31;CHAPINERO;2350081 -  - ;apartahotelcasablancabogota@hotmail.com;www.aparthahotelcasablanca.com;Menos de $ 150.000;No Pertenece a ZIT;
 1032;17372;HOTEL ALPICAT;HOTEL;KR 9 58 07;CHAPINERO;2350084 -  - ;NA;NA;Menos de $ 60.000;No Pertenece a ZIT;
-1034;17460;TEUSAQUILLO BOUTIQUE HOTEL;HOTEL;KR 18 A BIS 37 52;CHAPINERO;3405050 -  - ;servicioalcliente@santafeboutique.com;NA;Entre $ 60.001 y $ 150.000;Teusaquillo;
+1034;17460;TEUSAQUILLO BOUTIQUE HOTEL;HOTEL;TV 18 A BIS 37 52;CHAPINERO;3405050 -  - ;servicioalcliente@santafeboutique.com;NA;Entre $ 60.001 y $ 150.000;Teusaquillo;
 1036;17528;HMG SUITES 108;APARTA HOTEL;CL 108 16 05;USAQUÉN;6370319 -  - ;suites108@hotmail.com;www.suites108.com;Más de $ 150.001;No Pertenece a ZIT;
 1037;17529;DESTINO NOMADA HOSTEL;HOTEL;CL 11 00 38;CANDELARIA;3520932 -  - ;contactus@destinonomada.com;www.destinonomada.com;Menos de $ 60.000;Candelaria;
 1041;17572;HOSTAL VILLACANDELARIA;HOTEL;KR 3 12 D 93;CANDELARIA;2842348 - 3044739457 - ;villa.candelaria@hotmail.com - info@villacandelariahostel.com;www.villacandelariahostel.com;Menos de $ 60.000;Candelaria;
@@ -225,7 +222,7 @@ ID;RNT;NOMBRE COMERCIAL;TIPO;DIRECCION;LOCALIDAD;TELEFONO;E MAIL;PAGINA WEB;RANG
 1084;17500;HOTEL CASA  NORMANDIA;HOTEL;KR 71 B 53 35;ENGATIVÁ;2632522 - 2952132 - ;reservas@hotelcasanormandia.com;www.hotelcasanormandia.com;Entre $ 60.001 y $ 150.000;No Pertenece a ZIT;
 1085;31116;HOTEL PALERMO PLAZA;HOTEL;KR 19 45 A 28;TEUSAQUILLO;7512946 - 3406224 - ;hotelpalermoplaza@yahoo.com - - hotelpalermoplaza@hotmail.com;www.hotelpalermoplaza.com;Entre $ 60.001 y $ 150.000;No Pertenece a ZIT;
 1086;20082;HOTEL CASTELLANA INN;HOTEL;CL 94 BIS 49 A 18;BARRIOS UNIDOS;2364048 - 6105732 - 2365475;suiteslacastellana@gmail.com;www.hotelbogotainn.com;Entre $ 60.001 y $ 150.000;No Pertenece a ZIT;
-1087;20129;CASA BOUTIQUE POLO INN;HOTEL;AUT. NORTE 83 59;CHAPINERO;2366003 - 2365706 - 5340790;poloinn@gmail.com;www.hotelbogotainn.com;Entre $ 60.001 y $ 150.000;No Pertenece a ZIT;
+1087;20129;CASA BOUTIQUE POLO INN;HOTEL;AK 20 83 59;CHAPINERO;2366003 - 2365706 - 5340790;poloinn@gmail.com;www.hotelbogotainn.com;Entre $ 60.001 y $ 150.000;No Pertenece a ZIT;
 1088;20155;CASA COLONIAL INN;HOTEL;CL 57 18 26;TEUSAQUILLO;2490575 - 5486176 - 5486181;casacolonial@hotelbogotainn.com;www.hotelbogotainn.com;Entre $ 60.001 y $ 150.000;No Pertenece a ZIT;
 1089;20271;HOTEL CLASSIC;HOTEL;CL 25 A 38 A 22;TEUSAQUILLO;5703420 -  - ;contacto@hotelclassic.com.co;www.hotelclasic.com.co;Entre $ 60.001 y $ 150.000;No Pertenece a ZIT;
 1091;20295;HOTEL SPLENDOR;HOTEL;AC 24 40 46;TEUSAQUILLO;2447890 -  - ;reservas@hotelsplendorbogota.com;www.hotelsplendorbogota.com;Entre $ 150.001 y $ 350.000;Quinta Paredes;
@@ -350,7 +347,7 @@ ID;RNT;NOMBRE COMERCIAL;TIPO;DIRECCION;LOCALIDAD;TELEFONO;E MAIL;PAGINA WEB;RANG
 1409;26651;HOTEL ESTELAR PARQUE DE LA 93;HOTEL;CL 93 11 19;CHAPINERO;5111555 -  - ;reservas.bogotanorte3@hotelesestelar.com;www.hotelesestelar.com;Más de $ 350.001;Parque 93;
 1410;26668;HOTEL B3 VIRREY / UNIKA HOTELS CORP COLOMBIA;HOTEL;KR 15 88 36;CHAPINERO;5934490 -  - ;info@hotelesb3.com;www.hotelesb3.com;Entre $ 150.001 y $ 350.000;No Pertenece a ZIT;
 1411;26782;LIMA LIMÓN CANDELARIA HOSTAL ;HOSTAL;KR 1 12 B 15 ;CANDELARIA;2811260 - 3105596949 - ;info@limalimohostels.com;www.limalimonhostels.com;Menos de $ 60.000;Candelaria;
-1412;26807;HOTEL ESTADIO 63;HOTEL;Calle 63D No 63D - 21;BARRIOS UNIDOS;2496349 -  - ;reservas.d@hotelestadio63.com; www.hotelestadio63.com;Entre $ 60.001 y $ 150.000;No Pertenece a ZIT;
+1412;26807;HOTEL ESTADIO 63;HOTEL;Calle 63D No 21 - 16;BARRIOS UNIDOS;2496349 -  - ;reservas.d@hotelestadio63.com; www.hotelestadio63.com;Entre $ 60.001 y $ 150.000;No Pertenece a ZIT;
 1414;26809;DIPLOMAT EMBAJADA;HOTEL;AC 24 51 40;TEUSAQUILLO;4893030 - 4893000 - ;reservas@hotelesdiplomat.com;www.hotelesdiplomat.com;Entre $ 150.001 y $ 350.000;No Pertenece a ZIT;
 1415;26834;SPLENDOR APARTAHOTEL;APARTA HOTEL;CL 22 B 43 A 32;TEUSAQUILLO;2447890 - 2686576 - ;reservarapartahotelsplendor@gmail.com;www.hotelsplendorbogota.com;Menos de $ 150.000;Quinta Paredes;
 1417;26885;SANTA BARBARA CASA HOTEL;HOTEL;CL 63 C 69J 20;ENGATIVÁ;8017722 - 3185722339 - 3208665222;casahotelsantabarbara@hotmail.com;www.casahotelsantabarbara.com;Entre $ 60.001 y $ 150.000;No Pertenece a ZIT;
