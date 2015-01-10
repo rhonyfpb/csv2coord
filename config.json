@@ -3,7 +3,7 @@
 	"sourceFile": "03datasetdirectoriooficialda2014.csv",
 	"resultFile": "03datasetdirectoriooficialda2014-procesado.csv",
 	"errorFile": "03datasetdirectoriooficialda2014-error.csv",
-	"names": "JIMENEZ|EL DORADO|AMERICAS|BOYACA|CARACAS",
+	"names": "JIMENEZ|EL DORADO|AMERICAS|BOYACA|CARACAS|USME|PRIMERO DE MAYO|LA ESPERANZA|CORPAS",
 	"columnsName": [
 		"FECHA DE CORTE",
 		"NUMERO_LOCALIDAD",

@@ -4,7 +4,7 @@ var nconf = require("nconf"); // permite manejar archivos de configuracion (conf
 var chalk = require("chalk"); // dota a la consola de colores
 var db = require("diskdb"); // base de datos a disco
 
-nconf.file({ file: "./config.json" });
+nconf.argv().file({ file: "./config.json" });
 
 var path = nconf.get("path");
 
@@ -19,6 +19,22 @@ var numberColumnsError = nconf.get("columnsError");
 var numberColumnsResult = nconf.get("columnsResult");
 
 var names = nconf.get("names");
+
+console.log(chalk.yellow("-----------------------------------------------------------------------"));
+console.log(chalk.yellow("- CSV2Coord                                                           -"));
+console.log(chalk.yellow("- El programa acepta los parametros: --eq=# --lte=# --gte=# --req=0|1 -"));
+console.log(chalk.yellow("-----------------------------------------------------------------------"));
+
+// parametros de revision de columnas
+var eq = nconf.get("eq") !== undefined ? Number(nconf.get("eq")) : undefined; // ==
+var lte = nconf.get("lte") !== undefined ? Number(nconf.get("lte")) : Infinity; // <=
+var gte = nconf.get("gte") !== undefined ? Number(nconf.get("gte")) : -Infinity; // <=
+if(eq !== undefined) {
+  lte = gte = eq;
+}
+
+// para la ejecucion del request en el servidor remoto
+var req = nconf.get("req") === undefined ? true : Boolean(Number(nconf.get("req")));
 
 var reader = csv.createCsvFileReader(path + sourceFile, {
   separator: ";",
@@ -46,7 +62,7 @@ reader.addListener("data", function(data) {
   var DIRECCION = direccion.toUpperCase();
   DIRECCION = DIRECCION.replace(/,/g, "");
 
-  if(direccion /*&& i<10*/ && (i>=0 && i<=9)) {
+  if(direccion && (i>=gte && i<=lte)) {
 	
     var tokens = DIRECCION.split(/\s+/);
 
@@ -239,13 +255,7 @@ reader.addListener("data", function(data) {
       }
       
     });
-
-    // resultado
-    //console.log(chalk.yellow(i+1) + " " + DIRECCION + chalk.yellow(" = ") + chalk.green(tokens));
-    //console.log(chalk.yellow((i+1) + " PRE: ") + chalk.red(preResult.join(" ")));
-    //console.log(chalk.yellow((i+1) + " RES: ") + chalk.red(result.join(" ")));
-    //console.log(chalk.yellow((i+1) + " POS: ") + chalk.red(postResult.join(" ")));
-
+    
     // Revision de la direccion
     // 1 Tipo de via = AV, AC, AK, CL, KR, DG, TR
     // 2 Nombre o numero de via
@@ -263,14 +273,21 @@ reader.addListener("data", function(data) {
       valid = true;
     }
 
+    // resultado
+    //console.log(i + " " + DIRECCION + chalk.yellow(" = ") + chalk.green(tokens));
+    //console.log(chalk.yellow(i + " PRE: ") + chalk.red(preResult.join(" ")));
+    //console.log(chalk.yellow(i + " RES: ") + chalk.red(result));
+    //console.log(chalk.yellow(i + " POS: ") + chalk.red(postResult.join(" ")));
+    console.log(i + " " + chalk.yellow( DIRECCION + " = " ) + chalk.cyan( tokens ) + chalk.yellow( " = " + result ) + ( valid ? chalk.cyan(" VALIDA") : chalk.red(" INVALIDA") ) );
+
     // si hay direccion valida que consultar
     if(valid) {
       // se busca la direccion en la cache
       var resInCache = db.dirs.findOne({ "dir": result });
       if(resInCache) {
-        errorWriter.writeRecord( numberColumnsError.map(function(va) {
+        errorWriter.writeRecord( [i].concat( numberColumnsError.map(function(va) {
           return data[colsName[va]];
-        }).concat([ result, "VAL DIR", resInCache.coord.lat, resInCache.coord.lon, "VAL COORD" ]) ); // se anaden tambien la direccion procesada, el error de procesamiento de la direccion, lat, lon, error de coordenada
+        }).concat([ result, "VAL DIR", resInCache.coord.lat, resInCache.coord.lon, "VAL COORD" ]) ) ); // se anaden tambien la direccion procesada, el error de procesamiento de la direccion, lat, lon, error de coordenada
 
         writer.writeRecord( numberColumnsResult.map(function(vo) {
           return data[colsName[vo]];
@@ -282,8 +299,8 @@ reader.addListener("data", function(data) {
             "X-Requested-With": "XMLHttpRequest"
           }
         };
-        request(options, function(error, response, body) {
-          //console.log(body);
+        req && request(options, function(error, response, body) {
+          console.log(chalk.yellow("Requesting " + result + "..."));
           var resultRequest = JSON.parse(body);
           var coord = resultRequest ? resultRequest.coordinates : undefined;
           if(coord) {
@@ -298,25 +315,24 @@ reader.addListener("data", function(data) {
               });
             }
             
-            //writer.writeRecord([ data["NOMBRE COMERCIAL"], data.DIRECCION, data.TELEFONO, data["E MAIL"], data["PAGINA WEB"], coord[0], coord[1] ]);
-            errorWriter.writeRecord( numberColumnsError.map(function(va) {
+            errorWriter.writeRecord( [i].concat( numberColumnsError.map(function(va) {
               return data[colsName[va]];
-            }).concat([ result, "VAL DIR", coord[1], coord[0], "VAL COORD" ]) ); // se anaden tambien la direccion procesada, el error de procesamiento de la direccion, lat, lon, error de coordenada
+            }).concat([ result, "VAL DIR", coord[1], coord[0], "VAL COORD" ]) ) ); // se anaden tambien la direccion procesada, el error de procesamiento de la direccion, lat, lon, error de coordenada
 
             writer.writeRecord( numberColumnsResult.map(function(vo) {
               return data[colsName[vo]];
             }).concat([ result, coord[1], coord[0] ]) ); // se anaden la direccion procesada, la latitud y la longitud
           } else {
-            errorWriter.writeRecord( numberColumnsError.map(function(va) {
+            errorWriter.writeRecord( [i].concat( numberColumnsError.map(function(va) {
               return data[colsName[va]];
-            }).concat([ result, "VAL DIR", "ERR LAT", "ERR LON", "NOT VALID COORD" ]) ); // se anaden tambien la direccion procesada, el error de procesamiento de la direccion, lat, lon, error de coordenada
+            }).concat([ result, "VAL DIR", "ERR LAT", "ERR LON", "NOT VALID COORD" ]) ) ); // se anaden tambien la direccion procesada, el error de procesamiento de la direccion, lat, lon, error de coordenada
           }
         });
       }
     } else {
-      errorWriter.writeRecord( numberColumnsError.map(function(va) {
+      errorWriter.writeRecord( [i].concat( numberColumnsError.map(function(va) {
         return data[colsName[va]];
-      }).concat([ result, "NOT VALID DIR", "ERR LAT", "ERR LON", "NOT VALID COORD" ]) ); // se anaden tambien la direccion procesada, el error de procesamiento de la direccion, lat, lon, error de coordenada
+      }).concat([ result, "NOT VALID DIR", "ERR LAT", "ERR LON", "NOT VALID COORD" ]) ) ); // se anaden tambien la direccion procesada, el error de procesamiento de la direccion, lat, lon, error de coordenada
     }
   }
   i++;
@@ -330,7 +346,17 @@ reader.addListener("data", function(data) {
     var x = 0;
     var skipTo = -Infinity;
     var resultado = [];
-    var expected = [ "0,1,3,7", "0,1,3,4,7", "0,3,7,9", "0,3,7,8,9", "2,3,7,9", "2,3,7,9,10", "2,3,6,7,9", "2,3,6,7,8,9", "2,3,4,6,7,9", "2,3,7,8,9", "2,3,4,6,7,8,9", "2,3,4,7,9", "2,3,7,8,9,10", "2,3,4,7,8,9", "2,3,4,5,7,8,9", "2,3,4,7,9,10" ];
+    var expected = [
+      "0,1,3,7",        "0,1,3,7,10",       "0,1,3,4,7",       "0,1,3,4,7,10", 
+      "0,3,5,7,9",      "0,3,5,7,9,10",     "0,3,4,7,8,9",     "0,3,7,9", 
+      "0,3,7,9,10",     "2,3,4,7,8,9,10",   "0,3,5,7,8,9",     "0,3,7,8,9",       
+      "2,3,7,9",        "2,3,4,5,7,9",      "2,3,4,5,7,9,10",  "2,3,5,7,9",    
+      "2,3,5,7,9,10",   "2,3,5,7,8,9,10",   "2,3,7,9,10",      "2,3,5,7,8,9",   
+      "2,3,6,7,9",      "2,3,6,7,9,10",     "2,3,4,6,7,9,10",  "2,3,6,7,8,9", 
+      "2,3,6,7,8,9,10", "2,3,4,6,7,9",      "2,3,7,8,9",       "2,3,4,6,7,8,9", 
+      "2,3,4,7,9",      "2,3,7,8,9,10",     "2,3,4,7,8,9",     "2,3,4,5,7,8,9",   
+      "2,3,4,7,9,10",   "2,3,4,5,7,8,9,10", "2,3,4,6,7,8,9,10"
+    ];
 
     var reg = [
       /^(AV|AC|AK)$/,
@@ -381,7 +407,23 @@ reader.addListener("data", function(data) {
                     skipTo = y; // se salta la palabra completa
                     x++;
                     break;
-                  } 
+                  } else {
+                    var cad2 = "";
+                    var z = y + 1;
+                    while(z < cArreglo.length && !(/^\s$/.test(cArreglo[z]))) {
+                      cad2 += cArreglo[z];
+                      z++;
+                    }
+                    if(cad2) {
+                      if(new RegExp("^(" + reg[x] + ")$").test( [[temporal].concat(cad).join(" ")].concat(cad2).join(" ") )) {
+                        tokens.push([[temporal].concat(cad).join(" ")].concat(cad2).join(" "));
+                        resultado.push(x);
+                        skipTo = z; // se salta la palabra completa
+                        x++;
+                        break;
+                      }
+                    }
+                  }
                 }
               }
               x++;
@@ -405,7 +447,7 @@ reader.addListener("data", function(data) {
     
     // se revisa el ultimo token
     while(x < reg.length) {
-      if(x > 0) {
+      if(x > 0 && x !== 1) { // en 1 estan ubicados los nombres
         if(reg[x].test(temporal)) {
           tokens.push(temporal);
           resultado.push(x);
@@ -431,5 +473,5 @@ reader.addListener("data", function(data) {
 });
 
 reader.addListener("end", function() {
-  console.log(chalk.blue("FIN DE LA LECTURA DEL ARCHIVO"));
+  console.log(chalk.green("FIN DE LA LECTURA DEL ARCHIVO"));
 });
