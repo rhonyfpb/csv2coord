@@ -1,21 +1,23 @@
 {
 	"path": "./files/",
-	"sourceFile": "02establecimientosdegastronomiaysimilaresdatosabiertos.csv",
-	"resultFile": "02establecimientosdegastronomiaysimilaresdatosabiertos-procesado.csv",
-	"errorFile": "02establecimientosdegastronomiaysimilaresdatosabiertos-error.csv",
-	"names": "JIMENEZ|EL DORADO|AMERICAS|BOYACA|CARACAS",
+	"sourceFile": "06unidadesoperativassdisv2.csv",
+	"resultFile": "06unidadesoperativassdisv2-procesado.csv",
+	"errorFile": "06unidadesoperativassdisv2-error.csv",
+	"names": "JIMENEZ|EL DORADO|AMERICAS|BOYACA|CARACAS|USME|PRIMERO DE MAYO|LA ESPERANZA|CORPAS",
 	"columnsName": [
-		"ID",
-		"RNT",
-		"NOMBRE COMERCIAL",
+		"IDENTIFICADOR",
+		"NOMBRE",
 		"DIRECCION",
+		"CATEGORIA",
 		"TELEFONO",
+		"BARRIO_OFICIAL",
+		"POLIGONO_BARRIAL",
+		"CODIGO LOCALIDAD",
 		"LOCALIDAD",
-		"SERVICIO A DOMICILIO",
-		"TELEFONO DOMICILIO",
-		"PAGINA WEB"
+		"UPZ",
+		"CODIGO UPZ"
 	],
-	"columnDirectionIndex": 3,
-	"columnsError": [ 0, 2, 3 ],
-	"columnsResult": [ 0, 1, 2, 3, 4, 5, 8]
+	"columnDirectionIndex": 2,
+	"columnsError": [ 0, 1, 2 ],
+	"columnsResult": [ 0, 1, 2, 3, 4, 5, 8 ]
 }
