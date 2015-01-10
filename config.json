@@ -1,25 +1,23 @@
 {
 	"path": "./files/",
-	"sourceFile": "05estacionesservciov2.csv",
-	"resultFile": "05estacionesservciov2-procesado.csv",
-	"errorFile": "05estacionesservciov2-error.csv",
+	"sourceFile": "06unidadesoperativassdisv2.csv",
+	"resultFile": "06unidadesoperativassdisv2-procesado.csv",
+	"errorFile": "06unidadesoperativassdisv2-error.csv",
 	"names": "JIMENEZ|EL DORADO|AMERICAS|BOYACA|CARACAS|USME|PRIMERO DE MAYO|LA ESPERANZA|CORPAS",
 	"columnsName": [
-		"DEPENDENCIA",
+		"IDENTIFICADOR",
+		"NOMBRE",
+		"DIRECCION",
+		"CATEGORIA",
+		"TELEFONO",
+		"BARRIO_OFICIAL",
+		"POLIGONO_BARRIAL",
+		"CODIGO LOCALIDAD",
 		"LOCALIDAD",
 		"UPZ",
-		"DIRECCION",
-		"TELEFONO",
-		"COMPANIA",
-		"COMANDANTE",
-		"SUBCOMANDANTE",
-		"JEFE DE LA ESTACION",
-		"X",
-		"Y",
-		"LONGITUD",
-		"LATITUD"
+		"CODIGO UPZ"
 	],
-	"columnDirectionIndex": 3,
-	"columnsError": [ 0, 12, 11, 3 ],
-	"columnsResult": [ 0, 1, 4, 12, 11, 3 ]
+	"columnDirectionIndex": 2,
+	"columnsError": [ 0, 1, 2 ],
+	"columnsResult": [ 0, 1, 2, 3, 4, 5, 8 ]
 }

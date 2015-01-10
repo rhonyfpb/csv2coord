@@ -20,10 +20,10 @@ var numberColumnsResult = nconf.get("columnsResult");
 
 var names = nconf.get("names");
 
-console.log(chalk.yellow("-----------------------------------------------------------------------"));
-console.log(chalk.yellow("- CSV2Coord                                                           -"));
-console.log(chalk.yellow("- El programa acepta los parametros: --eq=# --lte=# --gte=# --req=0|1 -"));
-console.log(chalk.yellow("-----------------------------------------------------------------------"));
+console.log(chalk.yellow("-------------------------------------------------------------------------------------"));
+console.log(chalk.yellow("- CSV2Coord                                                                         -"));
+console.log(chalk.yellow("- El programa acepta los parametros: --eq=# --lte=# --gte=# --req=0|1 --onlyinv=0|1 -"));
+console.log(chalk.yellow("-------------------------------------------------------------------------------------"));
 
 // parametros de revision de columnas
 var eq = nconf.get("eq") !== undefined ? Number(nconf.get("eq")) : undefined; // ==
@@ -35,6 +35,9 @@ if(eq !== undefined) {
 
 // para la ejecucion del request en el servidor remoto
 var req = nconf.get("req") === undefined ? true : Boolean(Number(nconf.get("req")));
+
+// para mostrar solo los registros invalidos
+var onlyInv = nconf.get("onlyinv") === undefined ? false : Boolean(Number(nconf.get("onlyinv")));
 
 var reader = csv.createCsvFileReader(path + sourceFile, {
   separator: ";",
@@ -265,7 +268,8 @@ reader.addListener("data", function(data) {
     // 6 Numero de placa
     result = result.join(" ");
     var valid;
-    if(!isValidAddress(result)) {
+    var arrNum = [];
+    if(!isValidAddress(result, arrNum)) {
       //console.log(chalk.red(i) + "\t" + chalk.red("DIRECCION INVALIDA"));
       valid = false;
     } else {
@@ -278,7 +282,13 @@ reader.addListener("data", function(data) {
     //console.log(chalk.yellow(i + " PRE: ") + chalk.red(preResult.join(" ")));
     //console.log(chalk.yellow(i + " RES: ") + chalk.red(result));
     //console.log(chalk.yellow(i + " POS: ") + chalk.red(postResult.join(" ")));
-    console.log(i + " " + chalk.yellow( DIRECCION + " = " ) + chalk.cyan( tokens ) + chalk.yellow( " = " + result ) + ( valid ? chalk.cyan(" VALIDA") : chalk.red(" INVALIDA") ) );
+    if(onlyInv) {
+      if(!valid) {
+        console.log(i + " " + chalk.yellow( DIRECCION + " = " ) + chalk.cyan( tokens ) + chalk.yellow( " = " + result ) + ( valid ? chalk.cyan(" VALIDA") : chalk.red(" INVALIDA") ) + " " + arrNum.toString() );
+      }
+    } else {
+      console.log(i + " " + chalk.yellow( DIRECCION + " = " ) + chalk.cyan( tokens ) + chalk.yellow( " = " + result ) + ( valid ? chalk.cyan(" VALIDA") : chalk.red(" INVALIDA") ) + " " + arrNum.toString() );
+    }
 
     // si hay direccion valida que consultar
     if(valid) {
@@ -337,7 +347,7 @@ reader.addListener("data", function(data) {
   }
   i++;
 
-  function isValidAddress(address) {
+  function isValidAddress(address, arrNumbers) {
     
     //console.log("ADDRESS: " + chalk.green(address));
 
@@ -348,7 +358,7 @@ reader.addListener("data", function(data) {
     var resultado = [];
     var expected = [
       "0,1,3,7",       "0,1,3,7,10",     "0,1,3,4,7",        "0,1,3,4,7,10", 
-      "0,3,5,7,9",     "0,3,5,7,9,10",   "0,3,4,7,8,9",      "0,3,7,9", 
+      "0,3,5,7,9",    "0,3,5,7,8,9,10", "0,3,5,7,9,10",   "0,3,4,7,8,9", "0,3,4,7,9,10", "0,3,4,7,8,9,10",      "0,3,7,9", 
       "0,3,7,9,10",    "2,3,4,7,8,9,10", "0,3,5,7,8,9",      "0,3,7,8,9",       
       "0,3,7,8,9,10",  "2,3,7,9",        "2,3,4,5,7,9",      "2,3,4,5,7,9,10",  
       "2,3,5,7,9",     "2,3,5,7,9,10",   "2,3,5,7,8,9,10",   "2,3,7,9,10",      
@@ -463,6 +473,7 @@ reader.addListener("data", function(data) {
     //console.log("TOKENS: " + chalk.yellow(tokens));
     //console.log("RESULTADO: " + chalk.yellow(resultado));
 
+    arrNumbers.push(resultado.toString());
     if(expected.indexOf(resultado.toString()) === -1) {
       return false;
     } else {

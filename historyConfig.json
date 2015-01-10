@@ -128,5 +128,28 @@
 		"columnDirectionIndex": 3,
 		"columnsError": [ 0, 12, 11, 3 ],
 		"columnsResult": [ 0, 1, 4, 12, 11, 3 ]
+	},
+	{
+		"path": "./files/",
+		"sourceFile": "06unidadesoperativassdisv2.csv",
+		"resultFile": "06unidadesoperativassdisv2-procesado.csv",
+		"errorFile": "06unidadesoperativassdisv2-error.csv",
+		"names": "JIMENEZ|EL DORADO|AMERICAS|BOYACA|CARACAS|USME|PRIMERO DE MAYO|LA ESPERANZA|CORPAS",
+		"columnsName": [
+			"IDENTIFICADOR",
+			"NOMBRE",
+			"DIRECCION",
+			"CATEGORIA",
+			"TELEFONO",
+			"BARRIO_OFICIAL",
+			"POLIGONO_BARRIAL",
+			"CODIGO LOCALIDAD",
+			"LOCALIDAD",
+			"UPZ",
+			"CODIGO UPZ"
+		],
+		"columnDirectionIndex": 2,
+		"columnsError": [ 0, 1, 2 ],
+		"columnsResult": [ 0, 1, 2, 3, 4, 5, 8 ]
 	}
 ]
