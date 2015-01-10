@@ -1,23 +1,18 @@
 {
 	"path": "./files/",
-	"sourceFile": "06unidadesoperativassdisv2.csv",
-	"resultFile": "06unidadesoperativassdisv2-procesado.csv",
-	"errorFile": "06unidadesoperativassdisv2-error.csv",
-	"names": "JIMENEZ|EL DORADO|AMERICAS|BOYACA|CARACAS|USME|PRIMERO DE MAYO|LA ESPERANZA|CORPAS",
+	"sourceFile": "07datasetpuntostullavev2.csv",
+	"resultFile": "07datasetpuntostullavev2-procesado.csv",
+	"errorFile": "07datasetpuntostullavev2-error.csv",
+	"names": "JIMENEZ|EL DORADO|AMERICAS|BOYACA|CARACAS|USME|PRIMERO DE MAYO|LA ESPERANZA|CORPAS|ROJAS|SUBA|CIUDAD DE CALI",
 	"columnsName": [
-		"IDENTIFICADOR",
-		"NOMBRE",
+		"ESTABLECIMIENTO",
 		"DIRECCION",
-		"CATEGORIA",
-		"TELEFONO",
-		"BARRIO_OFICIAL",
-		"POLIGONO_BARRIAL",
-		"CODIGO LOCALIDAD",
 		"LOCALIDAD",
-		"UPZ",
-		"CODIGO UPZ"
+		"BARRIO",
+		"ZONA_SITP",
+		"FECHA CORTE"
 	],
-	"columnDirectionIndex": 2,
-	"columnsError": [ 0, 1, 2 ],
-	"columnsResult": [ 0, 1, 2, 3, 4, 5, 8 ]
+	"columnDirectionIndex": 1,
+	"columnsError": [ 0, 1 ],
+	"columnsResult": [ 0, 1, 2, 3, 4 ]
 }

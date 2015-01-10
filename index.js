@@ -56,7 +56,7 @@ var writer = csv.createCsvFileWriter(path + resultFile, {
 
 var i = 0;
 
-db.connect(__dirname, ["dirs"]);
+db.connect(__dirname, [ "dirs" , "errors" ]);
 
 reader.addListener("data", function(data) {
   // en data se obtiene la informacion de la fila del archivo
@@ -64,6 +64,8 @@ reader.addListener("data", function(data) {
 
   var DIRECCION = direccion.toUpperCase();
   DIRECCION = DIRECCION.replace(/,/g, "");
+  DIRECCION = DIRECCION.split("-").join(" ");
+  DIRECCION = DIRECCION.replace("TRASVERSAL", "TRANSVERSAL");
 
   if(direccion && (i>=gte && i<=lte)) {
 	
@@ -303,41 +305,52 @@ reader.addListener("data", function(data) {
           return data[colsName[vo]];
         }).concat([ result, resInCache.coord.lat, resInCache.coord.lon ]) ); // se anaden la direccion procesada, la latitud y la longitud
       } else {
-        var options = {
-          url: "http://www.direccionesbogota.com/ajax/search/co/bogota?query=" + result,
-          headers: {
-            "X-Requested-With": "XMLHttpRequest"
-          }
-        };
-        req && request(options, function(error, response, body) {
-          console.log(chalk.yellow("Requesting " + result + "..."));
-          var resultRequest = JSON.parse(body);
-          var coord = resultRequest ? resultRequest.coordinates : undefined;
-          if(coord) {
-            // se salva en el cache
-            if(!db.dirs.findOne({ "dir": result })) {
-              db.dirs.save({
-                dir: result,
-                coord: {
-                  lat: coord[1],
-                  lon: coord[0]
-                }
-              });
+        var resInError = db.errors.findOne({ "dir": result });
+        if(resInError) {
+          errorWriter.writeRecord( [i].concat( numberColumnsError.map(function(va) {
+            return data[colsName[va]];
+          }).concat([ result, "VAL DIR", "ERR LAT", "ERR LON", "NOT VALID COORD" ]) ) ); // se anaden tambien la direccion procesada, el error de procesamiento de la direccion, lat, lon, error de coordenada
+        } else {
+          var options = {
+            url: "http://www.direccionesbogota.com/ajax/search/co/bogota?query=" + result,
+            headers: {
+              "X-Requested-With": "XMLHttpRequest"
             }
-            
-            errorWriter.writeRecord( [i].concat( numberColumnsError.map(function(va) {
-              return data[colsName[va]];
-            }).concat([ result, "VAL DIR", coord[1], coord[0], "VAL COORD" ]) ) ); // se anaden tambien la direccion procesada, el error de procesamiento de la direccion, lat, lon, error de coordenada
+          };
+          req && request(options, function(error, response, body) {
+            console.log(chalk.yellow("Requesting " + result + "..."));
+            var resultRequest = JSON.parse(body);
+            var coord = resultRequest ? resultRequest.coordinates : undefined;
+            if(coord) {
+              // se salva en el cache
+              if(!db.dirs.findOne({ "dir": result })) {
+                db.dirs.save({
+                  dir: result,
+                  coord: {
+                    lat: coord[1],
+                    lon: coord[0]
+                  }
+                });
+              }
+              
+              errorWriter.writeRecord( [i].concat( numberColumnsError.map(function(va) {
+                return data[colsName[va]];
+              }).concat([ result, "VAL DIR", coord[1], coord[0], "VAL COORD" ]) ) ); // se anaden tambien la direccion procesada, el error de procesamiento de la direccion, lat, lon, error de coordenada
 
-            writer.writeRecord( numberColumnsResult.map(function(vo) {
-              return data[colsName[vo]];
-            }).concat([ result, coord[1], coord[0] ]) ); // se anaden la direccion procesada, la latitud y la longitud
-          } else {
-            errorWriter.writeRecord( [i].concat( numberColumnsError.map(function(va) {
-              return data[colsName[va]];
-            }).concat([ result, "VAL DIR", "ERR LAT", "ERR LON", "NOT VALID COORD" ]) ) ); // se anaden tambien la direccion procesada, el error de procesamiento de la direccion, lat, lon, error de coordenada
-          }
-        });
+              writer.writeRecord( numberColumnsResult.map(function(vo) {
+                return data[colsName[vo]];
+              }).concat([ result, coord[1], coord[0] ]) ); // se anaden la direccion procesada, la latitud y la longitud
+            } else {
+              // se almacena el valor de la direccion en la base de datos para no volver a consultarla
+              if(!db.errors.findOne({ "dir": result })) {
+                db.errors.save({ dir: result });
+              }
+              errorWriter.writeRecord( [i].concat( numberColumnsError.map(function(va) {
+                return data[colsName[va]];
+              }).concat([ result, "VAL DIR", "ERR LAT", "ERR LON", "NOT VALID COORD" ]) ) ); // se anaden tambien la direccion procesada, el error de procesamiento de la direccion, lat, lon, error de coordenada
+            }
+          });
+        }
       }
     } else {
       errorWriter.writeRecord( [i].concat( numberColumnsError.map(function(va) {
@@ -357,15 +370,17 @@ reader.addListener("data", function(data) {
     var skipTo = -Infinity;
     var resultado = [];
     var expected = [
-      "0,1,3,7",       "0,1,3,7,10",     "0,1,3,4,7",        "0,1,3,4,7,10", 
-      "0,3,5,7,9",    "0,3,5,7,8,9,10", "0,3,5,7,9,10",   "0,3,4,7,8,9", "0,3,4,7,9,10", "0,3,4,7,8,9,10",      "0,3,7,9", 
-      "0,3,7,9,10",    "2,3,4,7,8,9,10", "0,3,5,7,8,9",      "0,3,7,8,9",       
-      "0,3,7,8,9,10",  "2,3,7,9",        "2,3,4,5,7,9",      "2,3,4,5,7,9,10",  
-      "2,3,5,7,9",     "2,3,5,7,9,10",   "2,3,5,7,8,9,10",   "2,3,7,9,10",      
-      "2,3,5,7,8,9",   "2,3,6,7,9",      "2,3,6,7,9,10",     "2,3,4,6,7,9,10",  
-      "2,3,6,7,8,9",   "2,3,6,7,8,9,10", "2,3,4,6,7,9",      "2,3,7,8,9",       
-      "2,3,4,6,7,8,9", "2,3,4,7,9",      "2,3,7,8,9,10",     "2,3,4,7,8,9",     
-      "2,3,4,5,7,8,9", "2,3,4,7,9,10",   "2,3,4,5,7,8,9,10", "2,3,4,6,7,8,9,10"
+      "0,1,3,7",        "0,1,3,7,10",     "0,1,3,4,7",        "0,1,3,4,7,10", 
+      "0,3,4,7,9",      "0,3,4,5,7,9",    "0,3,4,5,7,9,10",   "0,3,4,5,7,8,9,10", 
+      "0,3,5,7,9",      "0,3,5,7,8,9,10", "0,3,5,7,9,10",     "0,3,4,7,8,9", 
+      "0,3,4,7,9,10",   "0,3,4,7,8,9,10", "0,3,7,9",          "0,3,7,9,10",    
+      "2,3,4,7,8,9,10", "0,3,5,7,8,9",    "0,3,7,8,9",        "0,3,7,8,9,10",  
+      "2,3,7,9",        "2,3,4,5,7,9",    "2,3,4,5,6,7,8,9",  "2,3,4,5,7,9,10",  
+      "2,3,5,7,9",      "2,3,5,7,9,10",   "2,3,5,7,8,9,10",   "2,3,7,9,10",      
+      "2,3,5,7,8,9",    "2,3,6,7,9",      "2,3,6,7,9,10",     "2,3,4,6,7,9,10",  
+      "2,3,6,7,8,9",    "2,3,6,7,8,9,10", "2,3,4,6,7,9",      "2,3,7,8,9",       
+      "2,3,4,6,7,8,9",  "2,3,4,7,9",      "2,3,7,8,9,10",     "2,3,4,7,8,9",     
+      "2,3,4,5,7,8,9",  "2,3,4,7,9,10",   "2,3,4,5,7,8,9,10", "2,3,4,6,7,8,9,10"
     ];
 
     var reg = [
