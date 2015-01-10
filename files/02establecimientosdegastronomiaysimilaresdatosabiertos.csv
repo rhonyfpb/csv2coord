@@ -1,15 +1,11 @@
 ﻿ID;RNT;NOMBRE COMERCIAL;DIRECCION;TELEFONO;LOCALIDAD;SERVICIO A DOMICILIO;TELEFONO DOMICILIO;PAGINA WEB
-1;8127;Hamburguesas el Corral Aeropuerto;Aeropuerto Eldorado, Tercel Nivel  Local 101;NR;Fontibon;No;NA;www.elcorral.com
 2;8251;Oma Barra de Cafe Bogota Puente Aereo;Avenida Calle 26 No 106 - 47 Primer Piso Diagonal Porteria 4 (Vuelos Nacionales de Avianca);NR;Fontibon;NR;NA;http://173.254.122.220/
-3;8252;Oma Barra de Cafe Aeropuerto Muelle Nacional;Aeropuerto Nuevo Dorado Muelle Nacional Sur Local 91;NR;Fontibon;NR;NA;http://173.254.122.220/
-4;8735;MC Donalds Aeropuerto;Aeropuerto El Dorado Local 2346 - 2347;428 26 81 - 311 491 31 71;Fontibon;No ;NA;www.mcdonalds.com.co
-5;11511;Kokoriko Puente Aereo;Puente Aereo  Local  L-2 209 Aeropuerto;NR;Fontibon;Si;410 01 11;www.kokoriko.com.co
 6;14321;Hamburguesas el Corral Centro Internacional;Carrera 7 No 32 - 83 Local 102;NR;Santafe;No;NA;www.elcorral.com
 7;14324;Hamburguesas el Corral Hacienda;Centro Comercial Hacienda Santa Barbara Carrera 7 No 115 - 72 Local E-111;NR;Usaquen;No;NA;www.elcorral.com
 8;14325;Hamburguesas el Corral Calle 93;Calle  93A No 14 - 30;NR;Chapinero;No;NA;www.elcorral.com
 9;14333;Hamburguesas el Corral Plaza;Centro Comercial Plaza de Las 'Americas' Carrera 71 D  No 6 - 94 Sur  Local 2912;NR;Kennedy;No;NA;www.elcorral.com
 10;14335;Hamburguesas el Corral Pepe Sierra;Avenida 116 No 18B - 75;NR;Usaquen;No;NA;www.elcorral.com
-11;14336;Corral Gourmet Atlantis;Calle 81 A No 13 A - 05 Local 01-02;623 29 93 - ;Chapinero;NR;NA;www.elcorralgourmet.com
+11;14336;Corral Gourmet Atlantis;Calle CL 80 No 13 - 48 Local 01-02;623 29 93 - ;Chapinero;NR;NA;www.elcorralgourmet.com
 12;14337;Hamburguesas el Corral Atlantis;Calle 80 No 13 A - 20 Local 403;NR;Chapinero;No;NA;www.elcorral.com
 13;14339;Hamburguesas el Corral Calle 100;Calle 100 No 8 - 75 Primer Piso;NR;Chapinero;No;NA;www.elcorral.com
 14;14345;Hamburguesas el Corral Calle 71;Carrera 9 No 71 - 24;NR;Chapinero;No;NA;www.elcorral.com
@@ -55,7 +51,6 @@
 54;14645;Restaurante Dilucca;Carrera 13 No 85 - 32;236 73 01 - 257 42 69;Chapinero;No ;NA;NR
 55;14646;Restaurante Niko Cafe;Carrera 13 No 83 - 48;610 80 90 - 610 81 02;Chapinero;No ;NA;NR
 56;14647;Restaurante Museo del Oro;Calle 16 No 5 - 41;282 92 05 - 334 71 28;Santafe;No ;NA;NR
-57;14649;La Fragata Internacional;Carrera  13 No 27 - 98 Piso 2;282 48 24 - ;Santafe;NR;NA;www.lafragata.com
 58;14650;La Fragata Restaurante Giratorio;Calle 100 No 8 A - 55 Piso 12;218 44 56 - ;Chapinero;NR;NA;www.lafragata.com
 59;14651;Fish Market La Fragata Zona T;Carrera 13 No 83 - 18;691 24 19 - 257 97 43;Chapinero;NR;NA;www.lafragata.com
 60;14660;Apolos Men;Calle 85 No 11 - 18;257 54 43 - 311 261 55 07;Chapinero;NR;NA;www.apolosmen.com.co
@@ -64,9 +59,6 @@
 63;14667;Oliveto Pizza Gourmet;Carrera 5 No 70 - 26;212 65 70 - 212 08 07;Chapinero;Si;212 65 70;www.olivetopizza.com / www.olivetopizzagourmet.com
 64;14668;Oliveto Pizza Gourmet;Carrera 6A No 118  -  57;213 41 24 - 213 03 02;Usaquen;Si;212 65 70;www.olivetopizza.com / www.olivetopizzagourmet.com
 65;14669;El Olivar Restaurante;Carrera 6 No 10 - 40;283 29 64 - ;Candelaria;NR;NA;NR
-66;14686;Restaurante Casa San Isidro;Paseo Bolivar No 21 - 48 Este Estacion Funicular;281 92 70 - 281 93 09;;NR;NA;www.restaurantecasasanisidro.com
-67;14687;Restaurante Casa Santa Clara;Paseo Bolivar No 21 - 48 Este Estacion Funicular;243 89 52 - 286 43 39;;NR;NA;www.restaurantecasasantaclara.com
-68;14717;Cafe De Monserrate;Cerro de Monserrate –Estacion del Funicular;243 89 48 - ;;No;NA;www.cafedemonserrate.com
 69;14777;Hard Rock Cafe;Centro Comercial Atlantis Calle 81 No 13 - 05  Local 011;530 73 28 - 530 73 29;Chapinero;Si;530 22 00;www.hardrock.com
 70;14806;MC Donalds Parque 93;Carrera 12 No 93  - 86;618 24 28 - 311 561 08 60;Chapinero;Si;400 33 33;www.mcdonalds.com.co
 71;14807;MC Donalds Andino;Carrera 11 No 82 - 02 Local 355;616 89 90 - 311 491 31 72;Chapinero;Si;400 33 33;www.mcdonalds.com.co
@@ -84,11 +76,11 @@
 83;15015;Oma Cafe Restaurante Bogota Parque 93;Calle 93 A No 12 - 55;NR;Chapinero;NR;NA;http://173.254.122.220/
 84;15016;Oma Cafe Restaurante Bogota Andino;Centro Comercial Andino Plaza Carrera 11 No 82 - 71 Local 347;NR;Chapinero;NR;NA;http://173.254.122.220/
 85;15027;Oma Cafe Restaurante Bogota Zona T;Carrera 12 A No 83 - 49;NR;Chapinero;NR;NA;http://173.254.122.220/
-86;15028;Oma Cafe Restaurante Bogota Gran Estacion;Centro Comercial Gran Estacion Calle 26 No 62 - 47 Local 157-158;NR;Teusaquillo;NR;NA;http://173.254.122.220/
+86;15028;Oma Cafe Restaurante Bogota Gran Estacion;Centro Comercial Gran Estacion Avenida EL Dorado No 62 - 49 Local 157-158;NR;Teusaquillo;NR;NA;http://173.254.122.220/
 87;15081;Donostia Cocina de Mercado;Calle 29 BIS No 5 - 84;287 39 43 - ;Santafe;NR;NA;NR
 88;15204;Restaurante Felix;Avenida Jimenez No 4 - 80;341 72 11 - 284 09 95;Candelaria;Si;341 72 11;NR
 89;15433;Tienda de Cafe;Calle 119 No 6 - 16;213 39 16 - 213 31 18;Usaquen;Si;213 31 18;www.tiendadeCafe.net
-90;15682;Tramonti;Carrera 1 No 93 - 50;218 24 00 - 636 19 95;Chapinero;NR;NA;www.tramonti.com.co
+90;15682;Tramonti;Carrera 1 No 70 - 50;218 24 00 - 636 19 95;Chapinero;NR;NA;www.tramonti.com.co
 91;15758;Cotidiano Cafe Brasserie;Carrera 5 No 71 - 45 Local 104;654 54 54 - ;Chapinero;Si;654 54 54;www.elcotidiano.com.co
 92;15881;Hamburguesas el Corral Parque Central Bavaria;Carrera 13 No 28 - 01 Local 173;NR;Santafe;No;NA;www.elcorral.com
 93;15882;Hamburguesas el Corral San Martin;Centro Comercial San Martin Carrera 7 No 32 - 16 Local 409;NR;Santafe;No;NA;www.elcorral.com
@@ -98,14 +90,12 @@
 98;16701;LA Brasa Roja Pepe Sierra;Avenida 19 No 116 - 40;629 02 57 - ;Usaquen;Si;600 45 65;labrasaroja.com
 99;16927;Sopas de Mama y Postres de la Abuela Sucursal el Retiro;Carrera 9 No 81 A - 09;658 48 90 - ;Chapinero;NR;NA;www.sopasypostres.com.co
 100;16928;Sopas de Mama y Postres de la Abuela - sucursal salitre;Avenida El Dorado No 68C - 61 Local 1-24;658 48 89 - ;Fontibon;NR;NA;www.sopasypostres.com.co
-101;16930;Sopas de Mama y Postres de la Abuela sucursal centro Internacional;Carrera 13 No 27 - 98 Local 241 Centro Internacional;658 48 91 - ;Santafe;NR;NA;www.sopasypostres.com.co
 102;16931;Sopas de Mama y Postres de la Abuela Sucursal Quinta Camacho;Calle 71 No 10 - 73;658 48 95 - ;Chapinero;NR;NA;www.sopasypostres.com.co
 103;16933;Sopas de Mama y Postres de la Abuela Sucursal Plaza de Bolivar;Carrera 9 No 10 - 59 ;658 48 94 - ;Candelaria;NR;NA;www.sopasypostres.com.co
 104;17422;Restaurante Wok;Carrera 6 BIS 29 -  07;287 31 94 - ;Santafe;NR;NA;www.wok.com.co
 105;17576;La Biferia;Calle 29 Bis No 6 - 12;245 83 88 - 314 414 24 03;Santafe;NR;NA;labiferia.squarespace.com
 106;17692;Hamburguesas el Corral La Candelaria;Calle 11 No 2 - 16;NR;Candelaria;No;NA;www.elcorral.com
 107;17697;Hamburguesas el Corral Plaza 39;Avenida Calle 39 No 7 - 40 Local 233;NR;Chapinero;No;NA;www.elcorral.com
-108;17881;El Portico;Kilometro 19 Autopista Norte;676 01 39 - 676 07 52;NA;NR;NA;www.elportico.com.co
 109;18235;Frisby G17;Calle 71 No 9 -  21 / 39 LC 1  Plazoleta Quinta de Camacho;01 800 939 000 - ;Chapinero;Si;01 800 939 000;www.frisby.com.co
 110;18694;Crepes & Waffles;Carrera 6 No 119  -  56;676 76 00 Extension 733 - ;Usaquen;No ;NA;www.Crepesywaffles.com
 111;18832;Hamburguesas el Corral Avenida Chile;Calle 73 No 10 - 83 Local 6 y 7;NR;Chapinero;No;NA;www.elcorral.com
@@ -127,14 +117,13 @@
 128;21570;La Despensa de Rafael;Calle 70 A No 9 - 95;235 88 91 - 248 19 97;Chapinero;NR;NA;www.rafaelosterling.pe/es/la-despensa.html
 129;21571;Rafael Restaurant;Calle 70 No 4 - 63;255 41 38 - ;Chapinero;NR;NA;www.rafaelosterling.pe/es/bogota.html
 130;21587;Restaurante 69 Oyster Bar;Calle 69A No 5 - 59 Interior 1;249 04 26 - ;Chapinero;No ;NA;NR
-131;21594;Frisby G49;Aeropuerto El Dorado Local 1330;01800939000 - ;Fontibon;Si;01 800 939 000;www.frisby.com.co
 132;21658;Hamburguesas el Corral Edificio Continental;Avenida Jimenez No 4 - 16 Local 21 Mezzanine;NR;Candelaria;No;NA;www.elcorral.com
 133;21678;teriyki Sushi Bar;Carrera 13 No 93 - 71;617 02 54 - ;Chapinero;Si;600 09 60;www.teriyaki.com.co
 134;21679;teriyki Thai;Carrera 13 No 83 - 66;618 15 19 - ;Chapinero;Si;618 15 19;www.teriyaki.com.co
 135;21680;teriyki 69;Calle 69 A No 5 - 79;321 02 15 - ;Chapinero;Si;321 02 15;www.teriyaki.com.co
 136;21758;Crepes & Waffles;Avenida calle 39 No 7  -  40 Local 137;676 76 00 Extension 732 - ;Chapinero;No ;NA;www.Crepesywaffles.com
 137;21935;La Plaza De Andres;Calle 82 No 12  -  21;863 78 80 - ;Chapinero;No ;NA;www.andrescarnederes.com
-138;22075;El CoQ;Calle 84 No 14 - 02;610 80 36 - ;Chapinero;NR;NA;NR
+138;22075;El CoQ;Calle 84 BIS No 14 - 02;610 80 36 - ;Chapinero;NR;NA;NR
 139;22089;Marfalitos;Calle 12 No 7 - 32 Piso 4;334 19 26 - 282 39 21;Candelaria;Si;334 19 26;NR
 140;22096;Hamburguesas el Corral Torre Cuzesar;Avenida Calle 116 No 7 - 15 Interior 2;NR;Usaquen;No;NA;www.elcorral.com
 141;22109;Papa Jhons Pepe Sierra;Calle 116 No 18 B - 40;NR;Usaquen;NR;NA;www.papajohns.com.co
@@ -171,7 +160,7 @@
 173;24346;Aracataca Colombian Steakhouse;Carrera 13 No 28 A - 31 Local 101;288 85 64 - 288 88 73;Santafe;Si;288 85 64;www.restaurantearacataca.com
 174;24420;Papa Jhons Avenida Chile;Carrera 9 No 71 - 60 /64;NR;Chapinero;NR;NA;www.papajohns.com.co
 175;25297;La Mar Cebiche ria Peruana ;Calle 119 B No 6 - 01;629 21 77 - ;Usaquen;NR;NA;www.lamarcebicheria.com
-176;25359;MC Donalds Gran Estacion;Centro Comercial Gran Estacion Avenida Calle 26 No 62 - 47 Local 3-36;572 65 89 - 311 561 08 67;Teusaquillo;No ;NA;www.mcdonalds.com.co
+176;25359;MC Donalds Gran Estacion;Centro Comercial Gran Estacion Avenida El Dorado No 62 - 49 Local 3-36;572 65 89 - 311 561 08 67;Teusaquillo;No ;NA;www.mcdonalds.com.co
 177;25360;MC Donalds Centro Internacional;Carrera 10 No 26 - 55 /57 Edificio Bachue;341 28 27 - 321 427 08 08;Santafe;Si;400 33 33;www.mcdonalds.com.co
 178;25361;MC Donalds Usaquen;Calle 118 No 6A - 76;637 84 81 - 320 307 99 26;Usaquen;Si;400 33 33;www.mcdonalds.com.co
 179;25608;Papa Jhons USAQUEN;Calle 121 No 6 - 11;NR;Usaquen;NR;NA;www.papajohns.com.co
@@ -193,10 +182,10 @@
 195;25786;Restaurante Mediterranea De Andrei;Carrera 6 A No 119 B - 05;612 90 59 - 629 82 79;Usaquen;NR;NA;www.mediterraneadeandreiusaquen.com
 196;25909;Gaira Cafe;Carrera 13 No 96 - 11;746 26 96 - ;Chapinero;NR;NA;www.gairacafe.co
 197;26068;Archies Santafe;Centro Comercial Santafe Calle 185 No 45 - 03 Local N3-063 ;605 82 32 - ;Usaquen;Si;605 05 05;www.archies.co
-198;26070;Archies Salitre;Calle 26 No 62 - 49 Local 318;571 81 38 - 572 23 43;Teusaquillo;Si;605 05 05;www.archies.co
+198;26070;Archies Salitre;Avenida El Dorado No 62 - 49 Local 318;571 81 38 - 572 23 43;Teusaquillo;Si;605 05 05;www.archies.co
 199;26318;Hamburguesas el Corral Santafe ;Centro Comercial Santafe Calle 185 No 45 - 03 Local 381;NR;Usaquen;No;NA;www.elcorral.com
-200;26319;Hamburguesas el Corral Gran Estacion;Centro Comercial Gran Estacion Avenida Calle 26 No 62 - 47 Local 314 - 315;NR;Teusaquillo;No;NA;www.elcorral.com
-201;26320;Hamburguesas el Corral Gran Estacion II;Centro Comercial Gran Estacion Avenida Calle 26 No 62 - 47 Local 350;NR;Teusaquillo;No;NA;www.elcorral.com
+200;26319;Hamburguesas el Corral Gran Estacion;Centro Comercial Gran Estacion Avenida El Dorado No 62 - 49 Local 314 - 315;NR;Teusaquillo;No;NA;www.elcorral.com
+201;26320;Hamburguesas el Corral Gran Estacion II;Centro Comercial Gran Estacion Avenida El Dorado No 62 - 49 Local 350;NR;Teusaquillo;No;NA;www.elcorral.com
 202;26321;Hamburguesas el Corral Unicentro II;Centro Comercial Uncientro Avenida 15 No 124 - 30  Local  409;NR;Usaquen;No;NA;www.elcorral.com
 203;26322;Hamburguesas el Corral Centro Mayor II;Centro Comercial Centro Mayor  Calle 38 A Sur No 34 D - 51 Local 3024 A;NR;Antonio Nariño;No;NA;www.elcorral.com
 204;26323;Hamburguesas el Corral Iserra;Centro Comercial Iserra 100 Transversal 55 No 98 A - 66 Local 315;NR;Barrios Unidos;No;NA;www.elcorral.com
@@ -206,15 +195,15 @@
 208;26327;Hamburguesas el Corral Carulla Galerias;Calle 53 No 26 - 60;NR;Chapinero;No;NA;www.elcorral.com
 209;26328;Hamburguesas el Corral Bulevar Niza;Avenida Carrera 58 No 127 - 59 Local 318 - 319 - 320;NR;Suba;No;NA;www.elcorral.com
 210;26329;Hamburguesas el Corral Centro Mayor I;Centro Comercial Centro Mayor Calle 38 A Sur No 34 D - 51 Local 2 -101 y 2 - 102;NR;Antonio Nariño;No;NA;www.elcorral.com
-211;26330;Corral Gourmet Gran Estacion;Centro Comercial Gran Estacion Avenida Calle 26 No 62 - 47 Local  343;221 41 91 - ;Teusaquillo;NR;NA;www.elcorralgourmet.com
-212;26331;Corral Gourmet Santa Ana;Calle 110 No 9 A - 60 Local 303;637 86 50 - ;Usaquen;NR;NA;www.elcorralgourmet.com
+211;26330;Corral Gourmet Gran Estacion;Centro Comercial Gran Estacion Avenida El Dorado No 62 - 49 Local  343;221 41 91 - ;Teusaquillo;NR;NA;www.elcorralgourmet.com
+212;26331;Corral Gourmet Santa Ana;Avenida Carrera 9 No 110 - 50 Local 303;637 86 50 - ;Usaquen;NR;NA;www.elcorralgourmet.com
 213;26332;Hamburguesas el Corral Santafe II;Centro Comercial Santafe Calle 183 No 45 - 03 Local 3-102;NR;Usaquen;No;NA;www.elcorral.com
-214;26333;Hamburguesas el Corral Americas;Avenida Americas No 39 A - 22;NR;Puente Aranda;No;NA;www.elcorral.com
-215;26356;La Brasa Roja Gran Estacion;Centro Comercial Gran Estacion Avenida Calle 26 No 62 - 47 Local 302;NR;Teusaquillo;Si;600 45 65;labrasaroja.com
+214;26333;Hamburguesas el Corral Americas;Avenida Americas No 39 - 24;NR;Puente Aranda;No;NA;www.elcorral.com
+215;26356;La Brasa Roja Gran Estacion;Centro Comercial Gran Estacion Avenida El Dorado No 62 - 49 Local 302;NR;Teusaquillo;Si;600 45 65;labrasaroja.com
 216;26357;La Brasa Roja Centro Comercial Santafe;Centro Comercial Santafe Calle 185 No 45 - 03 Local 392;NR;Usaquen;Si;600 45 65;labrasaroja.com
 217;26364;MC Donalds Bulevar Niza;Avenida Carrera 58 No 127 - 59 Local  2128/2129;613 46 65 - 313 870 63 40;Suba;No ;NA;www.mcdonalds.com.co
 218;26365;MC Donalds Santafe;Centro Comercial Santafe Calle 183 No 45 - 03 Local 3-121;600 65 07 - 312 588 95 17;Usaquen;Si;400 33 33;www.mcdonalds.com.co
-219;26366;MC Donalds Unicentro;Centro Comercial Unicentro Avenida 15 No 123 - 30 Local 1-65;629 15 55 - 311 561 08 64;Usaquen;No ;NA;www.mcdonalds.com.co
+219;26366;MC Donalds Unicentro;Centro Comercial Unicentro Avenida 15 No 124 - 30 Local 1-65;629 15 55 - 311 561 08 64;Usaquen;No ;NA;www.mcdonalds.com.co
 220;26367;Mc Donalds GALERIA 2;Calle 53 No 25 - 30;653 80 00 - ;Teusaquillo;NR;NA;www.mcdonalds.com.co
 221;26368;MC Donalds Calima;Centro Comercial Calima Avenida Calle 19 No 28 - 10 Local C27;378 61 26 - 311 554 90 00;Los Martires;Si;400 33 33;www.mcdonalds.com.co
 222;26369;MC Donalds Centro Mayor;Centro Comercial Centro Mayor Calle 38 A Sur No 34 D - 51 Local 2115 B-C;734 03 46 - 321 241 40 16;Antonio Nariño;No ;NA;www.mcdonalds.com.co
@@ -223,10 +212,10 @@
 225;26438;Crepes & Waffles;Avenida Carrera 58 No 127 - 59 Local 25 - 335;676 76 00 Extension 704 - ;Suba;No ;NA;www.Crepesywaffles.com
 226;26439;Crepes & Waffles;Avenida Carrera 9 No 110 - 50 Local 304/305;676 76 00 Extension 723 - ;Usaquen;No ;NA;www.Crepesywaffles.com
 227;26440;Crepes & Waffles;Centro Comercial Calima Avenida Calle 19 No 28 - 80 Local C32;676 76 00 Extension 755 - ;Los Martires;No ;NA;www.Crepesywaffles.com
-228;26441;Crepes & Waffles;Centro comercial Gran Estacion Avenida Calle 26 No  62 - 47 Local 321;676 76 00 Extension 726 - ;Teusaquillo;No ;NA;www.Crepesywaffles.com
+228;26441;Crepes & Waffles;Centro comercial Gran Estacion Avenida El Dorado No  62 - 49 Local 321;676 76 00 Extension 726 - ;Teusaquillo;No ;NA;www.Crepesywaffles.com
 229;26442;Crepes & Waffles;Centro Comercial Centro Mayor Calle 38 A Sur No 34 D - 51 Plaza del Equilibrista Piso 2;676 76 00 Extension 751 - ;Antonio Nariño;No ;NA;www.Crepesywaffles.com
 230;26443;Crepes & Waffles;Centro comercial Santafe Calle 185 No 45 - 03 Local 357;676 76 00 Extension 725 - ;Usaquen;No ;NA;www.Crepesywaffles.com
-231;26444;Crepes & Waffles;Carrera 15 No 123  -  30 Local 1089;676 76 00 Extension 705 - ;Usaquen;No ;NA;www.Crepesywaffles.com
+231;26444;Crepes & Waffles;Carrera 15 No 124  -  30 Local 1089;676 76 00 Extension 705 - ;Usaquen;No ;NA;www.Crepesywaffles.com
 232;26477;Enchiladas Cocina Mexicana;Calle 10 No 2 - 12;286 03 12 - 315 311 16 46;Candelaria;NR;NA;enchiladascandelaria.com
 233;26478;Tabula;Calle 29 BIS No 5 - 90;287 72 28 - 285 88 75;Santafe;NR;NA;NR
 234;26523;Capital Cocina Y Cafe;Calle 10 No 2 - 99;342 04 26 - ;Candelaria;NR;NA;NR
@@ -236,7 +225,7 @@
 239;26767;El Gato Gris;Carrera 1A No 12 B  - 12;342 17 16 - ;Candelaria;NR;NA;www.gatogris.com
 240;27168;Carbon 100 Unicentro;Centro Comercial Unicentro Avenida 15 No 124  - 30 Local 408;213 08 99 - 674 05 28;Usaquen;No;NA;carbon100xilvestre.com.co
 241;27200;Carbon 100 Avenida Chile;Calle 73 No 10 - 83 Local 409;248 92 81 - 674 05 28;Chapinero;No;NA;carbon100xilvestre.com.co
-242;27201;Restaurante Wok;Centro Comercial Gran Estacion Avenida Calle 26 No 62 - 47 Local 1-48;572 27 75 - ;Teusaquillo;NR;NA;www.wok.com.co
+242;27201;Restaurante Wok;Centro Comercial Gran Estacion Avenida El Dorado No 62 - 49 Local 1-48;572 27 75 - ;Teusaquillo;NR;NA;www.wok.com.co
 243;27237;Presto Word Trade Center;Carrera 11 No 98 - 46;610 29 04 - ;Chapinero;Si;6550 550;www.presto.com.co
 244;27238;Presto Pepe Sierra;Calle 116 No 19 - 62;612 73 91 - ;Chapinero;Si;6550 550;www.presto.com.co
 245;27239;Presto Calle 23;Carrera 7 No 22 - 95;243 73 70 - ;Santafe;Si;6550 550;www.presto.com.co
@@ -251,23 +240,20 @@
 255;27307;Frisby H16;Centro Comercial Andino Carrera A 11 No 82 - 11  Local 419;01800939000 - ;Chapinero;Si;01 800 939 000;www.frisby.com.co
 256;27308;Presto Colsubsidio Calle 26;Calle 26 No 25 - 50 Piso 2;338 43 44 - ;Teusaquillo;Si;6550 550;www.presto.com.co
 257;27317;Frisby G48;Centro Comercial 'Avenida' Chile Calle 72 No 10 - 34 Local 405;249 27 19 - ;Chapinero;Si;01 800 939 000;www.frisby.com.co
-258;27318;Frisby No 43;Centro Comercial Plaza de Las Americas Carrera 71 D No 6  - 94 Local 29 - 02 ;01800939000 - ;Kennedy;Si;01 800 939 000;www.frisby.com.co
+258;27318;Frisby No 43;Centro Comercial Plaza de Las Americas Carrera 71 D No 6  - 94 Sur Local 29 - 02 ;01800939000 - ;Kennedy;Si;01 800 939 000;www.frisby.com.co
 259;27319;Frisby No 50;Centro Comercial Salitre Plaza Carrera 68 B No 24 - 39 Local 384 ;01800939000 - ;Fontibon;Si;01 800 939 000;www.frisby.com.co
 260;27339;KFC;Centro Comercial Salitre Plaza Carrera 68 B No 24 - 39 Local 377;NR;Fontibon;Si;600 09 09;www.kfcbuenisimo.com/colombia
 261;27546;Paneroli;Centro Comercial Salitre Plaza Carrera 68 B No 24 - 39 Local 419 ;416 93 71 - ;Fontibon;Si;416 93 71;paneroli.com
-262;27547;Paneroli-3;Centro Comercial Gran Estacion Avenida Calle 26 No 62 - 47 Local 320A ;572 32 42 - ;Fontibon;No ;NA;paneroli.com
+262;27547;Paneroli-3;Centro Comercial Gran Estacion Avenida Avenida El Dorado No 62 - 49 Local 320A ;572 32 42 - ;Fontibon;No ;NA;paneroli.com
 263;27548;Paneroli 3;Centro Comercial Unicentro Avenida 15 No 124 - 30  Local 419 ;213 07 00 - ;Usaquen;Si;213 07 00;paneroli.com
 264;27623;MC Donalds Titan;Centro Comercial Titan Avenida Carrera 72 No 80 - 94;321 364 64 00;Engativa;No ;NA;www.mcdonalds.com.co
-265;27722;Restaurante WOK;Calle 110 No 9 B - 04 ;637 86 57 - ;Usaquen;NR;NA;www.wok.com.co
 266;27833;Restaurante Gaudi;Carrera 4A No 27 - 54;342 71 83 - 321 219 67 83;Santafe;No;NA;www.Restaurantegaudi.com
 267;27985;La Bonga del Sinu;Carrera 14 No 93  -  88;691 95 07 - 257 32 53;Chapinero;No ;NA;NR
-268;28132;Crepes & Waffles;Nuevo Aeropuerto Eldorado Local 4 Nivel Hall Publico ;676 73 50 - ;Fontibon;No ;NA;www.Crepesywaffles.com
 269;28323;Hamburguesas el Corral ESSO 100;Calle 100 No 11 - 79 Local 8 y 9;NR;Chapinero;No;NA;www.elcorral.com
 270;28391;Hamburguesas el Corral Plaza de Las Americas II;Centro Comercial Plaza de Las Americas Carrera 71 D No 6 - 94 Sur Local 1120;NR;Kennedy;No;NA;www.elcorral.com
 274;28397;Papa Jhons Salitre;Calle 24 A No 69 C - 52;NR;Fontibon;NR;NA;www.papajohns.com.co
-275;28413;Hamburguesas el Corral Exito Villa Mayor;Autopista Sur No 38 A - 07 Local 113;NR;Antonio Nariño;No;NA;www.elcorral.com
 276;28423;Papa Jhons Galerias;Calle 52 No 23 - 06 /10;NR;Teusaquillo;NR;NA;www.papajohns.com.co
-277;29564;Crepes & Waffles;Centro comercial Gran Estacion Avenida Calle 26 No  62 - 47  Local 319-320 Esfera;676 76 00 Extension 760 - ;Teusaquillo;No ;NA;www.Crepesywaffles.com
+277;29564;Crepes & Waffles;Centro comercial Gran Estacion Avenida El Dorado No  62 - 49  Local 319-320 Esfera;676 76 00 Extension 760 - ;Teusaquillo;No ;NA;www.Crepesywaffles.com
 278;29795;Cali Mio Centro Comercial Santafe;Centro Comercial Santafe Calle 185 No 45 03 Local 3 - 11;NR;Usaquen;Si;600 43 00;www.calimio.com.co
 279;29796;LA Brasa Roja Hacienda Santa Barbara;Calle 114 No 6 A - 92 Local 108;NR;Usaquen;Si;600 45 65;labrasaroja.com
 280;29801;La Brasa Roja Calle 67;Carrera 11 No 66 - 75;255 84 18 - ;Chapinero;Si;600 45 65;labrasaroja.com
@@ -276,7 +262,7 @@
 283;29840;Don Jediondo Sopitas y Parrilla ;Centro Comercial Santafe Calle 185 No 45 - 03 LC 395;605 83 13 - ;Usaquen;Si;605 83 13;www.donjediondo.com
 284;29891;Narcobollo 3;Carrera 20 No 116 - 14;637 70 96 - ;Usaquen;NR;NA;NR
 285;29905;La Bonga del Sinu;Calle 116 No 16 -  89;521 94 18 - 521 94 94;Usaquen;NR;NA;labongadelsinu.co
-286;29954;Diner Unicentro;Avenida 15 No 123 - 30 Local 2 142;213 02 45 - ;Usaquen;Si;213 02 45;NR
+286;29954;Diner Unicentro;Avenida 15 No 124 - 30 Local 2 142;213 02 45 - ;Usaquen;Si;213 02 45;NR
 287;29956;Cafe Illy Unicentro;Centro Comercial Unicentro Avenida 15 No 124 - 30 Local 1 - 12;215 79 74 - ;Usaquen;NR;NA;www.illy.com
 288;29959;Presto Puente Aereo;Calle 26 No 106 - 28 Puente Aereo ;413 92 45 - ;Fontibon;Si;6550 550;www.presto.com.co
 289;30002;El Carnal;Centro Comercial Hacienda Santa Barbara Carrera 7 No 115 - 72 Local E-205;NR;Usaquen;No;NA;elcarnal.com.co
@@ -284,7 +270,7 @@
 291;30004;El Carnal;Calle 85 No 13 -  20;NR;Chapinero;No;NA;elcarnal.com.co
 292;30006;El Carnal;Centro Comercial Centro Mayor Calle 38 A Sur No 34 D - 51 Local  2114;NR;Antonio Nariño;No;NA;elcarnal.com.co
 293;30007;El Carnal;Centro Comercial Plaza De Las Americas Carrera 71 D No 6 - 94 Sur Local 2910;NR;Kennedy;No;NA;elcarnal.com.co
-294;30008;El Carnal;Centro Comercial Gran Estacion Avenida Calle 26 No 62 - 47 Local 351;NR;Teusaquillo;No;NA;elcarnal.com.co
+294;30008;El Carnal;Centro Comercial Gran Estacion Avenida El Dorado No 62 - 49 Local 351;NR;Teusaquillo;No;NA;elcarnal.com.co
 295;30009;El Carnal;Centro Comercial Unicentro Avenida 15 No 124 - 30 Local 4-10;NR;Usaquen;No;NA;elcarnal.com.co
 296;30010;El Carnal;Calle 82 No 13 - 15;NR;Chapinero;No;NA;elcarnal.com.co
 297;30011;Corral Gourmet Usaquen;Calle 119 B No 5 - 86;215 95 51 - ;Usaquen;NR;NA;www.elcorralgourmet.com
@@ -293,7 +279,7 @@
 300;30216;Don Jediondo Sopitas y Parrilla;Centro Comercial Calima Calle 19 No 28 - 80 Local R-7;487 51 36 - ;Los Martires;Si;487 51 36;www.donjediondo.com
 301;30217;Don Jediondo Sopitas y Parrilla ;Centro Comercial Unicentro Avenida 15 No 124 - 30 Local 418;213 06 66 - ;Usaquen;Si;213 06 66;www.donjediondo.com
 303;30219;Don Jediondo Gurme´s;Centro Comercial Calima Calle 19 No 28 - 80 Local C-31;487 49 94 - ;Los Martires;Si;487 51 36;www.donjediondo.com
-304;30220;Don Jediondo Sopitas y Parrilla ;Centro Comercial Gran Estacion Avenida Calle 26 No 62 - 47 Local 304;572 00 24 - 650 91 40;Teusaquillo;Si;572 00 24;www.donjediondo.com
+304;30220;Don Jediondo Sopitas y Parrilla ;Centro Comercial Gran Estacion Avenida El Dorado No 62 - 49 Local 304;572 00 24 - 650 91 40;Teusaquillo;Si;572 00 24;www.donjediondo.com
 305;30221;Don Jediondo Sopitas y Parrilla ;Carrera 7 No 32 - 70 Local 419;350 09 30 - ;Santafe;Si;350 09 30;www.donjediondo.com
 306;30222;La Popular de Andres Contenedores;Centro Comercial Hacienda Santa Barbara Carrera 7 No 115 - 60 ;863 78 80 - 861 22 33;Usaquen;NR;NA;www.andrescarnederes.com
 307;30223;Andres Expres Caseta de Luxe;Centro Comercial Salitre Plaza Carrera 68 B No 24 - 39 Local 391 ;416 82 67 - ;Fontibon;No ;NA;www.andrescarnederes.com
@@ -307,9 +293,7 @@
 315;30768;PPC Pollo, Pizza, Carne;Transversal 35 No 38 A - 20 Sur  Local 2-122;335 06 00 - 733 34 87;Antonio Nariño;No ;NA;www.ppc.com.co
 316;30769;PPC Pollo, Pizza, Carne;Centro Comercial Calima Avenida Calle 19 No 28 - 10 Local 28;487 82 01 - ;Los Martires;Si;359 91 00;www.ppc.com.co
 317;30769;PPC Pollo, Pizza, Carne;Centro Comercial Calima Avenida Calle 19 No 28 - 80 Local C-29;487 82 01 - ;Los Martires;NR;NA;www.ppc.com.co
-318;30770;PPC Pollo, Pizza, Carne;Calle 26 No 51 A - 15 Local 322;335 06 00 - 321 364 39 46;Teusaquillo;No ;NA;www.ppc.com.co
-319;30770;PPC Pollo, Pizza, Carne;Centro Comercial Gran Estacion Calle 26 No 51  A - 15 Local 322 ;222 85 36 - ;Teusaquillo;NR;NA;www.ppc.com.co
-320;30771;PPC Pollo, Pizza, Carne;Diagonal 22B No 63 - 30 Local 341;650 91 54 - ;Teusaquillo;No ;NA;www.ppc.com.co
+319;30770;PPC Pollo, Pizza, Carne;Centro Comercial Gran Estacion Avenida El Dorado No 62 - 49 Local 322 ;222 85 36 - ;Teusaquillo;NR;NA;www.ppc.com.co
 321;30772;Sopas de Mama y Postres de la Abuela Sucursal Unicentro;Centro Comercial Unicentro Avenida 15 No 124 - 30 Local 1-060;658 48 98 - ;Usaquen;NR;NA;www.sopasypostres.com.co
 322;31033;Bagatelle S.A.S.;Diagonal 70 A No 4 - 99;310 44 69 - ;Chapinero;Si;310 44 69;www.Bagatelle.com.co
 323;31034;Bagatelle S.A.S.;Carrera 11 A No 94 - 45;256 16 19 - 634 71 59;Chapinero;Si;634 71 59;www.Bagatelle.com.co
@@ -323,23 +307,21 @@
 331;31415;Andres Expres Caseta de Luxe;Centro Comercial Portal de la 80 Transversal 100 A No 80 A - 20 Local N3-034 ;863 78 80 - ;Engativa;NR;NA;www.andrescarnederes.com
 332;31416;Andres Expres Caseta de Luxe;Centro Comercial Unicentro de occidente Carrera 111 C No 86 - 05 Local 2-26 ;863 78 80 - ;Engativa;NR;NA;www.andrescarnederes.com
 333;31455;1.492 Restaurante Latino;Carrera 12 No 83 - 11;257 28 53 - ;Chapinero;No;NA;www.1492restaurante.com
-334;31478;Beer Station Usaquen ;Centro Comercial Titan Plaza Carrera 72 No 80 - 94  Local 403A;736 20 29 - ;Engativa;NR;NA;www.beerstation.com.co
+334;31478;Beer Station Usaquen ;Centro Comercial Titan Plaza AC 80 No 70F - 128  Local 403A;736 20 29 - ;Engativa;NR;NA;www.beerstation.com.co
 336;31729;Crepes & Waffles;Calle 70 No 4 - 96;676 76 00 Extension 735  - ;Chapinero;NR;NA;www.Crepesywaffles.com
-337;32193;Oma Barra de Cafe Bogota Aeropuerto El Nuevo Dorado;Avenida Calle 26 Carrera 120 Primer Piso Diagonal Porteria 6;NR;Fontibon;NR;NA;http://173.254.122.220/
 338;32252;Kokoriko Central Domicilios Usaquen;Calle 119 No 9 - 04;NR;Usaquen;Si;410 01 11;www.kokoriko.com.co
 339;32254;Andres Expres Caseta de Luxe;Centro Comercial Platino Carrera 7 No 138 - 33 Local 309 ;863 78 80 - ;Usaquen;NR;NA;www.andrescarnederes.com
 340;32255;Andres Expres Caseta de Luxe;Centro Comercial Plaza De Las Americas Carrera 71 D No 6 - 94 Sur Local 29 - 03 ;863 78 80 - ;Kennedy;NR;NA;www.andrescarnederes.com
 341;32413;Cien Montaditos LA T;Carrera 13 No 83 - 24;621 90 51 - ;Chapinero;NR;NA;colombia.100montaditos.com
 342;32414;Cien Montaditos Pepe Sierra;Calle 116 No 17 A - 60;621 90 51 - ;Usaquen;NR;NA;colombia.100montaditos.com
-344;32842;Kokorico Natural Rotisserie;Aeropuerto El Dorado T 1 Hall Publico P 3 FIB 3 Local T 1 008;NR;Fontibon;Si;410 01 11;www.kokoriko.com.co
 346;32844;Kokoriko Salitre Plaza;Centro Comercial Salitre Plaza Carrera 68 B No 24 - 39 Local 363;NR;Fontibon;Si;410 01 11;www.kokoriko.com.co
 347;32845;Kokoriko Calima;Centro Comercial Calima Calle 18 No 28 - 80 ;NR;Los Martires;Si;410 01 11;www.kokoriko.com.co
 348;32846;Mercado Cocina Local Sabor Consciente;Calle 93 A No 12 - 73;236 25 00 - ;Chapinero;NR;NA;www.mcdonalds.com.co
 349;32847;Kokoriko Calle 71;Calle 71 No 9 - 06;NR;Chapinero;Si;410 01 11;www.kokoriko.com.co
-350;32848;Kokoriko La Gran Estacion;Centro Comercial Gran Estacion Avenida Calle 26 No 62 - 47 Local 319;NR;Teusaquillo;Si;410 01 11;www.kokoriko.com.co
+350;32848;Kokoriko La Gran Estacion;Centro Comercial Gran Estacion Avenida El Dorado No 62 - 49 Local 319;NR;Teusaquillo;Si;410 01 11;www.kokoriko.com.co
 351;32849;Kokorico Unicentro;Centro Comercial Unicentro Avenida 15 No 124 - 30  Local 242;NR;Usaquen;Si;410 01 11;www.kokoriko.com.co
 352;32850;Kokoriko Restaurante Centro Mayor;Centro Comercial Centro Mayor Calle 38 A Sur No 34 D - 51  Local 2172 - 2172;NR;Antonio Nariño;Si;410 01 11;www.kokoriko.com.co
-353;32851;Kokoriko Avenida Chile;Avenida  13 No 71 - 60;NR;Chapinero;Si;410 01 11;www.kokoriko.com.co
+353;32851;Kokoriko Avenida Chile;Calle 72 No 10 - 30;NR;Chapinero;Si;410 01 11;www.kokoriko.com.co
 354;32853;Kokoriko Andino;Centro Comercial Andino Carrera 11 No 82 - 71  Local 415 Piso 4;NR;Chapinero;Si;410 01 11;www.kokoriko.com.co
 355;33068;Hamburguesas el Corral Calle 85;Calle 85 No 13 - 77;NR;Chapinero;No;NA;www.elcorral.com
 356;33324;Uva;Carrera 13 No 94 A - 26 Local 3;703 10 97 - ;Chapinero;NR;NA;www.uvabar.co
@@ -370,7 +352,6 @@
 385;34435;Presto Santander;Carrera 7 No 16 - 49;341 01 37 - ;Santafe;Si;6550 550;www.presto.com.co
 386;34467;Andres Expres Caseta De Luxe;Centro Comercial Cafam Floresta Avenida Carrera 68 No 90 - 88 Local 2 011 ;863 78 80 - ;Barrios Unidos;NR;NA;www.andrescarnederes.com
 387;34468;Andres Expres Caseta De Luxe;Centro Comercial Avenida de Las Americas No 62 - 84 Local 388;863 78 80 - ;Puente Aranda;NR;NA;www.andrescarnederes.com
-389;34539;Presto Nuevo Dorado;Aeropuerto Eldorado, T2 Zona Internacional;NR;Fontibon;Si;6550 550;www.presto.com.co
 392;34801;Nolita;Carrera 13 No 85 - 25;610 00 80 - ;Chapinero;NR;NA;nolita.com.co
 393;34920;La Hamburgueseria  El Chico;Calle 93 B No 11 A - 34;616 01 69 - 616 00 54;Chapinero;Si;600 09 69;www.lahamburgueseria.com
 394;34921;La Hamburgueseria  La 85;Calle 85 No 12 - 49;610 20 01 - ;Chapinero;Si;600 09 69;www.lahamburgueseria.com
