@@ -151,5 +151,23 @@
 		"columnDirectionIndex": 2,
 		"columnsError": [ 0, 1, 2 ],
 		"columnsResult": [ 0, 1, 2, 3, 4, 5, 8 ]
+	},
+	{
+		"path": "./files/",
+		"sourceFile": "07datasetpuntostullavev2.csv",
+		"resultFile": "07datasetpuntostullavev2-procesado.csv",
+		"errorFile": "07datasetpuntostullavev2-error.csv",
+		"names": "JIMENEZ|EL DORADO|AMERICAS|BOYACA|CARACAS|USME|PRIMERO DE MAYO|LA ESPERANZA|CORPAS|ROJAS|SUBA|CIUDAD DE CALI",
+		"columnsName": [
+			"ESTABLECIMIENTO",
+			"DIRECCION",
+			"LOCALIDAD",
+			"BARRIO",
+			"ZONA_SITP",
+			"FECHA CORTE"
+		],
+		"columnDirectionIndex": 1,
+		"columnsError": [ 0, 1 ],
+		"columnsResult": [ 0, 1, 2, 3, 4 ]
 	}
 ]
