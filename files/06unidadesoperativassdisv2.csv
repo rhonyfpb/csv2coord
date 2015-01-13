@@ -3,7 +3,6 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 145002;Hogar San Francisco;CL 117 6 A 22;Albergue Adulto Mayor C.C.;2155584;Usaquen;Usaquén;1;Usaquén;Usaquen;14
 645003;Hogar Casa Nostra;DG 50 A SUR 26 80;Albergue Adulto Mayor C.C.;2301052;El Carmen;El Carmen_;6;Tunjuelito;Venecia;42
 945004;Hogar Santa Teresa Jornet;KR 97 22 G 64;Albergue Adulto Mayor C.C.;6273148;Ferrocaja Fontibon;Oviedo;9;Fontibón;Fontibón;75
-441001;Bello Horizonte;CL 31 D BIS SUR 3 1 ESTE;Albergue Adulto Mayor SDIS;2061604;Bello Horizonte;Bello Horizonte II Sector;4;San Cristóbal;20 de Julio;34
 1041002;Bosque Popular;KR 69 47 43;Albergue Adulto Mayor SDIS;2630949;Jardin Botanico;S.C. Jardín Botánico;10;Engativá;Jardín Botánico;105
 260001;Chapinero;CL 50 A 13 58;Atención a Personas en Prostitución;2494833;Marly;S.C. Marly;2;Chapinero;Chapinero;99
 860002;Kennedy;KR 74 42 G 52 SUR;Atención a Personas en Prostitución;4528362;Timiza A;Lagos De Timiza I;8;Kennedy;Timiza;48
@@ -13,38 +12,32 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 142001;Usaquen;CL 165 7 38;Atención al Adulto Mayor;6709098;Santa Teresa;Santa Teresa;1;Usaquén;La Uribe;10
 242002;Chapinero;CL 50 A 13 58;Atención al Adulto Mayor;2494678;Marly;S.C. Marly;2;Chapinero;Chapinero;99
 342003;Santafe - Candelaria;KR 2 4 10;Atención al Adulto Mayor;2892602;Lourdes;Lourdes 2;3;Santa Fe;Las Cruces;95
-442004;San Cristobal;DG 37 BIS B SUR 2 81 ESTE;Atención al Adulto Mayor;2891278;Velodromo;S.C. Velódromo;4;San Cristóbal;Sosiego;33
 542005;Usme - Sumapaz;AC 91 SUR 3 C 34 ESTE;Atención al Adulto Mayor;7685865;Charala;Chuniza;5;Usme;Comuneros;58
 642006;Tunjuelito;DG 47 A SUR 53 92;Atención al Adulto Mayor;7696933;Venecia;Venecia;6;Tunjuelito;Venecia;42
 742007;Bosa;CL 73 SUR 81 B 10;Atención al Adulto Mayor;7802711;Gran Colombiano;Grancolombiano II Sector;7;Bosa;Bosa Central;85
 842008;Kennedy;CL 38 SUR 94 C 29;Atención al Adulto Mayor;4528215;Galan;Bellavista_;8;Kennedy;Patio Bonito;82
 942009;Fontibon;KR 104 B 22 J 15;Atención al Adulto Mayor;4181948;La Cabana Fontibon;La Giralda;9;Fontibón;Fontibón;75
-1042010;Engativa;CL 70 78 7;Atención al Adulto Mayor;2524855;Santa Helenita;S.C. Santa Helenita;10;Engativá;Boyacá Real;30
 1142011;Suba;KR 91 146 C 15;Atención al Adulto Mayor;6921232;Suba Urbano;S.C. Suba Urbano;11;Suba;Suba;27
 1242012;Barrios Unidos;KR 58 67 D 31;Atención al Adulto Mayor;2509877;Popular Modelo;Popular Modelo;12;Barrios Unidos;Doce de Octubre;22
 1842014;Rafael Uribe Uribe;KR 15 C 31 G 40 SUR;Atención al Adulto Mayor;3665335;Gustavo Restrepo;Gustavo Restrepo;18;Rafael Uribe;San José;36
 1442015;Martires;DG 22 B BIS 20 51;Atención al Adulto Mayor;3684511;Santa Fe;Santa Fe;14;Los Mártires;La Sabana;102
 1642016;Puente Aranda - Antonio Nariño;KR 33 4 A 23;Atención al Adulto Mayor;2373467;Comuneros;Veraguas Central;16;Puente Aranda;Ciudad Montes;40
-1942017;Ciudad Bolivar;CL 70 SUR 34 5;Atención al Adulto Mayor;7180841;Arborizadora Alta;Arborizadora Alta;19;Ciudad Bolívar;Jerusalem;70
 1835001;ESCNNA Rafael Uribe Uribe;KR 11 A 30 22 SUR;Atención Especializada ESCNNA;2095532-3135781370;Sosiego Sur;Avenida Décima;18;Rafael Uribe;San José;36
 1435002;ESCNNA Martires;KR 19 A 22 B 14;Atención Especializada ESCNNA;3409498;Santa Fe;Santa Fe;14;Los Mártires;La Sabana;102
 1306013;Teusaquillo;AK 19 32 A 20;Atención Integral a la Primera Infancia en Ámbito Familiar;;Teusaquillo;Teusaquillo;13;Teusaquillo;Teusaquillo;101
 106001;Usaquen;CL 165 7 38;Atención Integral a la Primera Infancia en Ámbito Familiar;6709098;Santa Teresa;Santa Teresa;1;Usaquén;La Uribe;10
 206002;Chapinero;CL 50 A 13 58;Atención Integral a la Primera Infancia en Ámbito Familiar;2494678;Marly;S.C. Marly;2;Chapinero;Chapinero;99
 306003;Santafe - Candelaria;KR 2 4 10;Atención Integral a la Primera Infancia en Ámbito Familiar;2892602;Lourdes;Lourdes 2;3;Santa Fe;Las Cruces;95
-406004;San Cristobal;DG 37 BIS B SUR 2 81 ESTE;Atención Integral a la Primera Infancia en Ámbito Familiar;2891278;Velodromo;S.C. Velódromo;4;San Cristóbal;Sosiego;33
 506005;Usme - Sumapaz;AC 91 SUR 3 C 34 ESTE;Atención Integral a la Primera Infancia en Ámbito Familiar;7685865;Charala;Chuniza;5;Usme;Comuneros;58
 606006;Tunjuelito;DG 47 A SUR 53 92;Atención Integral a la Primera Infancia en Ámbito Familiar;7696933;Venecia;Venecia;6;Tunjuelito;Venecia;42
 706007;Bosa;CL 73 SUR 81 B 10;Atención Integral a la Primera Infancia en Ámbito Familiar;7802711;Gran Colombiano;Grancolombiano II Sector;7;Bosa;Bosa Central;85
 806008;Kennedy;CL 38 SUR 94 C 29;Atención Integral a la Primera Infancia en Ámbito Familiar;4528215;Galan;Bellavista_;8;Kennedy;Patio Bonito;82
 906009;Fontibon;KR 104 B 22 J 15;Atención Integral a la Primera Infancia en Ámbito Familiar;4181948;La Cabana Fontibon;La Giralda;9;Fontibón;Fontibón;75
-1006010;Engativa;CL 70 78 7;Atención Integral a la Primera Infancia en Ámbito Familiar;2524855;Santa Helenita;S.C. Santa Helenita;10;Engativá;Boyacá Real;30
 1106011;Suba;KR 91 146 C 15;Atención Integral a la Primera Infancia en Ámbito Familiar;6921232;Suba Urbano;S.C. Suba Urbano;11;Suba;Suba;27
 1206012;Barrios Unidos;KR 58 67 D 31;Atención Integral a la Primera Infancia en Ámbito Familiar;2509877;Popular Modelo;Popular Modelo;12;Barrios Unidos;Doce de Octubre;22
 1806014;Rafael Uribe Uribe;KR 15 C 31 G 40 SUR;Atención Integral a la Primera Infancia en Ámbito Familiar;3665335;Gustavo Restrepo;Gustavo Restrepo;18;Rafael Uribe;San José;36
 1406015;Martires;DG 22 B BIS 20 51;Atención Integral a la Primera Infancia en Ámbito Familiar;3684511;Santa Fe;Santa Fe;14;Los Mártires;La Sabana;102
 1606016;Puente Aranda - Antonio Nariño;KR 33 4 A 23;Atención Integral a la Primera Infancia en Ámbito Familiar;2373467;Comuneros;Veraguas Central;16;Puente Aranda;Ciudad Montes;40
-1906017;Ciudad Bolivar;CL 70 SUR 34 5;Atención Integral a la Primera Infancia en Ámbito Familiar;7180841;Arborizadora Alta;Arborizadora Alta;19;Ciudad Bolívar;Jerusalem;70
 316001;CAVIF;KR 13 18 34;Atención victimas violencia intrafamiliar;2811615;La Capuchina;La Capuchina;3;Santa Fe;Las Nieves;93
 317001;CAIVAS;DG 34 5 18;Atención victimas violencia sexual;232 22 65 288 05 57;La Merced;La Merced;3;Santa Fe;Sagrado Corazón;91
 880001;Centro Amar Chapinero;CL 59 6 24;Centro Amar de Integración;2172029;La Salle;S.C. La Salle;2;Chapinero;Pardo Rubio;90
@@ -69,7 +62,6 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 1890013;Centro Crecer Rafael Uribe;CL 31 G SUR 15 63;Centro CRECER;7651256;Gustavo Restrepo;Gustavo Restrepo;18;Rafael Uribe;San José;36
 1490014;Centro Crecer Mártires;AC 1 24 B 26;Centro CRECER;3330467;El Vergel;El Vergel_;14;Los Mártires;Santa Isabel;37
 1490015;Centro Crecer Arborizadora Alta;KR 21 63 08 SUR;Centro CRECER;2334605;Las Acacias;San Francisco I Sector;19;Ciudad Bolívar;San Francisco;66
-1990016;Centro Crecer Vista Hermosa;CL 69 K SUR 18 H 19;Centro CRECER;7651256;San Rafael;Vista Hermosa_;19;Ciudad Bolívar;Lucero;67
 390003;Centro Crecer La Paz;CL 65 A 1 60;Centro CRECER;3166293961;Juan XXIII;Juan_XXIII;2;Chapinero;Pardo Rubio;90
 390002;Centro Crecer Lourdes;KR 2 4 10;Centro CRECER;2806136;Lourdes;Lourdes 2;3;Santa Fe;Las Cruces;95
 890008;Centro Crecer Kennedy;KR 74 42 G 52 SUR;Centro CRECER;4542335;Timiza A;Lagos De Timiza I;8;Kennedy;Timiza;48
@@ -79,21 +71,15 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 996004;Casa de la Juventud Fontibon - el Pedregal;KR 112 B 20 C 29;Centro de Atención al Joven;4212260;Belen Fontibon;El Pedregal;9;Fontibón;Fontibón;75
 465001;Centro de Atención Integral a la Diversidad Sexual Mártires;KR 14 21 05;Centro de Atención Integral a la Diversidad Sexual;;Santafe;Santafe;4;Los Mártires;La Sabana;102
 1365002;CAIDS Sebastian Romero;TV 17 A BIS 36 74;Centro de Atención Integral a la Diversidad Sexual;3384616;Teusaquillo;Teusaquillo;13;Teusaquillo;Teusaquillo;104
-420003;Centro de Desarrollo Comunitario San Blas;KR 3 ESTE 15 57 SUR;Centro de Desarrollo Comunitario C.D.C.;;Velodromo;S.C. Velódromo;4;San Cristóbal;Sosiego;33
-420004;Centro de Desarrollo Comunitario La Victoria;DG 37 BIS B SUR 2 81 ESTE;Centro de Desarrollo Comunitario C.D.C.;;Las Guacamayas I;Las Guacamayas;4;San Cristóbal;La Gloria;50
 520005;Centro de Desarrollo Comunitario Julio Cesar Sanchez;AC 91 SUR 3 C 34 ESTE;Centro de Desarrollo Comunitario C.D.C.;;Charala;Chuniza;5;Usme;Comuneros;58
-1820006;Centro de Desarrollo Comunitario Molinos;CL 48 P BIS  SUR 5 10;Centro de Desarrollo Comunitario C.D.C.;7391513;San Agustin;Los Molinos II Sector;18;Rafael Uribe;Diana Turbay;55
 1820011;Centro de Desarrollo Comunitario Samore;CL 41 A SUR 31 46;Centro de Desarrollo Comunitario C.D.C.;2388980;Ingles;S.C. Ingles;18;Rafael Uribe;Quiroga;39
-1620013;Centro de Desarrollo Comunitario Jose Antonio Galan;CL 1 B 57 51;Centro de Desarrollo Comunitario C.D.C.;2605789;Galan;Galán;16;Puente Aranda;San Rafael;43
 1620014;Centro de Desarrollo Comunitario Asuncion;KR 32 A 1 H 6;Centro de Desarrollo Comunitario C.D.C.;3513806;La Asuncion;La Asunción;16;Puente Aranda;Ciudad Montes;40
 120001;Centro de Desarrollo Comunitario Simon Bolivar;CL 165 7 52;Centro de Desarrollo Comunitario C.D.C.;6708863;Santa Teresa;Santa Teresa;1;Usaquén;La Uribe;10
 320002;Centro de Desarrollo Comunitario Lourdes;KR 2 3 00;Centro de Desarrollo Comunitario C.D.C.;;Lourdes;Lourdes 2;3;Santa Fe;Las Cruces;95
 620007;Centro de Desarrollo Comunitario Pablo De Tarso;DG 47 A SUR 53 92;Centro de Desarrollo Comunitario C.D.C.;;Venecia;Venecia;6;Tunjuelito;Venecia;42
 702008;Centro de Desarrollo Comunitario El Porvenir;KR 100 52 24 SUR;Centro de Desarrollo Comunitario C.D.C.;SIN INFORMACION;Parcela El Porvenir;S.C Parcela El Porvenir;7;Bosa;El Porvenir;86
 920009;Centro de Desarrollo Comunitario La Giralda;KR 104 B 22 J 15;Centro de Desarrollo Comunitario C.D.C.;7172740 7153840;La Giralda;La Giralda;9;Fontibón;Fontibón;75
-1020010;Centro de Desarrollo Comunitario Santa Helenita;CL 70 78 7;Centro de Desarrollo Comunitario C.D.C.;2524855;SANTA HELENITA;S.C. Santa Helenita;10;Engativá;Boyacá Real;30
 1820012;Centro de Desarrollo Comunitario Colinas;KR 15 C 31 G 40 SUR;Centro de Desarrollo Comunitario C.D.C.;3665335;Gustavo Restrepo;Gustavo Restrepo;18;Rafael Uribe;San José;36
-1920015;Centro de Desarrollo Comunitario Arborizadora Alta;CL 70 SUR 34 5;Centro de Desarrollo Comunitario C.D.C.;7172740;Arborizadora Alta;Arborizadora Alta;19;Ciudad Bolívar;Jerusalem;70
 820016;Centro de Desarrollo Comunitario Lago Timiza;KR 74 42 G 52 SUR;Centro de Desarrollo Comunitario C.D.C.;;Timiza A;Lagos De Timiza I;8;Kennedy;Timiza;48
 820017;Centro de Desarrollo Comunitario Bellavista;CL 38 SUR 94 C 29;Centro de Desarrollo Comunitario C.D.C.;4528215;Galan;Ciudad Galán;8;Kennedy;Patio Bonito;82
 820018;Centro de Desarrollo Comunitario Kennedy;AK 80 43 43 SUR;Centro de Desarrollo Comunitario C.D.C.;;Pastrana;Nuevo Kennedy;8;Kennedy;Gran Britalia;81
@@ -112,19 +98,16 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 1311013;Teusaquillo;AK 19 32 A 20;Centro de Respiro;;Teusaquillo;Teusaquillo;13;Teusaquillo;Teusaquillo;101
 211002;Chapinero;CL 50 A 13 58;Centro de Respiro;2494678;Marly;S.C. Marly;2;Chapinero;Chapinero;99
 311003;Santafe - Candelaria;KR 2 4 10;Centro de Respiro;2892602;Lourdes;Lourdes 2;3;Santa Fe;Las Cruces;95
-411004;San Cristobal;DG 37 BIS B SUR 2 81 ESTE;Centro de Respiro;2891278;Velodromo;S.C. Velódromo;4;San Cristóbal;Sosiego;33
 511005;Usme - Sumapaz;AC 91 SUR 3 C 34 ESTE;Centro de Respiro;7685865;Charala;Chuniza;5;Usme;Comuneros;58
 611006;Tunjuelito;DG 47 A SUR 53 92;Centro de Respiro;7696933;Venecia;Venecia;6;Tunjuelito;Venecia;42
 711007;Bosa;CL 73 SUR 81 B 10;Centro de Respiro;7802711;Gran Colombiano;Grancolombiano II Sector;7;Bosa;Bosa Central;85
 811008;Kennedy;CL 38 SUR 94 C 29;Centro de Respiro;4528215;Galan;Bellavista_;8;Kennedy;Patio Bonito;82
 911009;Fontibon;KR 104 B 22 J 15;Centro de Respiro;4181948;La Cabana Fontibon;La Giralda;9;Fontibón;Fontibón;75
-1011010;Engativa;CL 70 78 7;Centro de Respiro;2524855;Santa Helenita;S.C. Santa Helenita;10;Engativá;Boyacá Real;30
 1111011;Suba;KR 91 146 C 15;Centro de Respiro;6921232;Suba Urbano;S.C. Suba Urbano;11;Suba;Suba;27
 1211012;Barrios Unidos;KR 58 67 D 31;Centro de Respiro;2509877;Popular Modelo;Popular Modelo;12;Barrios Unidos;Doce de Octubre;22
 1811014;Rafael Uribe Uribe;KR 15 C 31 G 40 SUR;Centro de Respiro;3665335;Gustavo Restrepo;Gustavo Restrepo;18;Rafael Uribe;San José;36
 1411015;Martires;DG 22 B BIS 20 51;Centro de Respiro;3684511;Santa Fe;Santa Fe;14;Los Mártires;La Sabana;102
 1611016;Puente Aranda - Antonio Nariño;KR 33 4 A 23;Centro de Respiro;2373467;Comuneros;Veraguas Central;16;Puente Aranda;Ciudad Montes;40
-1911017;Ciudad Bolivar;CL 70 SUR 34 5;Centro de Respiro;7180841;Arborizadora Alta;Arborizadora Alta;19;Ciudad Bolívar;Jerusalem;70
 297001;Juan XXIII;CL 65 A 1 60;Centro de Servicios;3490030;Juan XXIII;Juan_XXIII;2;Chapinero;Pardo Rubio;90
 440001;CIP La Maria;KR 3 A 10 26 SUR;Centro Integral de Protección;2467319 - 2334960 - 2334825;La Maria;S.C. La Maria;4;San Cristóbal;Sosiego;33
 1640002;CIP Antonia Santos;CL 4 53 F 18;Centro Integral de Protección;2624374;Colon;Colon;16;Puente Aranda;San Rafael;43
@@ -134,14 +117,11 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 1440006;Curnna (Centro Unico de Recepcion de Niños Niñas y Adolescentes);AC 1 24 C 10;Centro Integral de Protección;2466025 - 2896007 - 2874780 - 3373277- 2896302 - 2461276;El Vergel;El Vergel_;14;Los Mártires;Santa Isabel;37
 1540007;CIP Alvaro Lopez Pardo;KR 11 B 12 42 SUR;Centro Integral de Protección;3336380;Caracas;Caracas;15;Antonio Nariño;Ciudad Jardín;35
 1447001;Centro Noche Mártires;CL 10 26 69;Centro Noche;2019166;Ricaurte;Ricaurte;14;Los Mártires;La Sabana;102
-446001;La Victoria - Centro Día San Cristóbal;DG 37 BIS B SUR 2 81 ESTE;Centros Día;3279797;Las Guacamayas I;Las Guacamayas;4;San Cristóbal;La Gloria;50
 1046003;Bosque Popular - Centro Día Engativa;KR 69 47 43;Centros Día;3279797;Jardin Botanico;S.C. Jardín Botánico;10;Engativá;Jardín Botánico;105
-1646007;Centro Día Antonio Nariño;CL 1 B 57 51;Centros Día;3176813396;Galan;Galán;16;Puente Aranda;San Rafael;43
 1146008;Centro Día Suba;CL 135 140 B 05;Centros Día;3107691453;San Pedro;San Pedro de Tibabuyes;11;Suba;Tibabuyes;71
 1446009;Centro Día  Mártires;KR 18 B 22 D 40;Centros Día;3103065811;Santa Fe;Santa Fe;14;Los Mártires;La Sabana;102
 746002;Bosa - Centro Día;KR 100 52 24 SUR;Centros Día;3279797/1941;Parcela El Porvenir;S.C Parcela El Porvenir;7;Bosa;El Porvenir;86
 846004;Lago Timiza - Centro Día Kennedy;KR 74 42 G 52 SUR;Centros Día;4542329-4542328;Timiza A;Lagos De Timiza I;8;Kennedy;Timiza;48
-1946005;Arborizadora Alta - Centro Día Ciudad Bolívar;CL 70 SUR 34 5;Centros Día;7172743;Arborizadora Alta;Arborizadora Alta;19;Ciudad Bolívar;Jerusalem;70
 146006;Simón Bolívar - Centro Día Usaquén;CL 165 7 52;Centros Día;6718137 - 6724183;Santa Teresa;Santa Teresa;1;Usaquén;La Uribe;10
 348010;Centro Día Santa Fe;KR 2 4 10;Centros Día;3114613236;Lourdes;Lourdes 2;3;Santa Fe;Las Cruces;95
 1934001;Centro Responsabilidad Penal Adolescente Ciudad Bolivar;KR 44 58 C 90 SUR;Centros Forjar;7160402-3118680980;Arborizadora Baja;Arborizadora Baja;19;Ciudad Bolívar;Arborizadora;65
@@ -157,10 +137,8 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 170003;Soratama;CL 167 C 2 A 7;Comedor Comunitario SDIS;6796145;La Cita Rural;Soratama;1;Usaquén;San Cristóbal Norte;11
 370004;La Paz;CL 23 B 1 40;Comedor Comunitario SDIS;3005563001;Bosque Izquierdo;La Paz Central;3;Santa Fe;La Macarena;92
 270005;Lourdes;AV CARACAS 56 32;Comedor Comunitario SDIS;3144443303;Chapinero Central;S.C. Chapinero Central;2;Chapinero;Chapinero;99
-270006;San Isidro;KR 11 A ESTE 97 61;Comedor Comunitario SDIS;5220134;San Isidro;San Isidro;2;Chapinero;San Isidrio-Patios;89
 270007;Moraci;CL 98 5 78 ESTE;Comedor Comunitario SDIS;3144443303;San Luis Altos del Cabo;San Luís Altos Del Cabo;2;Chapinero;San Isidrio-Patios;89
 470008;El Triunfo;KR 3 ESTE 50 A 43 SUR;Comedor Comunitario SDIS;4013121;Arrayanes I;Nuevas Malvinas El Triunfo;4;San Cristóbal;Los Libertadores;51
-370009;San Bernardo;CL 4 12 A 26 SUR LOCAL 22;Comedor Comunitario SDIS;2460629;San Bernardino;San_Bernardo;3;Santa Fe;Las Cruces;95
 1470010;Santa Fe;KR 15 23 27;Comedor Comunitario SDIS;2433020;Santa Fe;Santa Fe;14;Los Mártires;La Sabana;102
 370011;Ramirez;KR 1 2 B 21;Comedor Comunitario SDIS;2805203;Lourdes;Lourdes III;3;Santa Fe;Lourdes;96
 370012;Aguas I y Aguas II;CL 22 0 24 ESTE;Comedor Comunitario SDIS;3479111;Las Aguas;Las Aguas;3;Santa Fe;La Macarena;92
@@ -172,8 +150,7 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 470018;San Martin de Loba;DG 41 SUR 2 A 77;Comedor Comunitario SDIS;2063601;San Martin Sur;San Martín de Loba;4;San Cristóbal;La Gloria;50
 470019;Antioquia;TV 7 B ESTE 48 9 SUR;Comedor Comunitario SDIS;3102174098;El Paraiso;El Paraíso Urb. Antioquia;4;San Cristóbal;Los Libertadores;51
 470020;Puente Colorado;TV 16 B ESTE 42 C 55 SUR;Comedor Comunitario SDIS;2082990;Altos Del Zipa;Los Alpes Del Zipa;4;San Cristóbal;La Gloria;50
-470021;Altos del Poblado;CL 40 SUR 11 0 ESTE;Comedor Comunitario SDIS;2078412;Altos Del Poblado;El Poblado;4;San Cristóbal;La Gloria;50
-470022;La Gloria;CL 46 B SUR 3 D 40 ESTE;Comedor Comunitario SDIS;3676006;Villa Del Cerro;Urb. Villa del Cerro;4;San Cristóbal;Los Libertadores;51
+470021;Altos del Poblado;Calle 40 SUR # 11 - 0;Comedor Comunitario SDIS;2078412;Altos Del Poblado;El Poblado;4;San Cristóbal;La Gloria;50
 470023;Veinte de Julio;KR 5 A 29 22 SUR;Comedor Comunitario SDIS;2066171;Suramerica;Suramérica;4;San Cristóbal;20 de Julio;34
 470024;Buenos Aires;KR 5 ESTE 8 70 SUR;Comedor Comunitario SDIS;2837063;Vitelma;S.C. Vitelma;4;San Cristóbal;Sosiego;33
 470025;Atenas;KR 2 ESTE 36 F 26 SUR;Comedor Comunitario SDIS;2063548;Atenas;Atenas;4;San Cristóbal;20 de Julio;34
@@ -182,14 +159,11 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 470028;Santa Ines;KR 5 ESTE 29 70 SUR;Comedor Comunitario SDIS;2068472;Santa Ines Sur;Santa Inés Sur;4;San Cristóbal;San Blas;32
 570029;Barranquillita;CL 69 D SUR 3 15;Comedor Comunitario SDIS;2004974;La Aurora;La Aurora_;5;Usme;Gran Yomasa;57
 570030;Virrey Chuniza;AC 91 SUR 3 C 34 ESTE;Comedor Comunitario SDIS;3132918260;Charala;Chuniza;5;Usme;Comuneros;58
-570031;San Luis (Tenerife);CL 73 D BIS SUR 3 21;Comedor Comunitario SDIS;7735959;Santa Librada;San_Luís;5;Usme;Gran Yomasa;57
 570032;El Bosque;TV 7 ESTE 82 21 SUR;Comedor Comunitario SDIS;3118639867;El Bosque;El Bosque;5;Usme;Gran Yomasa;57
-570033;El Libano;TV 3 G ESTE 87 A 12;Comedor Comunitario SDIS;3144465554;Chuniza;El Líbano;5;Usme;Comuneros;58
 570034;Juan Jose Rondon;CL 90 SUR 14 A 21 ESTE;Comedor Comunitario SDIS;3217043091;Tocaimita Sur;Juan Jose Rondon II Sector Union;5;Usme;La Flora;52
 570035;Villa Rosita;CL 87 A SUR 22 58 ESTE;Comedor Comunitario SDIS;3651017;Tihuaque Rural;Villa Rosita;5;Usme;La Flora;52
 570036;Nutriendo Hoy Como Futuro;KR 14 ESTE 76 79 SUR;Comedor Comunitario SDIS;3102177354;La Cabana;La Cabaña_;5;Usme;La Flora;52
 570037;Semillas de Antaño;KR 14 ESTE 76 D 33 SUR;Comedor Comunitario SDIS;3655382;La Cabana;La Cabaña_;5;Usme;La Flora;52
-570038;La Fiscala;DG 65 SUR 3 B 21 ESTE;Comedor Comunitario SDIS;2003151;Porvenir;Fiscala Sector Centro;5;Usme;Danubio;56
 570039;Lorenzo Alcantuz;KR 5 B 102 A 18 SUR;Comedor Comunitario SDIS;3112578802;Desarrollo Brazuelos;Brazuelos Sector El Paraiso;5;Usme;Comuneros;58
 570040;Villa Alemania;CL 111 A SUR 5 C 51 ESTE;Comedor Comunitario SDIS;3162482372;Villa Israel;Villa Alemania;5;Usme;Ciudad Usme;61
 670041;San Vicente Ferrer;CL 55 A SUR 33 33;Comedor Comunitario SDIS;7285249;San Vicente Ferrer;San Vicente Ferrer;6;Tunjuelito;Venecia;42
@@ -199,7 +173,6 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 770045;Nuevo Chile;KR 71 D 56 D 24 SUR;Comedor Comunitario SDIS;7787294;Olarte;Olarte;7;Bosa;Apogeo;49
 770047;Bosanova;KR 87 BIS 59 C 20 SUR;Comedor Comunitario SDIS;3168769219;Bosa Nova El Porvenir;Bosa Nova;7;Bosa;Bosa Occidental;84
 770048;San Pedro;KR 87 B 66 C 8 SUR;Comedor Comunitario SDIS;7842150;San Pedro;San Pedro II;7;Bosa;Bosa Occidental;84
-770049;Centauros;CL 58 SUR  91 C 14;Comedor Comunitario SDIS;7840410;La Cabana;Villa Alegre;7;Bosa;El Porvenir;86
 770050;Potreritos;KR 88 J 78 8 SUR;Comedor Comunitario SDIS;5710715;Villa Emma;S.C. San Bernardino XVIII;7;Bosa;Tintal Sur;87
 770051;San Bernardino;CL 78 SUR 88 F 10;Comedor Comunitario SDIS;4013121;San Bernardino Potreritos;La Esperanza II Sector - Tokio;7;Bosa;Tintal Sur;87
 770052;Comuneros;KR 89A 49D 01 SUR;Comedor Comunitario SDIS;7330986;Brasil;Villa de los Comuneros;7;Bosa;Bosa Occidental;84
@@ -228,30 +201,24 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 1070106;La Florida;KR 89 68 A 8;Comedor Comunitario SDIS;2753816;Florida Blanca;Florida Blanca;10;Engativá;Boyacá Real;30
 1070107;Las Ferias;CL 79 69 Q 55;Comedor Comunitario SDIS;2400191;Las Ferias Occidental;Las Ferias Occidental;10;Engativá;Las Ferias;26
 1070108;La Estrada;KR 69 C 69 75;Comedor Comunitario SDIS;3138040568;La Estrada;La Estrada;10;Engativá;Las Ferias;26
-1170109;San Carlos de Tibabuyes;KR 142 BIS 140 17;Comedor Comunitario SDIS;3143307766;Berlin;Berlin;11;Suba;Tibabuyes;71
+1170109;San Carlos de Tibabuyes;Carrera 140 A # 142 - 41;Comedor Comunitario SDIS;3143307766;Berlin;Berlin;11;Suba;Tibabuyes;71
 1170110;Taberin;CL 129 F 87 18;Comedor Comunitario SDIS;6812958;Los Naranjos;Taberin;11;Suba;El Rincón;28
 1170111;Rincon Rubi;CL 128 94 3;Comedor Comunitario SDIS;6822312;Rincon De Suba;San Cayetano;11;Suba;El Rincón;28
-1170112;Nuevo Corinto;CL 128 F 101 2;Comedor Comunitario SDIS;6844557;Lech Walesa;Nuevo Corinto;11;Suba;El Rincón;28
 1170113;Lisboa;CL 136 154 10;Comedor Comunitario SDIS;6889174;Lisboa;Lisboa;11;Suba;Tibabuyes;71
 1170114;Fontanar del Rio;CL 144 141 C 30;Comedor Comunitario SDIS;6975266;Tibabuyes II;Vereda Tibabuyes - Fontanar del Río;11;Suba;Tibabuyes;71
 1170115;La Aguadita;CL 128 86 C 38;Comedor Comunitario SDIS;6818193;Villa Alcazar;La Aguadita I y II;11;Suba;El Rincón;28
 1170116;Cañiza;CL 128 A BIS 121 B 20;Comedor Comunitario SDIS;5374810;Tibabuyes;Cañiza I, II y III;11;Suba;Tibabuyes;71
 1170117;Caminos de La Esperanza;CL 157 96A 16;Comedor Comunitario SDIS;SIN INFORMACION;Salitre Suba;Salitre I Sector;11;Suba;Suba;27
 1170118;Las Flores;KR 108 A 140 45;Comedor Comunitario SDIS;6971621;Puerta Del Sol;Los Comuneros Puerta del Sol;11;Suba;El Rincón;28
-1870119;Colinas;DG 32 H 14 B 44 SUR;Comedor Comunitario SDIS;2727751;Hospital San Carlos;Las Colinas;18;Rafael Uribe;Marco Fidel Suárez;53
 1870120;Palermo Sur;CL 51 SUR 1 B 71 ESTE;Comedor Comunitario SDIS;7141545;Palermo Sur;Palermo Sur;18;Rafael Uribe;Diana Turbay;55
 1870121;Diana Turbay Sector Lanceros;KR 3 B 48 R 56 SUR;Comedor Comunitario SDIS;3138440838;Diana Turbay;Diana Turbay;18;Rafael Uribe;Diana Turbay;55
 1870122;Diana Turbay Sector Plan Especial;CL 48 Z SUR 5 C 77;Comedor Comunitario SDIS;7711449;San Agustin;Diana Turbay S.C. San Agustín;18;Rafael Uribe;Diana Turbay;55
 1870123;Diana Turbay Sector Comuneros;CL 48 Z SUR 2 C 16;Comedor Comunitario SDIS;3174561270;Diana Turbay;Diana Turbay;18;Rafael Uribe;Diana Turbay;55
 1870124;Los Puentes;CL 48 P SUR 1 D 36;Comedor Comunitario SDIS;5686653;Arrayanes V;S.C. Arrayanes III, IV, y V;18;Rafael Uribe;Diana Turbay;55
 1870125;Diana Turbay Sector Valle;KR 1 48 Q 30 SUR;Comedor Comunitario SDIS;SIN INFORMACION;Diana Turbay Arrayanes;Diana Turbay Arrayanes;18;Rafael Uribe;Diana Turbay;55
-1870126;San Martin La Fiscala Alta;KR 13 A ESTE 49 87 SUR;Comedor Comunitario SDIS;3133543719;Arrayanes V;S.C. Arrayanes III, IV, y V;18;Rafael Uribe;Danubio;56
 1870127;Ingles;CL 41 SUR 26 87;Comedor Comunitario SDIS;7605203;Ingles;S.C. Ingles;18;Rafael Uribe;Quiroga;39
 1870128;Taza y Pan (Libertador);CL 35 SUR 25 24;Comedor Comunitario SDIS;3203566555;Murillo Toro;S.C. Murillo Toro;18;Rafael Uribe;Quiroga;39
-1870129;Bochica Sur;KR 15 A 48 6 SUR;Comedor Comunitario SDIS;5991615;Tunjuelito;Tunjuelito;6;Tunjuelito;Tunjuelito;62
-1870130;Providencia Alta;CL 48 I BIS 10 C 40;Comedor Comunitario SDIS;7698033;Guiparma;Providencia Alta;18;Rafael Uribe;Marruecos;54
 1870131;Govarova;KR 7 49 F 14 SUR;Comedor Comunitario SDIS;7694340;Molinos Del Sur;Govaroba;18;Rafael Uribe;Marruecos;54
-1870132;La Merced;DG 49 B BIS SUR 11 D 04;Comedor Comunitario SDIS;3143282662;El Playon;La Merced Sur;18;Rafael Uribe;Marruecos;54
 1870133;Resurreccion;DG 32 C SUR 12 D 34;Comedor Comunitario SDIS;3616368;Granjas De Santa Sofia;Resurrección;18;Rafael Uribe;Marco Fidel Suárez;53
 1870134;Villas del Sol;CL 48 C SUR 10 D 54;Comedor Comunitario SDIS;5677344;Arboleda Sur;Villa del Sol;18;Rafael Uribe;Marruecos;54
 1870135;Chircales;TV 5 J 48 J 01 SUR;Comedor Comunitario SDIS;5670903;Callejon Santa Barbara;Los Chircales;18;Rafael Uribe;Marruecos;54
@@ -260,9 +227,7 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 1570138;Policarpa;KR 10 BIS 3 58 SUR;Comedor Comunitario SDIS;3102107568;Policarpa;Policarpa Salavarrieta;15;Antonio Nariño;Ciudad Jardín;35
 1670139;Muzu (Tejar);KR 51 A 31 70 SUR;Comedor Comunitario SDIS;2305542;Alcala;Alcalá;16;Puente Aranda;Muzú;41
 1670141;Puente Aranda;KR 56 15 34;Comedor Comunitario SDIS;2618484;Puente Aranda;Puente Aranda;16;Puente Aranda;Puente Aranda;111
-1770142;La Concordia;CL 12 B ESTE 1 32;Comedor Comunitario SDIS;2811863;La Concordia;La_Concordia;17;Candelaria;La Candelaria;94
 1770143;Santa Barbara;CL 6 C 7 A 3;Comedor Comunitario SDIS;3280161;Santa Barbara;Santa Bárbara_;17;Candelaria;La Candelaria;94
-1770144;Granjas de San Pablo;CL 33 B BIS SUR 32 F 51;Comedor Comunitario SDIS;2721785;Quiroga Central;S.C. Quiroga Central;18;Rafael Uribe;Quiroga;39
 1970145;Paraiso;KR 27 M 71 I 8 SUR;Comedor Comunitario SDIS;3118873226;Paraiso Quiba;_El Paraíso;19;Ciudad Bolívar;Lucero;67
 1970146;Altos de La Cruz;TV 22 69 A 19 SUR;Comedor Comunitario SDIS;7155312;Juan Jose Rondon;Juan José Rondon_;19;Ciudad Bolívar;San Francisco;66
 1970147;Juan Pablo II;KR 18 Q 68 B 27 SUR;Comedor Comunitario SDIS;7903896;Juan Pablo II;Juan Pablo II;19;Ciudad Bolívar;Lucero;67
@@ -278,16 +243,13 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 1970157;Huertas;KR 75 K 62 D 42 SUR;Comedor Comunitario SDIS;7793528;Maria Cano;Las Huertas;19;Ciudad Bolívar;Ismael Perdomo;69
 1970158;San Fernando;DG 64 B SUR 19 21;Comedor Comunitario SDIS;2554846;Millan;San Fernando;19;Ciudad Bolívar;San Francisco;66
 1970159;Bella Flor -Sector La Torre (La Cabaña);KR 27 75 A 50 SUR;Comedor Comunitario SDIS;7905783;La Torre;Bella Flor;19;Ciudad Bolívar;Lucero;67
-1970160;Bella Flor - Sector D;KR 27 BIS A 73 C 45 SUR MZ 28;Comedor Comunitario SDIS;2554848;Bella Flor;Bella Flor;19;Ciudad Bolívar;Lucero;67
 1970161;Caracoli;CL 76 A SUR 74 B 5;Comedor Comunitario SDIS;7157360;Caracoli;Caracoli;19;Ciudad Bolívar;Ismael Perdomo;69
 870046;Mi Segundo Hogar;KR 82 C 5 A 20 SUR;Comedor Comunitario SDIS;SIN INFORMACION;Maria Paz;Maria Paz;8;Kennedy;Corabastos;80
 770055;Manzanares;KR 79 73 D 7 SUR;Comedor Comunitario SDIS;7809874;Charles De Gaulle;Charles De Gaulle II;7;Bosa;Bosa Central;85
 1670140;Colon;KR 58 4 B 31;Comedor Comunitario SDIS;3115521842;San Gabriel;San Gabriel;16;Puente Aranda;San Rafael;43
 870162;Nueva York;KR 68 I 39 61 SUR;Comedor Comunitario SDIS;SIN INFORMACION;Alqueria La Fragua II;El Progreso II Sector;8;Kennedy;Carvajal;45
-270163;Pardo Rubio;DG 48 2 A 40 ESTE;Comedor Comunitario SDIS;SIN INFORMACION;Siberia Central;S.C. Siberia Central;2;Chapinero;Pardo Rubio;90
 670164;Abraham Lincoln;KR 9 A 52 48 SUR;Comedor Comunitario SDIS;7698321;Abraham Lincoln;Abraham Lincoln;6;Tunjuelito;Tunjuelito;62
 170165;Buenavista;CL 192 5 C 24;Comedor Comunitario SDIS;5264974;Buenavista;Buenavista;1;Usaquén;Verbenal;9
-170166;Santa Cecilia;CL 163 3 A 15;Comedor Comunitario SDIS;3015250710;Bosque de Pinos;Santa Cecilia Norte Parte Alta;1;Usaquén;San Cristobal Norte;11
 1970167;Potosi;CL 81 SUR 42 76;Comedor Comunitario SDIS;7184181;Potosi;Jerusalen Potosi;19;Ciudad Bolívar;Jerusalem;70
 1270168;Doce de Octubre;CL 72 51 20 PI 2;Comedor Comunitario SDIS;;Doce De Octubre;12 de Octubre;12;Barrios Unidos;Doce de Octubre;22
 1370169;Teusaquillo;KR 33 23 51 BQ 3;Comedor Comunitario SDIS;;Centro Nariño;Centro Nariño;13;Teusaquillo;Quinta Paredes;107
@@ -298,7 +260,6 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 208003;Chapinero;CL 61 7 51;Comisaría de Familia;3459765;Chapinero Central;S.C. Chapinero Central;2;Chapinero;Chapinero;99
 308004;Santafe;CL 15 13 86;Comisaría de Familia;2435271;La Capuchina;La Capuchina;3;Santa Fe;Las Nieves;93
 508007;Usme 1;CL 137 C SUR 2 A 51;Comisaría de Familia;7660455;Centro Usme Urbano;S.C. Centro Usme;5;Usme;Ciudad Usme;61
-708011;Bosa 1;KR 81 D 59 59 SUR;Comisaría de Familia;7802084;Argelia II;Argelia_II;7;Bosa;Bosa Central;85
 808014;Kennedy 3;KR 69 F 5 A 82;Comisaría de Familia;4137119;Hipotecho;Nueva Marsella I Sector;8;Kennedy;Americas;44
 1108019;Suba 1;CL 146 A 94 A 5;Comisaría de Familia;6921592 - 6921593 - 6921594;Las Flores;Java I Sector;11;Suba;Suba;27
 1208022;Barrios Unidos;CL 74 A 63 4;Comisaría de Familia;6602763 - 6851911;Simon Bolivar;Simón Bolívar;12;Barrios Unidos;Doce de Octubre;22
@@ -306,10 +267,8 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 1908025;Ciudad Bolivar 2;KR 18 B 60 G 21 SUR;Comisaría de Familia;7928280;Meissen;Altos de Jalisco;19;Ciudad Bolívar;Lucero;67
 1408026;Los Martires;KR 21 14 75;Comisaría de Familia;2472602;El Liston;El Listón;14;Los Mártires;La Sabana;102
 1708030;Candelaria;KR 8 5 28;Comisaría de Familia;3338596 - 3338597 - 2811615;Santa Barbara;Santa Bárbara_;17;Candelaria;La Candelaria;94
-2008031;Sumapaz;VEREDA SANTA ROSA;Comisaría de Familia;9105577 - 9105604;Santa Rosa Baja;;20;Sumapáz;;0
 108002;Usaquen 2;CL 120 A 7 58;Comisaría de Familia;6375470;Santa Barbara Oriental;Santa Bárbara Oriental;1;Usaquén;Usaquen;14
 1108021;Suba 4;KR 143 132 A 45;Comisaría de Familia;5364084;San Pedro;San Pedro de Tibabuyes;11;Suba;Tibabuyes;71
-408005;San Cristobal 2;DG 37 BIS B SUR 2 81 ESTE;Comisaría de Familia;3628504 - 3628522;Las Guacamayas I;Las Guacamayas;4;San Cristóbal;La Gloria;50
 408006;San Cristobal 1;AC 20 SUR 1 40;Comisaría de Familia;3644866;Velodromo;S.C. Velódromo;4;San Cristóbal;Sosiego;33
 508008;Usme 2;AK 1 73 B 66 SUR;Comisaría de Familia;2004793;Santa Librada Norte;Brasilia Sur;5;Usme;Gran Yomasa;57
 608009;Tunjuelito;CL 52 SUR 7 10;Comisaría de Familia;7695748 - 2059509;Abraham Lincoln;Abraham Lincoln;6;Tunjuelito;Tunjuelito;62
@@ -321,7 +280,6 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 1008017;Engativa 1;CL 71 73 A 44;Comisaría de Familia;2916670 Ext. 2214 - 2215;Boyaca;S.C. Boyacá;10;Engativá;Boyacá Real;30
 1108018;Suba 2;TV 126 133 32;Comisaría de Familia;6903585;Tibabuyes;La Gaitana;11;Suba;Tibabuyes;71
 1108020;Suba 3;KR 94 A 129 B 28;Comisaría de Familia;6851911;El Rincon Norte;Rincón Escuela;11;Suba;El Rincón;28
-1908024;Ciudad Bolivar 1;TV 73 70 A 4 SUR;Comisaría de Familia;7182352 - 7182357 - 7182353 - 7175099;Sierra Morena;Sierra Morena;19;Ciudad Bolívar;Ismael Perdomo;69
 1608027;Puente Aranda;CL 4 31 D 20;Comisaría de Familia;2777119 - 2771025;Comuneros;Veraguas Central;16;Puente Aranda;Ciudad Montes;40
 1508028;Antonio Nariño;DG 19 SUR 19 33;Comisaría de Familia;2390605;Restrepo;Restrepo;15;Antonio Nariño;Restrepo;38
 1808029;Rafael Uribe Uribe;CL 32 SUR 23 62;Comisaría de Familia;3663916 - 3661917;Quiroga;S.C. Quiroga;18;Rafael Uribe;Quiroga;39
@@ -330,19 +288,16 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 102001;Usaquen;CL 165 7 38;Emergencia Social;6709098;Santa Teresa;Santa Teresa;1;Usaquén;La Uribe;10
 202002;Chapinero;CL 50 A 13 58;Emergencia Social;2493212;Marly;S.C. Marly;2;Chapinero;Chapinero;99
 302003;Santafe - Candelaria;KR 2 4 10;Emergencia Social;2897449;Lourdes;Lourdes 2;3;Santa Fe;Las Cruces;95
-402004;San Cristobal;DG 37 BIS B SUR 2 81 ESTE;Emergencia Social;2066880;Las Guacamayas I;Las Guacamayas;4;San Cristóbal;La Gloria;50
 502005;Usme - Sumapaz;AC 91 SUR 3 C 34 ESTE;Emergencia Social;2006448 EXT. 17;Charala;Chuniza;5;Usme;Comuneros;58
 602006;Tunjuelito;DG 47 A SUR 53 92;Emergencia Social;2308943;Venecia;Venecia;6;Tunjuelito;Venecia;42
 702007;Bosa;CL 73 SUR 81 B 10;Emergencia Social;7753064;Gran Colombiano;Grancolombiano II Sector;7;Bosa;Bosa Central;85
 802008;Kennedy;CL 38 SUR 94 C 29;Emergencia Social;4542714 EXT 02;Galan;Bellavista_;8;Kennedy;Patio Bonito;82
 902009;Fontibon;KR 104 B 22 J 15;Emergencia Social;4159214;La Cabana Fontibon;La Giralda;9;Fontibón;Fontibón;75
 902010;Atencion Al Migrante Terminal de Transporte;CL 22 C 68 F 37;Emergencia Social;2951047;Terminal De Transportes;Terminal de Transportes;9;Fontibón;Ciudad Salitre Occidental;110
-1002011;Engativa;CL 70 78 7;Emergencia Social;2524855;Santa Helenita;S.C. Santa Helenita;10;Engativá;Boyacá Real;30
 1102012;Suba;KR 91 146 C 15;Emergencia Social;6857436;Suba Urbano;S.C. Suba Urbano;11;Suba;Suba;27
 1402015;Martires;DG 22 B BIS 20 51;Emergencia Social;3617350;Santa Fe;Santa Fe;14;Los Mártires;La Sabana;102
 1602016;Puente Aranda - Antonio Nariño;KR 33 4 A 23;Emergencia Social;2373467;Comuneros;Veraguas Central;16;Puente Aranda;Ciudad Montes;40
 1202013;Barrios Unidos - Teusaquillo;KR 58 67 D 31;Emergencia Social;2509877;Popular Modelo;Popular Modelo;12;Barrios Unidos;Doce de Octubre;22
-1902014;Ciudad Bolivar;CL 70 SUR 34 5;Emergencia Social;7172740 EXT 109;Arborizadora Alta;Arborizadora Alta;19;Ciudad Bolívar;Jerusalem;70
 1802017;Rafael Uribe Uribe;KR 15 C 31 G 40 SUR;Emergencia Social;2090454 EXT 107;Gustavo Restrepo;Gustavo Restrepo;18;Rafael Uribe;San José;36
 1657001;Centro Acogida Hogar de Paso IDIPRON;CL 10 A 45 9;Hogar de Paso;2687974;Gorgonzola;Gorgonzola;16;Puente Aranda;Zona Industrial;108
 1657002;Centro Autocuidado 1 SDIS;KR 35 10 37;Hogar de Paso;SIN INFORMACION;Pensilvania;Pensilvania;16;Puente Aranda;Zona Industrial;108
@@ -361,7 +316,7 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 1932012;Sauces 2 - el Preguntario;KR 19 G 67 21 SUR;Jardín Infantil ACUNAR;3152512723;SAN FRANCISCO;San Francisco II Sector;19;Ciudad Bolívar;San Francisco;66
 832013;Semillas del Futuro;CL 5 A 86 A 34;Jardín Infantil ACUNAR;SIN INFORMACION;TAIRONA;Tayrona;8;Kennedy;Patio Bonito;82
 832014;Campo de Sueños (La Igualdad);KR 70 B N 2 34;Jardín Infantil ACUNAR;3118986362;HIPOTECHO OCCIDENTAL;Centro Americas;8;Kennedy;Americas;44
-832015;Creciendo Felices (Pastranita);CL 50 A 80 A 40 SUR;Jardín Infantil ACUNAR;3168386689;Casa Blanca Sur;Pastranita I Sector;8;Kennedy;Gran Britalia;81
+832015;Creciendo Felices (Pastranita);CL 50 A SUR 80 A 44;Jardín Infantil ACUNAR;3168386689;Casa Blanca Sur;Pastranita I Sector;8;Kennedy;Gran Britalia;81
 832016;Las Voces de los Niños (El Rubi);KR 78 M 57 H 12 SUR;Jardín Infantil ACUNAR;3153126700;EL RUBI;El Rubí de Kennedy;8;Kennedy;Timiza;48
 832017;Creadores de Sueños (Boita);KR 72 L BIS N 48 B 51 SUR;Jardín Infantil ACUNAR;3115472875;BOITA;Boita I Sector;8;Kennedy;Timiza;48
 1132018;Iguanita Azul;CARRERA 92 157 21;Jardín Infantil ACUNAR;SIN INFORMACION;SALITRE SUBA;Horizonte Salitre;11;Suba;Suba;27
@@ -374,16 +329,12 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 1032025;Engativa II;CL 64 D 113 B 49;Jardín Infantil ACUNAR;SIN INFORMACION;Villa Gladys;S.C. Villa Gladys;10;Engativá;Engativa;74
 232026;Casa de Hadas;CL 96 A 6 37 ESTE;Jardín Infantil ACUNAR;3167422646;;San Luís Altos del Cabo;2;Chapinero;San Isidrio-Patios;89
 832027;La Casita de Los Bebes;KR 78 J 39 A 03 SUR;Jardín Infantil ACUNAR;4061263;Ciudad Kennedy Central;Ciudad Kennedy Supermanzana 8;8;Kennedy;Kennedy Central;47
-1932028;La Salamandra;CL 75 A BIS SUR 27 15;Jardín Infantil ACUNAR;3420731;La Torre;Bella Flor;19;Ciudad Bolívar;Lucero;67
-832029;J.I CC Eco de Sonrisas;CL 57 D BIS SUR 79 F 22;Jardín Infantil ACUNAR;7774865;El Rubi;El Porvenir_;8;Kennedy;Timiza;48
-732030;Arcoiris de Sueños;CL 74 BIS SUR 87 C 76;Jardín Infantil ACUNAR;3103094213;;;7;Bosa;Bosa Occidental;84
 732031;Creciendo felices/La ruta de nuestros sueños;KR 87 57 B 36 SUR;Jardín Infantil ACUNAR;3202182700;ESCOCIA;;7;Bosa;Bosa Occidental;84
 1332032;Lugar de Recreo Casa Palermo;CL 45 C 24  42;Jardín Infantil ACUNAR;3017835900;PALERMO;;13;Teusaquillo;Galerías;100
 1832033;Castillos del Contry (Sueños y Sonrisas);CL 27 A SUR 11 A 23;Jardín Infantil ACUNAR;;SOSIEGO SUR;;18;Rafael Uribe;San José;36
 532034;Copito de nieve;KR 17 ESTE  No 87 C 25 SUR;Jardín Infantil ACUNAR;3118546998;JUAN JOSE RONDON I;;5;Usme;La Flora;52
 632035;Espiguita Dorada;AK 16 B 51 24 SUR;Jardín Infantil ACUNAR;3153975140;Tunjuelito;;6;Tunjuelito;Tunjuelito;62
 532036;Gran Yomasa;KR 1 A ESTE 75 20 SUR;Jardín Infantil ACUNAR;3145197880;;;5;Usme;Gran Yomasa;57
-532037;Nido de Amor;TV 4 ESTE 55 B 11 SUR;Jardín Infantil ACUNAR;3118547000;;;5;Usme;Danubio;56
 1632038;Salacuna Primavera y Gorgonzola;CL 4 D 40 55;Jardín Infantil ACUNAR;3511990;Primavera Occidental;Primavera Occidental;16;Puente Aranda;Ciudad Montes;40
 832039;Brisas de alegrìa;CL 41 SUR 94 12;Jardín Infantil ACUNAR;;CIUDAD DE CALI;;8;Kennedy;Patio Bonito;82
 932040;Villa Andrea;CL 17 C 134 70;Jardín Infantil ACUNAR;3866028-3002012580;Puente Grande;;9;Fontibón;Fontibón San Pablo;76
@@ -399,12 +350,9 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 1932050;Alegrias del Sur;CL 69 SUR 54 13;Jardín Infantil ACUNAR;;Sierra Morena;Sierra Morena;19;Ciudad Bolívar;Ismael Perdomo;69
 832051;CASTILLO DE COLORES;Carrera 98 A 41 - 13 Sur;Jardín Infantil ACUNAR;;ALMENDROS;;8;Kennedy;Patio Bonito 82;0
 832052;MANITAS Y PINCELADAS CREATIVAS;CLL 38 A SUR 90 A - 56;Jardín Infantil ACUNAR;;RIVERAS DE OCCIDENTE;;8;Kennedy;PATIO BONITO;0
-1932053;JARDÍN INFANTIL ALEGRIA DEL QUERER;Manzana Lote 16 Vereda Quiba Bajo;Jardín Infantil ACUNAR;3102751802;Quiba Bajo;;19;Ciudad Bolívar;;0
-1232054;ARRULLO DEL VIENTO;Carrera 17 No 49 C - 48;Jardín Infantil ACUNAR;;PALERMO;;12;Teusaquillo;GALERIAS;0
 332055;Con-Jugando;KR 13 1 B 31;Jardín Infantil ACUNAR;;San Bernardino;San_Bernardo;3;Santa Fe;Las Cruces;95
 1132056;El Castorcito;CL 134 A 150 B 3;Jardín Infantil ACUNAR;;Lisboa;San Pedro de Tibabuyes;11;Suba;Tibabuyes;71
 532057;La Aurora;KR 3 69 D 35 SUR;Jardín Infantil ACUNAR;;La Aurora;La Aurora;5;Usme;Gran Yomasa;57
-532058;Antonio Jose de Sucre;KR 7 A ESTE 116 18 SUR;Jardín Infantil ACUNAR;;Villa Israel;El Espino;5;Usme;Comuneros;58
 832059;La Lucerna;CL 38 D SUR 72 Q 91;Jardín Infantil ACUNAR;;Provivienda Occidental;Lucerna;8;Kennedy;Carvajal;45
 532060;Francesco Tonucci;KR 6 F ESTE 107 55 SUR;Jardín Infantil ACUNAR;;Puerta Al Llano De Usme;El Uval II Sector;5;Usme;Alfonso Lopez;59
 832061;Forjadores de Paz;KR 91 BIS 26 3 SUR;Jardín Infantil ACUNAR;;Calandamia;Calandamia;8;Kennedy;Calandamia;79
@@ -413,9 +361,7 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 110003;Tibabita;AC 191 8 38;Jardín Infantil C.V.;6743865;Tibabita;Urb. El Palmar;1;Usaquén;Verbenal;9
 110004;Horizontes;KR 3 A 183 A 15;Jardín Infantil C.V.;6749895;Horizontes Norte;Horizontes;1;Usaquén;Verbenal;9
 110005;Santa Cecilia;KR 5 A 164 A 3;Jardín Infantil C.V.;6682035;Bosque De Pinos;Santa Cecilia Parte Baja;1;Usaquén;San Cristóbal Norte;11
-110006;Babilonia;CL 164 C 29 A 50;Jardín Infantil C.V.;6696424;La Pradera Norte;Babilonia;1;Usaquén;Toberin;12
 110007;Orquideas;CL 161 16 B 33;Jardín Infantil C.V.;6680541;Estrella Del Norte;Villa Magdala;1;Usaquén;Toberin;12
-210008;Paso al Colegio;TV 1 BIS ESTE 40 24;Jardín Infantil C.V.;2855529;El Paraiso;_El_Paraíso;2;Chapinero;Pardo Rubio;90
 310009;Santa Rosa de Lima;CL 1 D 6 3 ESTE;Jardín Infantil C.V.;2336180;El Rocio;Santa Rosa De Lima;3;Santa Fe;Lourdes;96
 310010;Goticas de Rocio;CL 3 5 B 54 ESTE;Jardín Infantil C.V.;3339442;El Rocio;Rocío Parte Baja;3;Santa Fe;Lourdes;96
 410011;La Peninsula;CL 47 SUR 1 3;Jardín Infantil C.V.;2071903;Canada O Guira;La Península;4;San Cristóbal;Los Libertadores;51
@@ -424,13 +370,10 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 410014;San Miguel;CL 44 SUR 3 82 ESTE;Jardín Infantil C.V.;2079827;La Gloria Occidental;La Gloria;4;San Cristóbal;La Gloria;50
 410015;Guacamayas (Mi Pequeño Paraiso);CL 37 A SUR 3 84;Jardín Infantil C.V.;2075591;Guacamayas III;Las Guacamayas;4;San Cristóbal;La Gloria;50
 410016;San Isidro Los Cariñositos;CL 35 A SUR 6 A 15;Jardín Infantil C.V.;3613803;Las Lomas;San Isidro_II;4;San Cristóbal;20 de Julio;34
-410017;La Gran Colombia (Positos de Sueños);DG 9 18 30 SUR;Jardín Infantil C.V.;2336557;Molinos De Oriente Rural;La Gran Colombia;4;San Cristóbal;San Blas;32
 410018;Republicade Canada;TV 12 B ESTE 55 A 98 SUR;Jardín Infantil C.V.;3651493;Los Libertadores;Los Libertadores;4;San Cristóbal;Los Libertadores;51
-310019;El Triunfo;CL 1 BIS B 1 B 69;Jardín Infantil C.V.;2801188;Ramirez;El Triunfo;3;Santa Fe;Lourdes;96
 410020;Juan Rey;CL 71 SUR 13 B 22 ESTE;Jardín Infantil C.V.;3653199;Juan Rey (La Paz);Juan Rey;4;San Cristóbal;Los Libertadores;51
 410021;San Martin de Loba;CL 42 SUR 1 51 ESTE;Jardín Infantil C.V.;3672191;San Martin Sur;San Martín de Loba;4;San Cristóbal;La Gloria;50
 510022;Serranias;KR 1 G ESTE 81 36 SUR;Jardín Infantil C.V.;2004767;Serranias;Serranías;5;Usme;Gran Yomasa;57
-510023;Monteblanco;CL 95 SUR 3 A 10;Jardín Infantil C.V.;7612071;Monteblanco;Monteblanco;5;Usme;Comuneros;58
 510024;Marichuela;CL 77 A SUR 14 C 32;Jardín Infantil C.V.;7621635;Marichuela;Marichuela;5;Usme;Gran Yomasa;57
 510025;Gran Yomasa;KR 3 A ESTE 82 14 SUR;Jardín Infantil C.V.;7641279;Gran Yomasa;Gran Yomasa;5;Usme;Gran Yomasa;57
 510026;Tenerife;CL 91 B SUR 1 10;Jardín Infantil C.V.;7620931;Monteblanco;Tenerife;5;Usme;Comuneros;58
@@ -446,13 +389,9 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 510036;Comuneros Asvecom - Usme;KR 5 A ESTE 95 96 SUR;Jardín Infantil C.V.;76410 68;Comuneros;Comuneros;5;Usme;Comuneros;58
 510037;Chuniza;KR 1 G ESTE 90 12 SUR;Jardín Infantil C.V.;7620116;Chuniza;Chuniza I;5;Usme;Comuneros;58
 610038;Isla del Sol;CL 67 B SUR 63 15;Jardín Infantil C.V.;7107374;Isla Del Sol;Isla del Sol;6;Tunjuelito;Venecia;42
-610039;San Vicente Ferrer;TV 30 57 5 SUR;Jardín Infantil C.V.;7284291;Muzu;Muzu;6;Tunjuelito;Venecia;42
 710040;La Cabaña;KR 90 B 56 G 20 SUR;Jardín Infantil C.V.;7232063;La Cabana;La Cabaña y La Suerte;7;Bosa;El Porvenir;86
 710041;Pequeños Gigantes;KR 89 52 B 61 SUR;Jardín Infantil C.V.;7846041;Brasil;El Porvenir_Sector Brasil;7;Bosa;Bosa Occidental;84
-710042;Villa Comuneros;CL 50 BIS SUR 89 A 39;Jardín Infantil C.V.;7842927;Brasil;Villa de los Comuneros;7;Bosa;Bosa Occidental;84
 710043;Olarte;KR 71 D 54 15 SUR;Jardín Infantil C.V.;7827258;Olarte;Olarte;7;Bosa;Apogeo;49
-710044;La Abeja Maya;CL 57 N BIS SUR 75 B 26;Jardín Infantil C.V.;7775675;Cementerio Jardines Apogeo;El Motorista;7;Bosa;Apogeo;49
-710045;Hijos de Palestina;KR 81 D 58 33 SUR;Jardín Infantil C.V.;7781908;Paso Ancho;La Palestina I;7;Bosa;Bosa Central;85
 710046;Humberto Valencia;KR 82 71 A 35 SUR;Jardín Infantil C.V.;7776094;Paso Ancho;Humberto Valencia II Sector;7;Bosa;Bosa Central;85
 710047;Villa Clemencia;KR 86 A 57 C 47 SUR;Jardín Infantil C.V.;7833582;Escocia;El Paraíso__;7;Bosa;Bosa Occidental;84
 710048;La Escuelita;CL 61 B SUR 84 B 12;Jardín Infantil C.V.;7851603;La Paz Bosa;La Paz II Sector;7;Bosa;Bosa Occidental;84
@@ -475,58 +414,45 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 1110065;Timanquitos;CL 133 BIS 126 37;Jardín Infantil C.V.;6898131;La Gaitana;La Gaitana;11;Suba;Tibabuyes;71
 1110066;Nuevos Timanquitos;KR 125 B 132 B 51;Jardín Infantil C.V.;6979144;Tibabuyes;La Gaitana;11;Suba;Tibabuyes;71
 1110067;Comuneros Norte;CL 140 A 111 B 30;Jardín Infantil C.V.;5361972;Puerta Del Sol;Los Comuneros Puerta del Sol;11;Suba;El Rincón;28
-1110068;El Ruby;CL 128 A BIS A 92 72;Jardín Infantil C.V.;6817707;El Rincon;El Ruby;11;Suba;El Rincón;28
 1110069;San Cayetano;KR 93 F 127 B 46;Jardín Infantil C.V.;5369132;Rincon De Suba;San Cayetano;11;Suba;El Rincón;28
 1110070;La Chucua;CL 131 C 100 44;Jardín Infantil C.V.;6828096;Aures;Chucua III Sector;11;Suba;El Rincón;28
 1810071;Castillo de Sueños;CL 50 C SUR 11 B 22;Jardín Infantil C.V.;7692712;El Playon;Play¾n La Playita;18;Rafael Uribe;Marruecos;54
-1810072;Los Principitos;CL 49 B BIS 5 U 15 SUR;Jardín Infantil C.V.;7694685;MOLINOS DEL SUR;Marruecos;18;Rafael Uribe;Marruecos;54
+1810072;Los Principitos;Carrera 5 A BIS A # 48 P - 84 SUR;Jardín Infantil C.V.;7694685;MOLINOS DEL SUR;Marruecos;18;Rafael Uribe;Marruecos;54
 1810073;Granjas de San Pablo;KR 14 B 33 3 SUR;Jardín Infantil C.V.;3610418;Granjas San Pablo;El Triunfo Sur;18;Rafael Uribe;Marco Fidel Suárez;53
 1910074;JJ Rondon Alto de La Cruz;TV 22 68 K 22 SUR;Jardín Infantil C.V.;7313035;Juan Jose Rondon;Juan JosÚ Rondon_;19;Ciudad Bolívar;San Francisco;66
-1910075;J.J. Rondon Niño Jesus;KR 22 68 C 05 SUR/KR 19 66 46 SUR;Jardín Infantil C.V.;7182518;Millan;Millßn los Sauces;19;Ciudad Bolívar;San Francisco;66
-1910076;Nuestra Esperanza Compartir;KR 18 T 65 A 27 SUR;Jardín Infantil C.V.;7179256;Compartir;Las Delicias del_Sur;19;Ciudad Bolívar;Lucero;67
-1910077;Minuto de Maria;KR 18 A BIS B 80 A 21 SUR;Jardín Infantil C.V.;7912821;El Minuto De Maria;El Minuto de Maria;19;Ciudad Bolívar;El Tesoro;68
-1810078;El Refugio;CL 48 P BIS C SUR 5 10;Jardín Infantil C.V.;5992227;San Agustin;Los Molinos II Sector;18;Rafael Uribe;Diana Turbay;55
+1910075;J.J. Rondon Niño Jesus;KR 22 68 C 05 SUR;Jardín Infantil C.V.;7182518;Millan;Millßn los Sauces;19;Ciudad Bolívar;San Francisco;66
 710079;Antonia Santos;CL 67 SUR 81 B 10;Jardín Infantil C.V.;7760975;Paso Ancho;S.C. Paso Ancho;7;Bosa;Bosa Central;85
 1910080;La Casona;KR 20 C 68 B 48 SUR;Jardín Infantil C.V.;7189263;Juan Jose Rondon;Juan JosÚ Rondon_;19;Ciudad Bolívar;San Francisco;66
-1810081;Mi Pequeño Hogar;CL 49 BIS SUR 5 C 59;Jardín Infantil C.V.;7712841;San Agustin;San Agustín;18;Rafael Uribe;Diana Turbay;55
-1810082;Mi Taller Creativo;TV 1 B ESTE 49 20 SUR;Jardín Infantil C.V.;5681732;Los Arrayanes II;La Marqueza;18;Rafael Uribe;Diana Turbay;55
-1810083;Mi Pequeña Casita;DG 48 Q SUR 5 Z 20;Jardín Infantil C.V.;5678928;Molinos Del Sur;_El Mirador;18;Rafael Uribe;Marruecos;54
 1810084;Las Lomas;DG 38 F SUR 11 B 25;Jardín Infantil C.V.;3728423;San Luis;Las Lomas;18;Rafael Uribe;San José;36
 1910085;El Tesoro;CL 78 SUR 18 B 78;Jardín Infantil C.V.;7904397;Cedritos Del Sur;El Tesoro;19;Ciudad Bolívar;El Tesoro;68
 1910086;Estrella del Sur;KR 18 G 72 15 SUR;Jardín Infantil C.V.;7921082;Estrella Del Sur;Estrella del Sur;19;Ciudad Bolívar;Lucero;67
 1910087;Estrella del Mañana;KR 18Q 71 15 SUR;Jardín Infantil C.V.;7900546;Cordillera Del Sur;Tierra Linda;19;Ciudad Bolívar;Lucero;67
 1910088;Santa Rosita Las Vegas;TV 49 C 75 A 60 SUR;Jardín Infantil C.V.;7187901;Las Brisas;JerusalÚn las Brisas;19;Ciudad Bolívar;Jerusalem;70
 1910089;Manuela Beltran Mis Pequeñas Travesuras;KR 45C 69 15 SUR;Jardín Infantil C.V.;7316638;Jerusalen;Manuela_Beltrßn;19;Ciudad Bolívar;Jerusalem;70
-1910090;Los Pitufines;CL 68 J SUR 48 9;Jardín Infantil C.V.;7178317;Jerusalen;JerusalÚn;19;Ciudad Bolívar;Jerusalem;70
 1910091;Cartagena de Indias;CL 70 SUR 56 4;Jardín Infantil C.V.;;Sierra Morena;Sierra Morena;19;Ciudad Bolívar;Ismael Perdomo;69
 1910092;Barlovento;CL 62 B SUR 71 H 24;Jardín Infantil C.V.;7808587;Barlovento;Urb._Barlovento;19;Ciudad Bolívar;Ismael Perdomo;69
 1910093;Mi Refugio;TV 74 C 62 15 SUR;Jardín Infantil C.V.;7786626;La Primavera I;La Estancia;19;Ciudad Bolívar;Ismael Perdomo;69
 1910094;La Estancia mis Primeras Letras;KR 75 H 59 A 18 SUR;Jardín Infantil C.V.;7777763;La Estancia;La Estancia;19;Ciudad Bolívar;Ismael Perdomo;69
 1910095;Huellas Magicas;CL 60 A SUR 76 B 18;Jardín Infantil C.V.;7801461;Primavera II;San Isidro II;19;Ciudad Bolívar;Ismael Perdomo;69
-1910096;Acacia Sur;KR 19 A 63 D 51;Jardín Infantil C.V.;7907838;Las Acacias;San Francisco La Palmera;19;Ciudad Bolívar;San Francisco;66
 1910097;Los Niños Traviesos;KR 18 M 63 D 15 SUR;Jardín Infantil C.V.;7651293;Gibraltar Sur;Domingo Lain I;19;Ciudad Bolívar;Lucero;67
 1910098;Manitas;CL 70 B SUR 18 J 39;Jardín Infantil C.V.;7920490;Juan Pablo II;Las Manitas;19;Ciudad Bolívar;Lucero;67
 710099;Mi Segundo Hogar;KR 77 K 65 J 5 SUR;Jardín Infantil C.V.;7771076;La Estacion Bosa;San Pablo II Sector;7;Bosa;Bosa Central;85
 133001;Huellas con Ternura;KR 18 185 A 04;Jardin Infantil Cupo Cofinanciado C.C.;5269963;El Vervenal;Los Consuelos;1;Usaquén;Verbenal;9
 133002;Contador - el Jardin;CL 135 16  43;Jardin Infantil Cupo Cofinanciado C.C.;;El Contador;El Contador;1;Usaquén;Los Cedros;13
 333003;Centro Social Nueva Vida - Aldea;KR 6 3 44;Jardin Infantil Cupo Cofinanciado C.C.;2335590;Santa Barbara;Santa Bßrbara;3;Santa Fe;Las Cruces;95
-433004;Avesol;CL 36 I SUR 1 49 F;Jardin Infantil Cupo Cofinanciado C.C.;6066348;Atenas;Atenas;4;San Cristóbal;20 de Julio;34
+433004;Avesol;Diagonal 34 A SUR # 2 - 27 ESTE;Jardin Infantil Cupo Cofinanciado C.C.;6066348;Atenas;Atenas;4;San Cristóbal;20 de Julio;34
 433005;La Casita de Los Rincones;CL 8 SUR 9 26;Jardin Infantil Cupo Cofinanciado C.C.;2339964;Narino Sur;Nariño Sur;4;San Cristóbal;Sosiego;33
 433006;Pepaso II;KR 11 B ESTE 43 A 54 SUR;Jardin Infantil Cupo Cofinanciado C.C.;2066502;Altamira;Altamira Chiquita;4;San Cristóbal;La Gloria;50
-433007;San Ricardo de Pampuri;CL 70 SUR 16 25 ESTE;Jardin Infantil Cupo Cofinanciado C.C.;3656455;Juan Rey (La Paz);S.C Ciudad Londres I;4;San Cristóbal;Los Libertadores;51
 433008;Castillo San Lucas;DG 40 A SUR 11 86 ESTE;Jardin Infantil Cupo Cofinanciado C.C.;7829464;San Jose Sur Oriental;S.C. San JosÚ Sur Oriental;4;San Cristóbal;La Gloria;50
-433009;Huellas y Talentos;KR 7 BIS ESTE 17 98 SUR;Jardin Infantil Cupo Cofinanciado C.C.;3372479;Las Mercedes;S.C Las Mercedes;4;San Cristóbal;San Blas;32
 533010;Maria Micaela;KR 17 D ESTE 87 19 SUR;Jardin Infantil Cupo Cofinanciado C.C.;3651716;Juan Jose Rondon I;Juan JosÚ Rondon;5;Usme;La Flora;52
 533011;Chaminade Voz de Alerta;DG 53 F SUR 1 9 ESTE;Jardin Infantil Cupo Cofinanciado C.C.;2057412;La Paz;La Fiscala Sector Daza;5;Usme;Danubio;56
 633012;El Inicio del Saber;KR 19 54 19 SUR;Jardin Infantil Cupo Cofinanciado C.C.;2798488;San Carlos;San Carlos;6;Tunjuelito;Tunjuelito;62
 633013;Pinturitas Proactivas;KR 37 50 A 40 SUR;Jardin Infantil Cupo Cofinanciado C.C.;2382625;Fatima;Fßtima;6;Tunjuelito;Venecia;42
 633014;El Rincon de La Alegria;DG 50 SUR 59 A 93;Jardin Infantil Cupo Cofinanciado C.C.;7105278;Nuevo Muzu;Rinc¾n de Venecia;6;Tunjuelito;Venecia;42
-733015;San Bernardino;KR 89 A BIS 79 10 SUR;Jardin Infantil Cupo Cofinanciado C.C.;5735316;San Bernardino Potreritos;Poteritos;7;Bosa;Bosa Occidental;84
 733016;Jardin La Estacion;CL 65 C SUR 78 C 17;Jardin Infantil Cupo Cofinanciado C.C.;7751663;Gualoche;San Judas La Estaci¾n;7;Bosa;Bosa Central;85
 733017;Acepta el Cambio;CL 65 C SUR 78 C 31;Jardin Infantil Cupo Cofinanciado C.C.;7814559;Gualoche;San Judas La Estaci¾n;7;Bosa;Bosa Central;85
 733018;Semillas de Esperanza (San Bernardino);KR 87 B 80 40 SUR;Jardin Infantil Cupo Cofinanciado C.C.;5713425;El Remanso;S.C. El Remanso;7;Bosa;Tintal Sur;87
 733019;Independencia;CL 78 SUR 88 F 8;Jardin Infantil Cupo Cofinanciado C.C.;5768191;El Remanso I;San Bernardino;7;Bosa;Tintal Sur;87
-733020;Raices;CL 65 J SUR 67 J 47;Jardin Infantil Cupo Cofinanciado C.C.;7759256;La Estacion Bosa;Las Margaritas_;7;Bosa;Bosa Central;85
 733021;San Angel;KR 87 Q 70 73 SUR;Jardin Infantil Cupo Cofinanciado C.C.;4822303;La Independencia;El Recuerdo;7;Bosa;Bosa Occidental;84
 733022;San Pedro;KR 82 C 73 F 67 SUR;Jardin Infantil Cupo Cofinanciado C.C.;5779452;Gran Colombiano;San Pedro_;7;Bosa;Bosa Central;85
 833023;Fundacion Pepaso;CL 42 A SUR 99 16;Jardin Infantil Cupo Cofinanciado C.C.;5702886;Los Almendros;Los Almendros;8;Kennedy;Patio Bonito;82
@@ -567,28 +493,22 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 1133058;Villamaria - Funandes;CL 138 A 113  78;Jardin Infantil Cupo Cofinanciado C.C.;4935346;Villa Maria;Villa Maria;11;Suba;El Rincón;28
 1133059;Tuna Alta Otero;KR 90 147 C 32;Jardin Infantil Cupo Cofinanciado C.C.;;Suba Urbano;S.C. Suba Urbano;11;Suba;Suba;27
 1233060;Mil Sonrisas;KR 29 A 74 42;Jardin Infantil Cupo Cofinanciado C.C.;2507648;Once De Noviembre;11 de Noviembre;12;Barrios Unidos;Los Alcázares;98
-533061;Chaminade Buenos Aires;CL 49 C BIS SUR 3 21 ESTE;Jardin Infantil Cupo Cofinanciado C.C.;2058167;Arrayanes V;San Martín (Villa Neiza);5;Usme;Danubio;56
 1833062;Marruecos Bambi;TV 5 Q 48 J 24 SUR;Jardin Infantil Cupo Cofinanciado C.C.;2797150;Callejon Santa Barbara;Callej¾n de Santa Bßrbara Sur;18;Rafael Uribe;Marruecos;54
 1433063;Filadelfia;CL 2 C 29 57;Jardin Infantil Cupo Cofinanciado C.C.;5602890;Santa Isabel;Santa Isabel;14;Los Mártires;Santa Isabel;37
 1533064;Ciudad Jardin San Jose;CL 17 SUR 10 21;Jardin Infantil Cupo Cofinanciado C.C.;3727729;Ciudad Jardin Sur;Ciudad Jardín del Sur;15;Antonio Nariño;Ciudad Jardín;35
 1733065;Asoben;CL 9 9 60;Jardin Infantil Cupo Cofinanciado C.C.;3419324;Centro Administrativo;Centro Administrativo;17;Candelaria;La Candelaria;94
 1933066;Alegria de Vivir;KR 18 I 81 C 29 SUR;Jardin Infantil Cupo Cofinanciado C.C.;7911570;Arabia;El Tesorito;19;Ciudad Bolívar;El Tesoro;68
-1933067;Vaticanitos;DG 81 A BIS SUR 17 D 29;Jardin Infantil Cupo Cofinanciado C.C.;7661549;Quiba Urbano;San Joaquín Vaticano el Vergel;19;Ciudad Bolívar;El Tesoro;68
 1933068;Semillitas de Amor;DG 75 D SUR 75 L 7;Jardin Infantil Cupo Cofinanciado C.C.;5975191;Santa Viviana;Santa Viviana;19;Ciudad Bolívar;Ismael Perdomo;69
 1933069;Caminos de La Vida;KR 76 C BIS 62 F 42 SUR;Jardin Infantil Cupo Cofinanciado C.C.;7793204;Los Tres Reyes;Casa Grande;19;Ciudad Bolívar;Ismael Perdomo;69
 1933070;Mi Pequeño Refugio;KR 18 B 73 A 28 SUR;Jardin Infantil Cupo Cofinanciado C.C.;7914189;Estrella Del Sur;Estrella del Sur;19;Ciudad Bolívar;Lucero;67
-1933071;Sonrisas y Cuentos Rural (Pasquilla);PASQUILLA CENTRO POBLADO;Jardin Infantil Cupo Cofinanciado C.C.;8050177;Pasquilla;S.C. Pasquilla;19;Ciudad Bolívar;;0
-1933072;Rondas y Bombones Proactivos;CL 68 A 19 51 SUR;Jardin Infantil Cupo Cofinanciado C.C.;7926163/ 3125876184/ 3145496403;COMPARTIR;Las Delicias del_Sur;19;Ciudad Bolívar;Lucero;67
 1933073;La Casita de Juan Jose;CL 62 B SUR 19 B 24;Jardin Infantil Cupo Cofinanciado C.C.;2696161;Las Acacias;Acacias Sur;19;Ciudad Bolívar;San Francisco;66
 1933074;Caracoli;CL 76 A SUR 74 B 5;Jardin Infantil Cupo Cofinanciado C.C.;7316351;Caracoli;Caracoli;19;Ciudad Bolívar;Ismael Perdomo;69
 1933075;Waldorf;TV 73 H BIS 75 B 46 SUR;Jardin Infantil Cupo Cofinanciado C.C.;7189019;Sierra Morena;Sierra Morena;19;Ciudad Bolívar;Ismael Perdomo;69
 1933076;Amores y Colores;KR 72 62 G 71 SUR;Jardin Infantil Cupo Cofinanciado C.C.;7828341;Perdomo Alto;Ismael Perdomo;19;Ciudad Bolívar;Ismael Perdomo;69
-1933077;El Encuentro;KR 27 Q 74 B 51 SUR;Jardin Infantil Cupo Cofinanciado C.C.;3103403834;Quiba Bajo;S.C. Quiba Bajo;19;Ciudad Bolívar;;0
 1933078;Castillo San Lucas-Maria Cano;KR 74 I 62 3 SUR;Jardin Infantil Cupo Cofinanciado C.C.;7829464;Maria Cano;Maria Cano;19;Ciudad Bolívar;Ismael Perdomo;69
 1933079;Manantial;CL 73 C SUR 48 A 20;Jardin Infantil Cupo Cofinanciado C.C.;7522986;Las Brisas;JerusalÚn las Brisas;19;Ciudad Bolívar;Jerusalem;70
-1933080;Candelaria la Nueva - Mis pequeños Genios;TV 70 B 73 B 15 SUR;Jardin Infantil Cupo Cofinanciado C.C.;7152120;Candelaria La Nueva;Candelaria la Nueva;19;Ciudad Bolívar;San Francisco;66
+1933080;Candelaria la Nueva - Mis pequeños Genios;Calle 64 C SUR # 27 - 31;Jardin Infantil Cupo Cofinanciado C.C.;7152120;Candelaria La Nueva;Candelaria la Nueva;19;Ciudad Bolívar;San Francisco;66
 1933081;Aeiotu - Juan Bosco Obrero La Estrella;KR 18 G 74 A 59 SUR;Jardin Infantil Cupo Cofinanciado C.C.;7619141;Naciones Unidas;Estrella de Maria;19;Ciudad Bolívar;Lucero;67
-1933082;El Tesoro Canal de Bendicion;CL 73 BIS SUR 22 60;Jardin Infantil Cupo Cofinanciado C.C.;7651630;Los Alpes Sur;Los Alpes;19;Ciudad Bolívar;Lucero;67
 733083;Sembrando Camino;CL 53 A SUR 89 B 16;Jardin Infantil Cupo Cofinanciado C.C.;5743610;Parcela El Porvenir;Porvenir III;7;Bosa;El Porvenir;86
 933084;Jordan;CL 20 C 107 53;Jardin Infantil Cupo Cofinanciado C.C.;4041740;Belen Fontibon;S.C. BelÚn Fontib¾n;9;Fontibón;Fontibón;75
 833085;Fundangel - Villamil;CL 42 C SUR 81 B 34;Jardin Infantil Cupo Cofinanciado C.C.;4039162;Chucua De La Vaca I;Villa_Nelly;8;Kennedy;Corabastos;80
@@ -601,25 +521,20 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 1133092;Teresita - Aures;CL 132 D 100 A 65;Jardin Infantil Cupo Cofinanciado C.C.;;POTRERILLO;Urb. Potrerillos de Suba;11;Suba;El Rincón;28
 1633093;Galan ASODIF;KR 55 2 B 30;Jardin Infantil Cupo Cofinanciado C.C.;SIN INFORMACION;Galan;Galßn;16;Puente Aranda;San Rafael;43
 933094;La Flauta Magica;CL 19 106 34;Jardin Infantil Cupo Cofinanciado C.C.;SIN INFORMACION;Belen Fontibon;S.C. BelÚn Fontib¾n;9;Fontibón;Fontibón;75
-433095;San Blas - Alejandrinos;KR 3 C 20 59 SUR;Jardin Infantil Cupo Cofinanciado C.C.;5609649;Veinte De Julio;S.C. 20 De Julio;4;San Cristóbal;20 de Julio;34
 1933096;Maria Cano Esperanza Viva;CL 62 H SUR 74 H 22;Jardin Infantil Cupo Cofinanciado C.C.;4618739-3132162120;Rincon de Galicia;Rincón de Galicia;19;Ciudad Bolívar;Ismael Perdomo;69
-533097;Usme Centro;KR 3 A 138 B 14 SUR;Jardin Infantil Cupo Cofinanciado C.C.;;Centro Usme;S.C. Centro Usme;5;Usme;Ciudad Usme;61
 731001;La Esperanza;KR 80 J 76 38 SUR;Jardín Infantil J.S.;7195177;San Diego-Bosa;Urb. La Esperanza;7;Bosa;Bosa Central;85
 1931002;Buenavista;CL 78 SUR 17 F 80;Jardín Infantil J.S.;7913956;Quiba I;Urb. Buenavista;19;Ciudad Bolívar;El Tesoro;68
 131004;El Nogal;KR 11 183 90;Jardín Infantil J.S.;6682598;Verbenal San Antonio;San Antonio Norte II Sector;1;Usaquén;Verbenal;9
 331005;La Alameda;KR 13 20 91;Jardín Infantil J.S.;2832791;La Alameda;La Alameda;3;Santa Fe;Las Nieves;93
 431006;Nueva Roma;AK 4 ESTE 50 80 SUR;Jardín Infantil J.S.;3638546;Villabel;Urb. Nueva Roma Oriental Dardanelos;4;San Cristóbal;Los Libertadores;51
-431007;San Jeronimo del Yuste;DG 11 SUR 15 A 00 ESTE;Jardín Infantil J.S.;3373176;Tibaque Rural;S.C Tibaque;4;San Cristóbal;;0
+431007;San Jeronimo del Yuste;Diagonal 13 B SUR # 19 A - 2 ESTE;Jardín Infantil J.S.;3373176;Tibaque Rural;S.C Tibaque;4;San Cristóbal;;0
 431008;San Vicente;CL 34 SUR 7 10 ESTE;Jardín Infantil J.S.;2068554;Santa Ines Sur;San Vicente (Predio);4;San Cristóbal;San Blas;32
 531009;Chuniza;AC 91 SUR 3 C 34 ESTE;Jardín Infantil J.S.;7731349;Charala;Chuniza;5;Usme;Comuneros;58
-731010;Santa Marta;KR 93 B 54 84 SUR;Jardín Infantil J.S.;7840465;El Corzo;Santa_Marta;7;Bosa;El Porvenir;86
-531011;Monteblanco;CL 97 SUR 1 5;Jardín Infantil J.S.;7734651;Yomasa Norte;S.C. Yomasa Norte;5;Usme;Comuneros;58
 531012;Bolonia;CL 81 A SUR 6 40 ESTE;Jardín Infantil J.S.;7611922;La Esperanza Sur;Santa Marta;5;Usme;Gran Yomasa;57
 531013;San Cayetano;CL 74 A SUR 16 60 ESTE;Jardín Infantil J.S.;3653100;Ciudad Londres Rural;_San Cayetano_;5;Usme;;0
 531014;Nebraska;KR 1 C ESTE 66 A 70 SUR;Jardín Infantil J.S.;7646292;La Fiscala;Nebraska;5;Usme;Danubio;56
 531015;El Cipres;CL 114 A SUR 6 G 54 ESTE;Jardín Infantil J.S.;7671285;Puerta Al Llano De Usme;El Uval II Sector;5;Usme;Alfonso López;59
 731016;El Porvenir;CL 49 D SUR 92 A 34;Jardín Infantil J.S.;7279187;Parcela El Porvenir;S.C. Osorio Diez;7;Bosa;El Porvenir;86
-731017;Santiago de Las Atalayas;KR 89 BIS A 61 A 25 SUR;Jardín Infantil J.S.;7833965;Las Margaritas;S.C. Las_Margaritas;7;Bosa;Bosa Occidental;84
 831018;Tintalito Social;AC 43 SUR 88 A 30;Jardín Infantil J.S.;4943684;Dindalito;Piamonte Occidental;8;Kennedy;Patio Bonito;82
 1131019;Piedra Verde Celestin Freinet;CL 137 129 35;Jardín Infantil J.S.;6933649;Toscana;Urb. Piedra Verde;11;Suba;Tibabuyes;71
 1831020;Palermo Sur;CL 49 D SUR 2 B 50;Jardín Infantil J.S.;7677492;Palermo Sur;Palermo Sur;18;Rafael Uribe;Diana Turbay;55
@@ -633,13 +548,6 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 1037004;Wawakunapak Yachahuna Wasi (Casa de Enseñanza para Niños);KR 69 I 69 A 41;Jardín Infantil SDIS Indígena.;3125593154;La Estrada;La Estrada;10;Engativá;Las Ferias;26
 1137005;Gue Atyqiib (Los Pinos);CL 144 139 55;Jardín Infantil SDIS Indígena.;6970936;San Carlos De Suba;S.C. San Carlos de Suba;11;Suba;Tibabuyes;71
 437006;Wawitakunapa Wasi (La Casita de Los Niños);CL 18 SUR 9 40;Jardín Infantil SDIS Indígena.;2724260;SOCIEGO;El Sosiego;4;San Cristóbal;Sosiego;33
-538001;Centro Desarrollo Infantil y Fam el Destino;VEREDA EL DESTINO;Jardín Infantil SDIS Rural.;SIN INFORMACION;La Regadera;S.C. La Regadera;5;Usme;;0
-2038002;Centro Desarrollo Infantil y Fam San Juan;VEREDA SAN JUAN DE SUMAPAZ;Jardín Infantil SDIS Rural.;SIN INFORMACION;San Juan;;20;Sumapáz;;0
-2038003;Centro Desarrollo Infantil y Fam Nazareth;VEREDA NAZARETH;Jardín Infantil SDIS Rural.;SIN INFORMACION;Nazareth;;20;Sumapáz;;0
-2038004;Centro Desarrollo Infantil y Fam. La Union;VEREDA LA UNION;Jardín Infantil SDIS Rural.;SIN INFORMACION;La Union;;20;Sumapáz;;0
-1138005;CDIF Centro Verde en Luz y Rocio;ZONA RURAL DE SUBA SECTOR 1 Y 2 CHORRILLOS;Jardín Infantil SDIS Rural.;SIN INFORMACION;Tuna Rural;S.C. Tuna;11;Suba;;0
-1938006;CDIF-SEMILLAS Y AGUA-;ZONA RURAL DE CIUDAD BOLIVAR SE ENCUENTRAN EN LAS 9 VEREDAS;Jardín Infantil SDIS Rural.;SIN INFORMACION;Pasquilla;S.C. Pasquilla;19;Ciudad Bolívar;;0
-238007;CENTRO DE DESARROLLO INFANTIL Y FAMILIAR RURAL  EL VERJON;Km 6 Via Choachi Vereda El Verjon Bajo Zona de las Antenas;Jardín Infantil SDIS Rural.;;VEREDA EL VERJON;;2;Chapinero;UPR EL VERJON;0
 130001;Granito de Mostaza;KR 11 187 A 15;Jardín Infantil SDIS.;6704759;Vervenal San Antonio;San Atonio Norte II Sector;1;Usaquén;Verbenal;9
 1930002;Arabia;DG 82 SUR 18 I 35;Jardín Infantil SDIS.;7911971;Arabia;Arabia;19;Ciudad Bolívar;El Tesoro;68
 130003;Verbenal;KR 18 A 187 75;Jardín Infantil SDIS.;6774525;El Cerezo;El Verbenal I;1;Usaquén;Verbenal;9
@@ -648,25 +556,18 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 230006;Juan XXIII;CL 65 B 1 19;Jardín Infantil SDIS.;SIN INFORMACION;Juan XXIII;Juan_XXIII;2;Chapinero;Pardo Rubio;90
 330007;La Perseverancia;KR 1 33 0;Jardín Infantil SDIS.;2856629;Parque Nacional Oriental;Vereda Monserrate;3;Santa Fe;Sagrado Corazón;91
 330008;Las Cruces;CL 1 C 5 A 30;Jardín Infantil SDIS.;2462715;Las Cruces;Las Cruces;3;Santa Fe;Las Cruces;95
-330009;Atanasio Girardot;KR 2A 1D 40;Jardín Infantil SDIS.;2332958;Girardot;Atanasio Girardot;3;Santa Fe;Lourdes;96
-330010;Los Laches;DG 4 B 6 A 11 ESTE;Jardín Infantil SDIS.;2338220;Los Laches;Los Laches;3;Santa Fe;Lourdes;96
 330011;Goticas de Ilusion;KR 11 ESTE 1 A 73;Jardín Infantil SDIS.;2335627;El Rocio;El Consuelo;3;Santa Fe;Lourdes;96
 330012;San Bernardo;CL 1 C 13 41;Jardín Infantil SDIS.;2466644;San Bernardino;San_Bernardo;3;Santa Fe;Las Cruces;95
 230013;La Paz;CL 49 3 40 ESTE;Jardín Infantil SDIS.;3401880;Siberia Central Rural;Pardo Rubio;2;Chapinero;Pardo Rubio;90
-430014;San Cristobal;CL 13 SUR 2 20 ESTE;Jardín Infantil SDIS.;3334874;San Cristobal Sur;S.C. San Crist¾bal Sur;4;San Cristóbal;Sosiego;33
 430015;El Quindio;KR 16 A ESTE 46 C 20 SUR;Jardín Infantil SDIS.;2067597;Las Brisas;S.C. Las Brisas;4;San Cristóbal;La Gloria;50
-430016;Bello Horizonte;CL 32A SUR 3 A 91 ESTE;Jardín Infantil SDIS.;2061940;Bello Horizonte;Bello Horizonte II Sector;4;San Cristóbal;20 de Julio;34
-530017;Amiguitos del Valle de Cafam;CL 92 BIS SUR KR 3 BIS A ESQUINA;Jardín Infantil SDIS.;7735647;Marichuela;Marichuela;5;Usme;Comuneros;58
+430016;Bello Horizonte;Carrera 3A ESTE # 31C - 21 SUR;Jardín Infantil SDIS.;2061940;Bello Horizonte;Bello Horizonte II Sector;4;San Cristóbal;20 de Julio;34
 530018;Betania;CL 76 B SUR 2 C 42 ESTE;Jardín Infantil SDIS.;2003369;La Cabana;Betania_;5;Usme;Gran Yomasa;57
 530019;La Esperanza;CL 76 B SUR 14 39 ESTE;Jardín Infantil SDIS.;3654200;La Cabana;La Cabaña_;5;Usme;La Flora;52
 530020;El Oasis;KR 3 D BIS 133 B 3 SUR;Jardín Infantil SDIS.;77082 22;Centro Usme Urbano;Ciudadela El Oasis;5;Usme;Ciudad Usme;61
-530021;Barranquillita;KR 1 ESTE 70 B 10 SUR;Jardín Infantil SDIS.;76403 29;Barranquillita;Barranquillita_;5;Usme;Gran Yomasa;57
 630022;Tejares;KR 2 ESTE 75 B 40 SUR;Jardín Infantil SDIS.;2002099;Santa Librada Norte;Santa Librada Los Tejares;5;Usme;Gran Yomasa;57
-630023;Pablo de Tarso;DG 49 A SUR 48 63;Jardín Infantil SDIS.;2709537;Venecia;Venecia;6;Tunjuelito;Venecia;42
 630024;El Carmen;KR 28 48 A 17 SUR;Jardín Infantil SDIS.;2382942;Samore;Samore;6;Tunjuelito;Venecia;42
 630025;Rafael Barberi Cualla;KR 36 50 B 35 SUR;Jardín Infantil SDIS.;2305932;Fatima;Fßtima;6;Tunjuelito;Venecia;42
 630026;San Benito;CL 58 SUR 19 B 37;Jardín Infantil SDIS.;2794548;San Benito;San Benito;6;Tunjuelito;Tunjuelito;62
-630027;Santa Lucia;CL 50 SUR 18 B 60;Jardín Infantil SDIS.;2793777;Santa Lucia;San Carlos Norte;6;Tunjuelito;Tunjuelito;62
 630028;Tunjuelito;CL 58 SUR 13 1;Jardín Infantil SDIS.;2790646;Tunjuelito;Tunjuelito;6;Tunjuelito;Tunjuelito;62
 630029;Satelite Playon Playita;KR 11 A 52 54 SUR;Jardín Infantil SDIS.;7697913;Abraham Lincoln;Abraham Lincoln;6;Tunjuelito;Tunjuelito;62
 730031;San Pablo de Calamo;CL 65 J SUR 77 N 23;Jardín Infantil SDIS.;7751080;La Estacion Bosa;S.C. La Estaci¾n Bosa;7;Bosa;Bosa Central;85
@@ -674,7 +575,6 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 730033;Los Cedros;KR 81 A 84 C 25 SUR;Jardín Infantil SDIS.;4488239;El Jardin;S.C. El Jardín;7;Bosa;Bosa Central;85
 830034;Vision de Colombia;KR 79 G 13 9;Jardín Infantil SDIS.;2924294;Vision De Oriente;Visi¾n de Colombia;8;Kennedy;Castilla;46
 830036;Luisa de Marillac;CL 38 A SUR 86 F 15;Jardín Infantil SDIS.;4511613;Patio Bonito II;Patio Bonito I Sector;8;Kennedy;Patio Bonito;82
-830037;Villa Rica;KR 77 K BIS A CON CL 51A SUR ESQUINA;Jardín Infantil SDIS.;4518279;Catalina;Villa Rica;8;Kennedy;Timiza;48
 830038;Pio Xii;KR 79 D 6 15;Jardín Infantil SDIS.;2928965;Pio XII;Pi¾ XII;8;Kennedy;Castilla;46
 830039;La Igualdad;CL 2 68 A 80;Jardín Infantil SDIS.;9101333;Hipotecho Sur;La Igualdad;8;Kennedy;Americas;44
 830040;Argelia;CL 39B SUR 72G 62;Jardín Infantil SDIS.;2046063;Las Delicias;San AndrÚs;8;Kennedy;Carvajal;45
@@ -683,7 +583,6 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 830043;Ciudad de Bogota;KR 80 43 43 SUR;Jardín Infantil SDIS.;4549160;Pastrana;Nuevo Kennedy;8;Kennedy;Gran Britalia;81
 930044;Rafael Pombo;KR 97 A 19 35;Jardín Infantil SDIS.;2672996;Centro Fontibon;Centro Fontib¾n;9;Fontibón;Fontibón;75
 1030046;Engativa;CL 66 B 122 3;Jardín Infantil SDIS.;4336083;Engativa Zona Urbana;S.C. Engativa Zona Urbana;10;Engativá;Engativa;74
-1030047;Villa Amalia;CL 71 C 110 C 35;Jardín Infantil SDIS.;4429051;Villa Amalia;Villa Amalia;10;Engativá;Garcés Navas;73
 1030048;Plazuelas del Virrey;CL 72 A 106 91;Jardín Infantil SDIS.;4429519;Villa Amalia;Plazuelas del Virrey;10;Engativá;Garcés Navas;73
 1030049;Villa Cristina;KR 95 G 91 A 22;Jardín Infantil SDIS.;4332868;Ciudad Bachue;Villa Cristina;10;Engativá;El Minuto de Dios;29
 1030050;Los Cerezos;KR 89 80 35;Jardín Infantil SDIS.;4342773;Los Cerezos;Los Cerezos;10;Engativá;El Minuto de Dios;29
@@ -707,8 +606,6 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 1830071;Marco A. Iriarte;KR 21 23 21 SUR;Jardín Infantil SDIS.;2392601;Olaya;S.C. Olaya;18;Rafael Uribe;Quiroga;39
 1830072;Samore;CL 41 SUR 31 77;Jardín Infantil SDIS.;2708080;Ingles;S.C. Ingles;18;Rafael Uribe;Quiroga;39
 1830073;Socorro Sur;KR 15 A 50 24 SUR;Jardín Infantil SDIS.;2059272;Marco Fidel Suarez I;El Socorro II Sector;18;Rafael Uribe;Marruecos;54
-1830074;San Jorge;DG 45 BIS B SUR 16 A 74;Jardín Infantil SDIS.;2794804;San Jorge Sur;Urb. Tanque de Santa Lucia;18;Rafael Uribe;Marco Fidel Suárez;53
-1830075;Satelite Resurreccion;TV 14 33 35 SUR;Jardín Infantil SDIS.;3666970;Granjas San Pablo;Granjas de San Pablo;18;Rafael Uribe;Marco Fidel Suárez;53
 1830076;Acacias;TV 13 32B 51 SUR;Jardín Infantil SDIS.;2727118;Granjas De Santa Sofia;Resurrecci¾n;18;Rafael Uribe;Marco Fidel Suárez;53
 1830077;Pijaos;KR 10 B 35 2 SUR;Jardín Infantil SDIS.;2093455;San Luis;Los Pijaos;18;Rafael Uribe;San José;36
 1430079;Jorge Bejarano;CL 10 29 48;Jardín Infantil SDIS.;2478735;Ricaurte;Ricaurte;14;Los Mártires;La Sabana;102
@@ -719,20 +616,18 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 1630084;Alcala Muzu;KR 52 37 5 SUR;Jardín Infantil SDIS.;2702254;Alqueria;La Alquería;16;Puente Aranda;Muzú;41
 1630085;Camelia;TV 57 1 60 SUR;Jardín Infantil SDIS.;2615237;Galan;Galßn;16;Puente Aranda;San Rafael;43
 1630086;Calixto Torres;KR 65 4 17;Jardín Infantil SDIS.;2603602;La Pradera;La Pradera;16;Puente Aranda;San Rafael;43
-1630087;Trinidad Galan;CL 4 B 59 80;Jardín Infantil SDIS.;2619277;San Gabriel;San Gabriel;16;Puente Aranda;San Rafael;43
+1630087;Trinidad Galan;KR 60 # 4 - 15;Jardín Infantil SDIS.;2619277;San Gabriel;San Gabriel;16;Puente Aranda;San Rafael;43
 1630088;Satelite Primavera;KR 41 B 5 57;Jardín Infantil SDIS.;2011453;Primavera Occidental;Primavera Occidental;16;Puente Aranda;Ciudad Montes;40
 1630089;Bochica;CL 1 A BIS 35 20;Jardín Infantil SDIS.;3511184;Santa Matilde;Santa Matilde;16;Puente Aranda;Ciudad Montes;40
-1930090;Candelaria la Nueva;CL 69 F 18 I 49 SUR;Jardín Infantil SDIS.;7152120;Verona;Candelaria la Nueva II Sector;19;Ciudad Bolívar;Jerusalem;70
 1930092;Arborizadora Baja;CL 59 B SUR 43 17;Jardín Infantil SDIS.;7188804;Arborizadora Baja;Arborizadora Baja;19;Ciudad Bolívar;Arborizadora;65
 1930093;San Francisco;KR 20 A 67 27 SUR;Jardín Infantil SDIS.;7150642;San Francisco;San Francisco II Sector;19;Ciudad Bolívar;San Francisco;66
 1930094;La Estancia;KR 74 G 59 87 SUR;Jardín Infantil SDIS.;7807486;La Estancia;La Estancia;19;Ciudad Bolívar;Ismael Perdomo;69
 1930095;Urapanes;KR 18 A 80 82 SUR;Jardín Infantil SDIS.;7910074;Quiba;Los Urapanes;19;Ciudad Bolívar;El Tesoro;68
-130096;Buenavista;CL 190 4 C 63;Jardín Infantil SDIS.;6791967;Buenavista;Buenavista;1;Usaquén;Verbenal;9
 1430097;Casa de Desarrollo Integral la Libelulosa;KR 15 8 57;Jardín Infantil SDIS.;3186178451;Voto Nacional;Voto Nacional;14;Los Mártires;La Sabana;102
 1830098;Chiquitines del Bosque;KR 5 A BIS 48 P 84 SUR;Jardín Infantil SDIS.;7391506;San Agustin;El Bosque de los Molinos;18;Rafael Uribe;Diana Turbay;55
 130099;Obra Suiza;Cl 182 6 21;Jardín Infantil SDIS.;6705611;Horizontes Norte;El Codito;1;Usaquén;Verbenal;9
 130101;Verbenal Orientando Tus Pasitos;KR 17 BIS 186 C 8;Jardín Infantil SDIS.;6794659;El Vervenal;El Verbenal II Sector;1;Usaquén;Verbenal;9
-1930102;Maravilla Infantiles Nueva Colombia Sur;CL 70 K 18 L 49;Jardín Infantil SDIS.;7665022-3003966430;;;19;Ciudad Bolívar;Lucero;67
+1930102;Maravilla Infantiles Nueva Colombia Sur;Calle 70 K SUR # 18 L - 49;Jardín Infantil SDIS.;7665022-3003966430;;;19;Ciudad Bolívar;Lucero;67
 930103;La Cabaña Fontibon;KR 104 A BIS 23 G 44;Jardín Infantil SDIS.;4151723-3213734360;La Cabana Fontibon;La Giralda;9;Fontibón;Fontibón;75
 930104;El Portal;TV 124 18 A 79;Jardín Infantil SDIS.;4219725;;;9;Fontibón;Fontibón San Pablo;76
 1430105;Los Martires;CL 3 B 29 57;Jardín Infantil SDIS.;SIN INFORMACION;SANTA ISABEL;Santa Isabel;14;Los Mártires;Santa Isabel;37
@@ -744,8 +639,6 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 1230067;Maria Goretti;CL 67 D 58 14;Jardín Infantil SDIS.;2400285;Popular Modelo;Popular Modelo;12;Barrios Unidos;Doce de Octubre;22
 1830070;Colinas;KR 15 C 31 G 40 SUR;Jardín Infantil SDIS.;2786696;Gustavo Restrepo;Gustavo Restrepo;18;Rafael Uribe;San José;36
 1430078;Samper Mendoza;KR 22 22 A 62;Jardín Infantil SDIS.;2681805;Santa Fe;Santa Fe;14;Los Mártires;La Sabana;102
-1930091;Arborizadora Alta;CL 70 SUR 34 05;Jardín Infantil SDIS.;7169924;Arborizadora Alta;Arborizadora Alta;19;Ciudad Bolívar;Jerusalem;70
-430100;La Victoria;DG 37 BIS B SUR 2 81 ESTE;Jardín Infantil SDIS.;3637407;Las Guacamayas I;Las Guacamayas;4;San Cristóbal;La Gloria;50
 1999001;Bellavista;CL 69 SUR 18 B 36;Salon S.D.I.S. - Uso Libre;SIN INFORMACION;Bellavista Lucero Alto;Bellavista Lucero Alto;19;Ciudad Bolívar;Lucero;67
 1999002;Salon San Francisco;KR 22 64 99 SUR;Salon S.D.I.S. - Uso Libre;SIN INFORMACION;Las Acacias;San Francisco I Sector;19;Ciudad Bolívar;San Francisco;66
 301001;Archivo-Soporte Tecnico Sistemas;KR 5 33 44;Sede Administrativa;3279797 EXT. 1079;La Perseverancia;La Perseverancia;3;Santa Fe;La Macarena;92
@@ -761,14 +654,11 @@ IDENTIFICADOR;NOMBRE;DIRECCION;CATEGORIA;TELEFONO;BARRIO_OFICIAL;POLIGONO_BARRIA
 505005;Subd Local Usme-Sumapaz;AC 91 SUR 3 C 34 ESTE;Subdirección Local para la Integración Social;2006448 - 7640385 - 7685863 -7685865;Charala;Chuniza;5;Usme;Comuneros;58
 705007;Subd Local Bosa;CL 73 SUR 81 B 10;Subdirección Local para la Integración Social;7753064 - 7802711;Gran Colombiano;Grancolombiano II Sector;7;Bosa;Bosa Central;85
 305003;Subd Local Santafe - Candelaria;KR 2 3 10;Subdirección Local para la Integración Social;2465631 - 2897449 - 2892448 - 2465631 - 2330716;Lourdes;Lourdes 2;3;Santa Fe;Las Cruces;95
-405004;Subd Local San Cristobal;DG 37 BIS B SUR 2 81 ESTE;Subdirección Local para la Integración Social;2065168 - 2065287 - 3674990 - 3674991 - 3636741;Las Guacamayas I;Las Guacamayas;4;San Cristóbal;La Gloria;50
 605006;Subd Local Tunjuelito;DG 47 A SUR 53 92;Subdirección Local para la Integración Social;2702827 - 7410171 - 7410174 - 2308943;Venecia;Venecia;6;Tunjuelito;Venecia;42
 905008;Subd Local Fontibon;KR 104 B 22 J 15;Subdirección Local para la Integración Social;4185564 - 2672417 - 4159214 - 2672806 - 4184119 - 2672424 - 4181948 - 4210976;La Cabana Fontibon;La Giralda;9;Fontibón;Fontibón;75
-1005009;Subd Local Engativa;CL 70 78 7;Subdirección Local para la Integración Social;2524855 - 4371077 - 4361832;Santa Helenita;S.C. Santa Helenita;10;Engativá;Boyacá Real;30
 1105010;Subd Local Suba;KR 91 146 C 15;Subdirección Local para la Integración Social;6815452 - 6635482 - 6835951 - 6921232 - 6857436 - 6835171;Suba Urbano;S.C. Suba Urbano;11;Suba;Suba;27
 1205011;Subd Local Barrios Unidos - Teusaquillo;KR 58 67 D 31;Subdirección Local para la Integración Social;2509877 - 2509966 - 3113299 - 2400945;Popular Modelo;Popular Modelo;12;Barrios Unidos;Doce de Octubre;22
-1205012;Subd Local Ciudad Bolivar;CL 70 SUR 34 5;Subdirección Local para la Integración Social;7180841 - 7172740 - 7172743 - 7172745 - 7180842;Arborizadora Alta;Arborizadora Alta;19;Ciudad Bolívar;Jerusalem;70
-1405013;Subd Local Los Martires;KR 23 22 A 72;Subdirección Local para la Integración Social;2448978 - 2681821 - 2697350 - 3685688 - 2684400;Santa Fe;Santa Fe;14;Los Mártires;La Sabana;102
+1405013;Subd Local Los Martires;Diagonal 22 B BIS # 20 - 51;Subdirección Local para la Integración Social;2448978 - 2681821 - 2697350 - 3685688 - 2684400;Santa Fe;Santa Fe;14;Los Mártires;La Sabana;102
 1605014;Subd Local Puente Aranda - Antonio Nariño;KR 33 4 A 23;Subdirección Local para la Integración Social;2373467 - 2373638 - 2770669 - 2770676 - 2770671;Comuneros;Veraguas Central;16;Puente Aranda;Ciudad Montes;40
 1805015;Subd Local Rafael Uribe Uribe;KR 15 C 31 G 40 SUR;Subdirección Local para la Integración Social;3663805 - 3665335 - 2090454;Gustavo Restrepo;Gustavo Restrepo;18;Rafael Uribe;San José;36
 805016;Subd Local Kennedy;CL 38 SUR 94 C 29;Subdirección Local para la Integración Social;4542712;Galan;Bellavista_;8;Kennedy;Patio Bonito;82
